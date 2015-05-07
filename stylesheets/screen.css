@@ -1,0 +1,330 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 3, ../sass/_global.scss */
+body {
+  font-family: Myriad Pro;
+}
+
+/* line 7, ../sass/_global.scss */
+.section-head {
+  font-size: 4em;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 6em;
+  margin-bottom: .5em;
+}
+
+/* line 16, ../sass/_global.scss */
+.section-head-desc {
+  font-size: 3em;
+  text-align: center;
+  color: #00a0c6;
+  margin-bottom: 2em;
+  margin-top: -1em;
+}
+
+/* line 24, ../sass/_global.scss */
+p {
+  line-height: 1.6em;
+  font-size: 1.2em;
+  margin-bottom: 1.6em;
+}
+
+/* line 30, ../sass/_global.scss */
+.buttons {
+  text-align: center;
+  margin-top: 1em;
+}
+/* line 34, ../sass/_global.scss */
+.buttons .button {
+  border: 1px solid #333;
+  color: #333;
+  text-decoration: none;
+  padding: .75em 2em;
+  margin: 1em;
+  display: inline-block;
+  clear: both;
+  font-size: 1.6em;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  transition: 0.5s all;
+}
+/* line 45, ../sass/_global.scss */
+.buttons .button:hover {
+  color: #00a0c6 !important;
+  border-color: #00a0c6 !important;
+}
+
+/* line 57, ../sass/_global.scss */
+section {
+  padding: 4em 0;
+  background: url("../images/texture.png") 0 0 no-repeat;
+  background-size: cover;
+}
+/* line 62, ../sass/_global.scss */
+section.photo {
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20vh 0;
+  color: #fff;
+}
+/* line 71, ../sass/_global.scss */
+section.photo .buttons .button {
+  border: 1px solid #fff;
+  color: #fff;
+}
+/* line 75, ../sass/_global.scss */
+section.photo .buttons .button:hover {
+  background: rgba(0, 0, 0, 0.75);
+}
+/* line 83, ../sass/_global.scss */
+section .wrapper {
+  width: 75%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* line 1, ../sass/_header.scss */
+header {
+  position: fixed;
+  top: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 0 2em;
+  width: 100%;
+  z-index: 9999;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 11, ../sass/_header.scss */
+header h1 {
+  text-indent: -9999em;
+  background: url("../images/point-logo-header.png") 0 0 no-repeat;
+  width: 145px;
+  height: 67px;
+  float: left;
+  margin: 1em 0;
+}
+/* line 20, ../sass/_header.scss */
+header nav {
+  float: right;
+  font-family: Myriad Pro;
+  width: 75%;
+  margin-right: 2em;
+  text-align: right;
+}
+/* line 28, ../sass/_header.scss */
+header nav ul li {
+  font-size: 1.2em;
+  display: inline;
+}
+/* line 32, ../sass/_header.scss */
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 2.15em 2em;
+  display: inline-block;
+}
+/* line 38, ../sass/_header.scss */
+header nav ul li a:hover {
+  background: rgba(0, 0, 0, 0.25);
+}
+/* line 46, ../sass/_header.scss */
+header.past-intro {
+  background: #333;
+  border-bottom: none;
+}
+
+/* line 1, ../sass/_footer.scss */
+footer {
+  background: #333;
+  height: 200px;
+}
+
+/* line 3, ../sass/_home.scss */
+#home-intro {
+  background-image: url("../images/home-intro-bg.jpg");
+  height: 100vh;
+  padding: 0;
+}
+/* line 8, ../sass/_home.scss */
+#home-intro h2 {
+  font-family: Myriad Pro;
+  font-size: 4em;
+  text-align: center;
+  padding-top: 25vh;
+}
+/* line 14, ../sass/_home.scss */
+#home-intro h2 dt {
+  text-indent: -9999em;
+  background: url("../images/point-logo-large.png") bottom center no-repeat;
+  background-size: contain;
+  height: 300px;
+  margin-bottom: 5%;
+}
+
+/* line 27, ../sass/_home.scss */
+#home-worship {
+  background-image: url("../images/home-worshop.jpg");
+}
+
+/* line 31, ../sass/_home.scss */
+#home-sermons {
+  background-image: url("../images/home-sermons.jpg");
+}
+
+/* line 35, ../sass/_home.scss */
+#home-leadership {
+  background-image: url("../images/home-leadership.jpg");
+}
+
+/* line 39, ../sass/_home.scss */
+#home-kids {
+  position: relative;
+  overflow: hidden;
+}
+/* line 45, ../sass/_home.scss */
+#home-kids .paint-splatter span {
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+/* line 57, ../sass/_home.scss */
+#home-kids .paint-splatter #orange {
+  /*height: 296px;
+  width: 237px;
+  top: -85px;
+  left: 120px;*/
+  background-image: url("../images/home-kids-paint-orange.png");
+  z-index: 1;
+  background-position: 8% 14%;
+}
+/* line 67, ../sass/_home.scss */
+#home-kids .paint-splatter #purple {
+  background-image: url("../images/home-kids-paint-purple.png");
+  /*height: 680px;
+  width: 538px;
+  top: -60px;
+  left: 0;*/
+  background-position: 0 10%;
+}
+/* line 76, ../sass/_home.scss */
+#home-kids .paint-splatter #green {
+  background-image: url("../images/home-kids-paint-green.png");
+  			/*height: 325px;
+   			width: 579px;
+    			right: 0px;
+    			top: -105px;*/
+  background-position: 100% 15%;
+}
+/* line 85, ../sass/_home.scss */
+#home-kids .paint-splatter #pink {
+  background-image: url("../images/home-kids-paint-pink.png");
+  			/*height: 224px;
+    			width: 209px;
+    			bottom: 20px;
+    			right: 10px;*/
+  background-position: 95% 95%;
+}
+/* line 94, ../sass/_home.scss */
+#home-kids .paint-splatter #pink2 {
+  background-image: url("../images/home-kids-paint-pink-2.png");
+  background-position: 85% 90%;
+}
+
+/* line 110, ../sass/_home.scss */
+#home-locations .locations {
+  margin-bottom: 4em;
+}
+/* line 113, ../sass/_home.scss */
+#home-locations .locations li {
+  display: inline-block;
+  width: 24%;
+  text-align: center;
+  background: url("../images/home-locations-apex.png") no-repeat top center;
+  padding-top: 170px;
+}
+/* line 121, ../sass/_home.scss */
+#home-locations .locations dt {
+  font-size: 2em;
+  color: #00a0c6;
+}

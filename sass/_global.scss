@@ -1,0 +1,92 @@
+$point-blue: #00a0c6;
+
+body{
+	font-family: Myriad Pro;
+}
+
+.section-head{
+	font-size: 4em;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 6em;
+	margin-bottom: .5em;
+}
+
+.section-head-desc{
+	font-size: 3em;
+	text-align: center;
+	color: #00a0c6;
+	margin-bottom: 2em;
+	margin-top: -1em;
+}
+
+p{
+	line-height: 1.6em;
+	font-size: 1.2em;
+	margin-bottom: 1.6em;
+}
+
+.buttons{
+	text-align: center;
+	margin-top: 1em;
+
+	.button{
+		border: 1px solid #333;
+		color: #333;
+		text-decoration: none;
+		padding: .75em 2em;
+		margin: 1em;
+		display: inline-block;
+		clear: both;
+		font-size: 1.6em;
+		@include transition(.5s all);
+
+		&:hover{
+			color: $point-blue!important;
+			border-color: $point-blue!important;
+			
+			&:after{
+				//content: "\2192"; 
+				//padding-left: .5em;
+			}
+		}
+	}
+}
+
+section{
+	padding: 4em 0;
+	background: url('../images/texture.png') 0 0 no-repeat;
+	background-size: cover;
+
+	&.photo{
+		background-attachment: fixed;
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;	
+		padding: 20vh 0;
+		color: #fff;
+
+		.buttons{
+			.button{
+				border: 1px solid #fff;
+				color: #fff;
+
+				&:hover{
+					background: rgba(0,0,0,.75);
+				}
+				
+			}
+		}
+	}
+	
+	.wrapper{
+		width: 75%;
+		max-width: 960px;
+		margin: 0 auto;
+	}
+
+
+
+}
+

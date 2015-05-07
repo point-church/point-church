@@ -1,0 +1,50 @@
+header{
+	position: fixed;
+	top: 0;
+	border-bottom: 1px solid rgba(255,255,255,.5);
+	padding: 0 2em;
+	width: 100%;
+	z-index: 9999;
+	@include transition(all .5s);
+	@include clearfix;
+
+	h1{
+		text-indent: -9999em;
+		background: url('../images/point-logo-header.png') 0 0 no-repeat;
+		width: 145px;
+		height: 67px;
+		float: left;
+		margin: 1em 0;
+	}
+
+	nav{
+		float: right;
+		font-family: Myriad Pro;
+		width: 75%;
+		margin-right: 2em;
+		text-align: right;
+		//padding: 1em 4em 1em 0;
+
+		ul li{
+			font-size: 1.2em;
+			display: inline;
+
+			a{
+				color: #fff;
+				text-decoration: none;
+				padding: 2.15em 2em;
+				display: inline-block;
+
+				&:hover{
+					background: rgba(0,0,0,.25);
+
+				}
+			}
+		}
+	}
+
+	&.past-intro{
+		background: #333;
+		border-bottom: none;
+	}
+}
