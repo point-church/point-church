@@ -40,6 +40,11 @@
 	position: relative;
 	overflow: hidden;
 
+	.buttons{
+		position: relative;
+		z-index: 2;
+	}
+
 	.paint-splatter{
 
 		span{ 
@@ -127,7 +132,12 @@
 	}
 
 	#map-canvas{
-		height: 100vh;
+		display: none;
+		height: 600px;
+
+		&.expand{
+			display: block;
+		}
 
 		.campus-name{
 			font-size: 1.4em;

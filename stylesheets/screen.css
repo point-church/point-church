@@ -257,7 +257,12 @@ footer {
   position: relative;
   overflow: hidden;
 }
-/* line 45, ../sass/_home.scss */
+/* line 43, ../sass/_home.scss */
+#home-kids .buttons {
+  position: relative;
+  z-index: 2;
+}
+/* line 50, ../sass/_home.scss */
 #home-kids .paint-splatter span {
   display: block;
   position: absolute;
@@ -268,7 +273,7 @@ footer {
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
-/* line 57, ../sass/_home.scss */
+/* line 62, ../sass/_home.scss */
 #home-kids .paint-splatter #orange {
   /*height: 296px;
   width: 237px;
@@ -278,7 +283,7 @@ footer {
   z-index: 1;
   background-position: 8% 14%;
 }
-/* line 67, ../sass/_home.scss */
+/* line 72, ../sass/_home.scss */
 #home-kids .paint-splatter #purple {
   background-image: url("../images/home-kids-paint-purple.png");
   /*height: 680px;
@@ -287,7 +292,7 @@ footer {
   left: 0;*/
   background-position: 0 10%;
 }
-/* line 76, ../sass/_home.scss */
+/* line 81, ../sass/_home.scss */
 #home-kids .paint-splatter #green {
   background-image: url("../images/home-kids-paint-green.png");
   			/*height: 325px;
@@ -296,7 +301,7 @@ footer {
     			top: -105px;*/
   background-position: 100% 15%;
 }
-/* line 85, ../sass/_home.scss */
+/* line 90, ../sass/_home.scss */
 #home-kids .paint-splatter #pink {
   background-image: url("../images/home-kids-paint-pink.png");
   			/*height: 224px;
@@ -305,17 +310,17 @@ footer {
     			right: 10px;*/
   background-position: 95% 95%;
 }
-/* line 94, ../sass/_home.scss */
+/* line 99, ../sass/_home.scss */
 #home-kids .paint-splatter #pink2 {
   background-image: url("../images/home-kids-paint-pink-2.png");
   background-position: 85% 90%;
 }
 
-/* line 110, ../sass/_home.scss */
+/* line 115, ../sass/_home.scss */
 #home-locations .locations {
   margin-bottom: 4em;
 }
-/* line 113, ../sass/_home.scss */
+/* line 118, ../sass/_home.scss */
 #home-locations .locations li {
   display: inline-block;
   width: 24%;
@@ -323,17 +328,22 @@ footer {
   background: url("../images/home-locations-apex.png") no-repeat top center;
   padding-top: 170px;
 }
-/* line 121, ../sass/_home.scss */
+/* line 126, ../sass/_home.scss */
 #home-locations .locations dt {
   font-size: 2em;
   color: #00a0c6;
 }
 
-/* line 129, ../sass/_home.scss */
+/* line 134, ../sass/_home.scss */
 #map-canvas {
-  height: 100vh;
+  display: none;
+  height: 600px;
 }
-/* line 132, ../sass/_home.scss */
+/* line 138, ../sass/_home.scss */
+#map-canvas.expand {
+  display: block;
+}
+/* line 142, ../sass/_home.scss */
 #map-canvas .campus-name {
   font-size: 1.4em;
   margin-bottom: 1em;
