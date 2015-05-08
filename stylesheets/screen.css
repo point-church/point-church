@@ -328,3 +328,13 @@ footer {
   font-size: 2em;
   color: #00a0c6;
 }
+
+/* line 129, ../sass/_home.scss */
+#map-canvas {
+  height: 100vh;
+}
+/* line 132, ../sass/_home.scss */
+#map-canvas .campus-name {
+  font-size: 1.4em;
+  margin-bottom: 1em;
+}
