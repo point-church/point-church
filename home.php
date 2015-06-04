@@ -75,12 +75,14 @@
 					<dd>9am &amp; 11am</dd>
 				</dl>
 			</li>
-			<li class="cary">
-				<dl>
-					<dt>Cary</dt>
-					<dd>9am &amp; 11am</dd>
-				</dl>
-			</li>
+			<a href="<?php bloginfo('url'); ?>/locations/cary">
+				<li class="cary">
+					<dl>
+						<dt>Cary</dt>
+						<dd>9am &amp; 11am</dd>
+					</dl>
+				</li>
+			</a>
 			<li class="espanol">
 				<dl>
 					<dt>Español</dt>
