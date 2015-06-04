@@ -1,0 +1,193 @@
+#campus-intro{
+	text-align: center;
+	background: #666;
+
+	.section{
+		font-size: 1.2em;
+		font-weight: 100;
+		margin-top: 3em;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+	}
+
+	.campus-title{
+		font-size: 6em;
+		margin-top: .5em;
+		text-transform:  uppercase;
+		font-weight: bold;
+		letter-spacing: 2px;
+
+
+	}
+}
+
+#campus-welcome{
+	@include clearfix;
+
+	p{
+		float: right;
+		width: 50%;
+		padding-top: 2em;
+	}
+	.video{
+		float: left;
+		width: 45%;
+
+		*{
+			width: 100%;
+		}
+	}
+}
+
+#campus-sermon{
+
+	background-image: url('../images/home-sermons.jpg');
+
+	.audio{
+		float: left;
+		width: 25%;
+		background: url('../images/audio-player.png') no-repeat center;
+		height: 106px;
+	}
+
+	p{
+		float: right;
+		width: 75%;
+	}
+}
+
+#campus-visit{
+
+	
+
+	.map-info{
+		position: relative;
+
+		.campus-map{
+			width: 100%;
+			margin: 0;
+		}
+
+		.campus-info{
+			position: absolute;
+			background: rgba(0,0,0,.5);
+			color: #fff;
+			bottom: 0;
+			left: 0;
+			width: 90%;
+			padding: 5%;
+			font-size: 2em;
+			font-weight: 100;
+
+			p{
+				margin: 0;
+			}
+		}
+	}
+
+	.visit-questions{
+		clear: both;
+		padding-top: 2em;
+
+		.question{
+			width: 45%;
+			padding: 2.5% 5% 2.5% 0;
+			float: left;
+		}
+
+		.question-title{
+			font-size: 2em;
+			margin-bottom: 1em;
+
+			span{
+				background: url('../images/campus-question-sprite.png') no-repeat 0 0;
+				height: 50px;
+				width: 50px;
+				display: inline-block;
+				margin-right: .5em;
+				position: relative;
+				top: 12.5px;
+			}
+	
+			&.park span{ background-position: -50px 0; }
+			&.wear span{ background-position: -100px 0; }
+			&.kids span{ background-position: -150px 0; }
+		}
+	}	
+
+}
+
+#campus-events{
+
+	background-image: url('../images/events-texture.jpg');
+
+	.event{
+		float: left;
+		text-align: center;
+		width: 25%;
+		margin: 0 4.16667% 2em;
+
+		h4{
+			font-size: 1.5em;
+			margin-top: 1em;
+		}
+
+		img{
+			width: 100%;
+		}
+	}
+
+}
+
+#campus-staff{
+	padding: 6em 0;
+	@include clearfix;
+
+	.staff-list{
+		margin-bottom: 2em;
+
+		li{
+			width: 25%;
+			float: left;
+			text-align: center;
+		}
+
+		img{
+			width: 150px;
+			height: 150px;
+			margin-bottom: 1em;
+			@include border-radius(100%);
+		}
+
+		dt{
+			font-size: 1.4em;
+			margin-bottom: .25em;
+		}
+
+		dd{
+			font-size: 1em;
+		}
+	}
+}
+
+#campus-social{
+	background-image: url('../images/events-texture.jpg');
+	overflow: hidden;
+	.wrapper{
+		width: 80%;
+		max-width: none;
+	}
+
+	.instagram{
+		img{
+			width: 16.166666667%;
+			float: left;
+			padding: .25%;
+			opacity: .8;
+
+			&:hover{
+				opacity: 1;
+			}
+		}
+	}
+}

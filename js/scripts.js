@@ -1,5 +1,5 @@
 // get the value of the bottom of the #intro element by adding the offset of that element plus its height, set it as a variable
-var introbottom = $('#home-intro').offset().top;
+var introbottom = $('.promo').offset().top;
 
 
 if( $(window).scrollTop() > introbottom ){

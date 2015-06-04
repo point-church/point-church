@@ -12,7 +12,7 @@
 		<h1><?php bloginfo('name'); ?></h1>
 
 		<nav>
-			<?php wp_nav_menu(); ?>
+			<?php wp_nav_menu(array('menu' => 'global_nav' )); ?>
 		</nav>
 	</header>
 

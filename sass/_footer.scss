@@ -1,4 +1,46 @@
 footer{
 	background: #333;
-	height: 200px;
+	padding: 2em;
+	color: #999;
+	font-weight: 100;
+	@include clearfix;
+
+	.footer-title{
+		background: url(../images/footer-logo.png) no-repeat 0 0;
+		text-indent: -9999em;
+		height: 66px;
+		width: 150px;
+	}
+
+	.footer-address{
+		margin-top: 2em;
+		line-height: 1.4em;
+		font-size: 1.2em;
+		font-weight: 100;
+	}
+
+	.footer-utilities{
+		clear: both;
+		border-top: 1px solid #999;
+		margin-top: 1em;
+		padding-top: 1em;
+
+		.button{
+			width: 15%;
+			border: 1px solid #999;
+			padding: 1%;
+			text-align: center;
+			text-decoration: none;
+			color: #999;
+		}
+
+		.copyright{
+			float: left;
+			text-align: center;
+			width: 64%;
+			padding-top: 1%;
+
+			a{ color: #ccc; }
+		}
+	}
 }

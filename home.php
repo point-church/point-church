@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section id="home-intro" class="photo" data-photo="<?php bloginfo('stylesheet_directory');?>/images/home-intro-bg.jpg">
+<section id="home-intro" class="photo promo" data-photo="<?php bloginfo('stylesheet_directory');?>/images/home-intro-bg.jpg">
 	<div class="wrapper">
 		<h2>
 			<dl>
@@ -14,7 +14,7 @@
 <section id="home-welcome">
 	<div class="wrapper">
 		<h3 class="section-head">Welcome</h3>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at metus sagittis, fermentum velit vel, pellentesque turpis. Donec feugiat, sem vitae ultricies pulvinar, tellus neque imperdiet purus, id fermentum tortor metus vitae dolor. Suspendisse vel nibh at sapien sagittis sodales.</p>
+		<p>The Point Church is a movement of churches across the Triangle with one mission. We are all about pointing people to Jesus and helping them take their next steps with him—no matter where they are in their faith. *So there’s no need to dress up, pretend, or worry about your past. We just want you experience Jesus.</p>
 		<div class="buttons">
 			<a href="#" class="button">Beliefs</a>
 			<a href="#" class="button">Staff</a>
@@ -25,7 +25,7 @@
 <section id="home-worship" class="photo">
 	<div class="wrapper">
 		<h3 class="section-head">Worship</h3>
-		<h4 class="section-head-desc">Energetic. Alive. Fresh.</h4>
+		<h4 class="section-head-desc">Exciting . Diverse.  Experiential.</h4>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at metus sagittis, fermentum velit vel, pellentesque turpis. Donec feugiat, sem vitae ultricies pulvinar, tellus neque imperdiet purus, id fermentum tortor metus vitae dolor. Suspendisse vel nibh at sapien sagittis sodales.</p>
 		<div class="buttons">
 			<a href="#" class="button">Times & Locations</a>
@@ -37,7 +37,7 @@
 <section id="home-kids">
 	<div class="wrapper">
 		<h3 class="section-head">Kids</h3>
-		<h4 class="section-head-desc">Safe. Fun. Creative.</h4>
+		<h4 class="section-head-desc">Secure. Intentional. Engaging.</h4>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at metus sagittis, fermentum velit vel, pellentesque turpis. Donec feugiat, sem vitae ultricies pulvinar, tellus neque imperdiet purus, id fermentum tortor metus vitae dolor. Suspendisse vel nibh at sapien sagittis sodales.</p>
 		<div class="buttons">
 			<a href="#" class="button">Kid Point</a>
@@ -56,7 +56,7 @@
 <section id="home-sermons" class="photo">
 	<div class="wrapper">
 		<h3 class="section-head">Listen to a Sermon</h3>
-		<h4 class="section-head-desc">Biblical. Dynamic. Engaging.</h4>
+		<h4 class="section-head-desc">Applicable. Biblical. Compelling.</h4>
 		<div class="buttons">
 			<a href="#" class="button">Latest Message</a>
 			<a href="#" class="button">Series Archive</a>
@@ -67,7 +67,7 @@
 <section id="home-locations">
 	<div class="wrapper">
 		<h3 class="section-head">Explore a Campus</h3>
-		<h4 class="section-head-desc">One Church in Multiple Locations</h4>
+		<h4 class="section-head-desc">A Movement in Many Locations.</h4>
 		<ul class="locations">
 			<li class="apex">
 				<dl>
