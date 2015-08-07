@@ -1,3 +1,5 @@
+$(document).ready(function(){
+
 // get the value of the bottom of the #intro element by adding the offset of that element plus its height, set it as a variable
 var introbottom = $('.promo').offset().top;
 
@@ -18,11 +20,11 @@ $(window).on('scroll',function(){
 
 });
 
-function buildMap(){
+function buildHomepageMap(){
 	
 	var map;
 	
-	var MY_MAPTYPE_ID = 'custom_style';
+	var MY_MAPTYPE_ID = 'homepage_map';
 	
 	function initialize() {
 	
@@ -80,7 +82,7 @@ function buildMap(){
 	      mapOptions);
 	
 	  var styledMapOptions = {
-	    name: 'Custom Style'
+	    name: 'The Point Church'
 	  };
 	
 	  var customMapType = new google.maps.StyledMapType(featureOpts, styledMapOptions);
@@ -173,5 +175,101 @@ function buildMap(){
 	
 }
 
-buildMap();
 
+function buildCampusMap(){
+	
+	var map;
+	
+	var MY_MAPTYPE_ID = 'campus_map';
+	
+	function initialize() {
+
+	  var lat = $('#map-canvas').data('lat');
+	  var lng = $('#map-canvas').data('lng');
+
+	  // for cary : 35.7688008,-78.745
+
+	  var myLatlng = new google.maps.LatLng( lat , lng);
+	
+	  var featureOpts = [
+	    {
+	      stylers: [
+	        { hue: '#000000' },
+	        { saturation: -100 },
+	        { lightness: -10 },
+	        { visibility: 'simplified' },
+	        { gamma: 0.5 },
+	        { weight: 0.5 },
+	        { invert_lightness: true }
+	
+	      ]
+	    },
+	    {
+	      elementType: 'labels',
+	      stylers: [
+	      //  { //visibilty: "off" }
+	      ]
+	    },
+	    {
+	      featureType: 'water',
+	      stylers: [
+	        { color: '#333333' }
+	      ]
+	    },
+	    {
+	    	featureType: "road",
+	    	elementType: "labels",
+	    	stylers: [
+	      	//	{ visibility: "off" }
+	    	]
+	    },
+	    {
+	    	featureType: "poi",
+	    	elementType: "labels",
+	    	stylers: [
+	    		{ visibility: "off" }
+	    	]
+	    }	
+	  ];
+	
+	  var mapOptions = {
+	    zoom: 12,
+	    mapTypeControlOptions: {
+	      mapTypeIds: [google.maps.MapTypeId.ROADMAP, MY_MAPTYPE_ID]
+	    },
+	    mapTypeId: MY_MAPTYPE_ID,
+	    scrollwheel: false,
+	    center: myLatlng
+	  };
+	
+	  map = new google.maps.Map(document.getElementById('map-canvas'),
+	      mapOptions);
+	
+	  var styledMapOptions = {
+	    name: 'The Point Church'
+	  };
+	
+	  var customMapType = new google.maps.StyledMapType(featureOpts, styledMapOptions);
+	
+	  map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
+	
+	  var image = '/point-church/wp-content/themes/point-church/images/piont-church-marker.png';
+	
+	  var location = new google.maps.Marker({
+	      position: new google.maps.LatLng( lat, lng ),
+	      map: map,
+	      title: 'Cary Campus',
+	      icon: image
+	  });
+	
+	}
+	
+	google.maps.event.addDomListener(window, 'load', initialize);
+	
+}
+
+
+if($('body').hasClass('home')){ buildHomepageMap(); }
+if($('body').hasClass('locations')){ buildCampusMap(); }
+
+});

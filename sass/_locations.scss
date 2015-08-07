@@ -1,6 +1,40 @@
+/*STYLES FOR LOCATION ARCHIVE */
+
+.locations{
+
+	
+
+	.list{
+		@include pie-clearfix;
+
+
+		a{ 
+			color: #333;
+			@include transition(all .5s);
+
+			&:hover{ color: $point-blue; }
+		}
+	}
+
+	.list-item{
+		width: 21%;
+		margin: 0 2%;
+		float: left;
+		text-align: center;
+
+		.post-title{
+			font-size: 1.4em;
+			margin-top: 1em;
+			font-weight: bold;
+		}
+	}
+
+}
+
+
+/* STYLES FOR LOCATION SINGLE */
 #campus-intro{
 	text-align: center;
-	background: #666;
 
 	.section{
 		font-size: 1.2em;
@@ -16,22 +50,17 @@
 		text-transform:  uppercase;
 		font-weight: bold;
 		letter-spacing: 2px;
-
-
 	}
 }
 
 #campus-welcome{
 	@include clearfix;
 
-	p{
-		float: right;
-		width: 50%;
-		padding-top: 2em;
-	}
+	
 	.video{
 		float: left;
 		width: 45%;
+		margin-right: 5%;
 
 		*{
 			width: 100%;
@@ -51,8 +80,8 @@
 	}
 
 	p{
-		float: right;
-		width: 75%;
+		//float: right;
+		//width: 75%;
 	}
 }
 
@@ -63,25 +92,28 @@
 	.map-info{
 		position: relative;
 
-		.campus-map{
+		#map-canvas{
 			width: 100%;
+			display: block;
 			margin: 0;
+			border: 2px solid $point-blue;
 		}
 
-		.campus-info{
+		.location-info{
 			position: absolute;
-			background: rgba(0,0,0,.5);
-			color: #fff;
-			bottom: 0;
-			left: 0;
-			width: 90%;
-			padding: 5%;
-			font-size: 2em;
-			font-weight: 100;
+			top: 2px;
+			right: -2px;
+			background: rgba(255,255,255,.85);
+			border-left: 2px solid $point-blue;
+			border-bottom: 2px solid $point-blue;
+			color: #333;
+			padding: 4em 4em 4em 6em;
+			background-image: url('../images/map-icon.svg');
+			background-repeat: no-repeat;
+			background-position: 1em center;
+			background-size: 75px;
 
-			p{
-				margin: 0;
-			}
+			p{ margin: 0; }
 		}
 	}
 
@@ -89,9 +121,28 @@
 		clear: both;
 		padding-top: 2em;
 
+		.location-info{
+			padding: 2em 0; 
+			background-size: 75px;
+			margin: 1em 0;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			box-sizing: border-box;
+
+			.question-title span{
+				background-image: url('../images/map-icon.svg');
+	
+			}
+
+			p{
+				margin: 0;
+			}
+		}
+
 		.question{
 			width: 45%;
-			padding: 2.5% 5% 2.5% 0;
+			padding: 2.5%;
 			float: left;
 		}
 
@@ -100,18 +151,20 @@
 			margin-bottom: 1em;
 
 			span{
-				background: url('../images/campus-question-sprite.png') no-repeat 0 0;
+				background-image: url('../images/clock-icon.svg');
+				background-repeat: no-repeat;
+				background-size: 100%;
 				height: 50px;
 				width: 50px;
 				display: inline-block;
-				margin-right: .5em;
+				margin-right: .25em;
 				position: relative;
 				top: 12.5px;
 			}
 	
-			&.park span{ background-position: -50px 0; }
-			&.wear span{ background-position: -100px 0; }
-			&.kids span{ background-position: -150px 0; }
+			&.park span{ background-image: url('../images/car-icon.svg'); }
+			&.wear span{ background-image: url('../images/tshirt-icon.svg'); }
+			&.kids span{ background-image: url('../images/lollipop-icon.svg'); }
 		}
 	}	
 
@@ -120,21 +173,65 @@
 #campus-events{
 
 	background-image: url('../images/events-texture.jpg');
+	@include pie-clearfix;
 
 	.event{
 		float: left;
 		text-align: center;
-		width: 25%;
-		margin: 0 4.16667% 2em;
+		width: 21%;
+		margin: 0 2%;
+		position: relative;
 
-		h4{
+		a{ color: #fff; }
+
+		.event-image{
+			height: 200px;
+			background-size: cover;
+			display: block;
+			background-position: center;
+		}
+
+		&:hover{
+			.short-description{
+				opacity: 1;
+				@include transition(all .5s);
+			}
+		}
+
+		.event-title{
 			font-size: 1.5em;
 			margin-top: 1em;
+		}
+
+		.event-date, .event-time{
+			font-size: 1.2em;
+			margin-top: .5em;
+		}
+
+		.short-description{ 
+			position: absolute;
+			top: 0;
+			left: 0;
+			padding: 1em;
+			background: rgba(0,0,0,.5);
+			text-align: left;
+			font-size: 1em;
+			line-height: 1.4em;
+			opacity: 0; 
+			height: 175px;
 		}
 
 		img{
 			width: 100%;
 		}
+
+		&:hover{
+
+		}
+	}
+
+	.buttons{
+		clear: both;
 	}
 
 }

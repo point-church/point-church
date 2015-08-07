@@ -6,10 +6,19 @@
 	<link type="text/css" rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/stylesheets/screen.css" />
 </head>
 
-<body>
+<?php if(is_home()){ $type = 'home'; } else{ $type = get_post_type(); } ?>
 
-	<header>
+<body class="<?php echo $type; ?>">
+	<?php 
+		if(is_home() || is_singular('locations') ){ 
+			$navstate = '';
+		}else{ 
+			$navstate = 'opaque'; 
+		} ?>
+	<header class="<?php echo $navstate; ?>">
 		<a href="<?php bloginfo('url'); ?>"><h1><?php bloginfo('name'); ?></h1></a>
+
+		
 
 		<nav>
 			<?php wp_nav_menu(array('menu' => 'global_nav' )); ?>

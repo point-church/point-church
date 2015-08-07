@@ -27,6 +27,39 @@ p{
 	margin-bottom: 1.6em;
 }
 
+small{
+	font-size: .8em;
+	line-height: 1.4em;
+	margin: 0 1em 0 0;
+	color: #666;
+	font-weight: 100;
+}
+
+strong{
+	font-weight: bold;
+}
+
+em{
+	font-style: italic;
+}
+
+h5{
+	font-weight: 800;
+	font-size: 1.4em;
+	margin: 3em 0 1em;
+}
+
+.scripture{
+	padding: 2em;
+	background: $point-blue;
+	color: #fff;
+
+	small{
+		color: lighten($point-blue, 25%);
+		display: block;
+	}
+}
+
 .buttons{
 	text-align: center;
 	margin-top: 1em;
@@ -41,6 +74,11 @@ p{
 		clear: both;
 		font-size: 1.6em;
 		@include transition(.5s all);
+
+		&.small{
+			padding: .5em 1.5em;
+			font-size: 1.2em;
+		}
 
 		&:hover{
 			color: $point-blue!important;
@@ -66,6 +104,7 @@ section{
 		background-repeat: no-repeat;	
 		padding: 20vh 0;
 		color: #fff;
+		background-color: darken( $point-blue, 10% );
 
 		.buttons{
 			.button{
@@ -90,6 +129,68 @@ section{
 
 }
 
+ol.styled-list{
+
+		li{
+			list-style: decimal;
+
+		}
+	
+	
+}
+
+ul.styled-list{
+	>li{
+		background: url('../images/point-bullet.png') no-repeat top left;
+		padding-left: 30px;
+		margin-left: -48px;
+
+	}
+}
+
+.styled-list{
+	padding-left: 1.25em;
+
+	li{
+		line-height: 1.6em;
+		margin-bottom: 1em;
+		font-size: 1.2em;
+
+		ul{
+			margin-top: 1em;
+			margin-bottom: 2em;
+
+			li{
+				display: inline-block;
+				font-size: .8em;
+				line-height: 1.4em;
+				margin: 0 1em 0 0;
+				color: #666;
+				font-weight: 100;
+			}
+		}
+
+		strong{
+			color: $point-blue;
+			display: block;
+		}
+	}
+}
+
+
 .float-left{ float: left; }
 .float-right{ float: right; }
+
+.standard-header{
+		padding-top: 8em;
+		padding-bottom: 0em;
+
+		.tagline{
+			margin-top: 2em;
+			background: $point-blue;
+			color: #fff;
+			text-align: center;
+			padding: .5em 0;
+		}
+	}
 
