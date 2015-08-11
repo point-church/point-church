@@ -4,6 +4,7 @@
 	<title><?php bloginfo('name'); ?></title>
 	<link type="text/css" rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/style.css" />
 	<link type="text/css" rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/stylesheets/screen.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <?php
 
