@@ -33,23 +33,26 @@
 
 
 /* STYLES FOR LOCATION SINGLE */
-#campus-intro{
-	text-align: center;
+.page-header{
 
-	.section{
-		font-size: 1.2em;
-		font-weight: 100;
-		margin-top: 3em;
-		text-transform: uppercase;
-		letter-spacing: 2px;
+	&.promo{
+		padding-top: 12em;
+		padding-bottom: 4em;
+
+		h2{
+			text-shadow: 0 0 10px #000;
+		}
+
 	}
 
-	.campus-title{
+	.page-title{
 		font-size: 6em;
-		margin-top: .5em;
+		margin-top: .25em;
 		text-transform:  uppercase;
 		font-weight: bold;
 		letter-spacing: 2px;
+		color: #fff;
+		@include text-shadow(0 0 10px #000);
 	}
 }
 
@@ -135,6 +138,7 @@
 	
 			}
 
+
 			p{
 				margin: 0;
 			}
@@ -144,6 +148,14 @@
 			width: 45%;
 			padding: 2.5%;
 			float: left;
+
+			&:nth-child(2n+1){
+				clear: left;
+			}
+
+			.question-title{
+				@include pie-clearfix;
+			}
 		}
 
 		.question-title{
@@ -159,7 +171,8 @@
 				display: inline-block;
 				margin-right: .25em;
 				position: relative;
-				top: 12.5px;
+				top: -12.5px;
+    			float: left;
 			}
 	
 			&.park span{ background-image: url('../images/car-icon.svg'); }

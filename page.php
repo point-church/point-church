@@ -2,14 +2,14 @@
 
 <?php if ( have_posts() ) : ?>
 
-<section id="campus-intro" class="standard-header" data-photo="<?php bloginfo('stylesheet_directory');?>/images/home-intro-bg.jpg">
+<?php include('page-header.php'); ?>
+	
+	<?php	if(get_field('featured_video') != null){
+			echo '<div class="featured-video"><iframe src="//player.vimeo.com/video/'.get_field('featured_video').'" width="650" height="370" frameborder="0"></iframe></div>';
+		} ?>
+		<section>
 	<div class="wrapper">
-		<h2 class="campus-title"><?php the_title(); ?></h2>
-	</div>
-	<p class="tagline"><?php the_field('tagline'); ?></p>
-</section>
-<section class="list">
-	<div class="wrapper">
+
 <?php while ( have_posts() ) : the_post(); ?>
 
 		<?php the_content(); ?>

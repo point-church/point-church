@@ -2,49 +2,15 @@
 
 <?php if ( have_posts() ) : ?>
 
-<section id="campus-intro" class="standard-header" data-photo="<?php bloginfo('stylesheet_directory');?>/images/home-intro-bg.jpg">
-	<div class="wrapper">
-		<h2 class="campus-title"><?php the_title(); ?></h2>
-	</div>
-	<p class="tagline">Our Purpose &amp; Our People</p>
-</section>
+<?php include('page-header.php'); ?>
+
 <?php while ( have_posts() ) : the_post(); ?>
 
-	<section class="mission">
+
+
+	<section id="beliefs-baptism">
 		<div class="wrapper">
-			<h3 class="page-section-head">Mission, Vision, &amp; Values</h3>
-			<h4 class="page-section-subhead">Our Mission</h4>
-			<p>The Point Church is all about pointing people to Jesus.</p>
-			<h4 class="page-section-subhead">Our Vision</h4>
-			<p>To plant 30 churches in the triangle area in the next 15 years (2025) through making disciples that disciple others and planting churches that plant churches.</p>
-			<h4 class="page-section-subhead">Our Values</h4>
-			<ul class="styled-list">
-				<li><strong>Invest and Invite</strong> We intentionally invest our lives into people who are far from God and invite them to know Christ.</li>
-
-				<li><strong>Contributors not Consumers</strong> We do not settle for being religious consumers but desire for every person to contribute to the cause of Christ.</li>
-
-				<li><strong>Better Together</strong> We can do more by working together than we can apart both as believers and churches.</li>
-
-				<li><strong>Where God Guides He Provides</strong> We take bold steps of faith because God will always provide for what he calls us to do.</li>
-
-				<li><strong>Help the Hurting</strong> We have a heart to help the hurting and in doing so we serve Christ. (Matthew 25:40)</li>
-
-				<li><strong>Disciples Make Disciples</strong> We will reach our community and world by making disciples who make disciples and planting churches who plant churches.</li>
-
-				<li><strong>Families Our First Mission Field</strong> We prioritize reaching and discipling the families God has already entrusted us.</li>
-
-				<li><strong>Love the Local Church</strong> We love the local church because it is the bride of Christ and primary vehicle to accomplish God’s mission in the world.</li>
-
-				<li><strong>Intentionally Pursue Diversity</strong> We desire to reach all demographics of our communities and work purposefully to achieve this goal.</li>
-			</ul>
-
-		</div>
-	</section>
-
-	<section class="beliefs">
-		<div class="wrapper">
-			<h3 class="page-section-head">Beliefs &amp; Baptism</h3>
-			<h4 class="page-section-subhead">Beliefs</h4>
+			<h3>Beliefs</h3>
 			<ul class="styled-list">
 				<li><strong>The Bible - God wrote a book</strong>
 				The Bible is God's Word to all people. It was written by human authors under the supernatural guidance of the Holy Spirit. Because it was inspired by God, the Bible is truth without any mixture of error and is completely relevant to our daily lives.
@@ -180,9 +146,9 @@
 					</ul>
 				</li>
 			</ul>
-			<div class="buttons"><a class="button small" href="#">More about beliefs &amp; practices</a></div>
+			<div class="buttons"><a class="button small" target="_blank" href="<?php echo get_template_directory_uri(); ?>/documents/beliefs.pdf">More about beliefs &amp; practices</a></div>
 			
-			<h4 class="page-section-subhead">Baptism</h4>
+			<h3>Baptism</h3>
 
 			<p>We believe baptism is the first step for a Christ Follower.   Below is a detailed explanation of the reasons for baptism, meaning, method, who should be baptized, and when someone should "take the plunge."  If you would like to talk about getting baptized at The Point Church email us at info@pointchurch.com and indicate the campus at which you would like to be baptized.</p>
   
@@ -267,18 +233,7 @@
 		</div>
 	</section>
 
-	<section class="staff">
-		<div class="wrapper">
-			<h3 class="page-section-head">Staff</h3>
-		</div>
-	</section>
-
-	<section class="all-in">
-		<div class="wrapper">
-			<h3 class="page-section-head">All In</h3>
-		</div>
-	</section>
-		<?php the_content(); ?>
+	
 
 
 <?php endwhile; ?>

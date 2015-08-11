@@ -35,6 +35,8 @@ small{
 	font-weight: 100;
 }
 
+a{ color: $point-blue; &:hover{ color: lighten($point-blue, 5%); }}
+
 strong{
 	font-weight: bold;
 }
@@ -74,6 +76,7 @@ h5{
 		clear: both;
 		font-size: 1.6em;
 		@include transition(.5s all);
+		line-height: 1.4em;
 
 		&.small{
 			padding: .5em 1.5em;
@@ -182,15 +185,63 @@ ul.styled-list{
 .float-right{ float: right; }
 
 .standard-header{
-		padding-top: 8em;
-		padding-bottom: 0em;
+	padding-top: 8em;
+	padding-bottom: 2em;
+}
 
-		.tagline{
-			margin-top: 2em;
+.breadcrumbs{
 			background: $point-blue;
 			color: #fff;
 			text-align: center;
 			padding: .5em 0;
+			font-size: .8em;
+			font-weight: 100;
+
+			
+				a{
+					color: #fff;
+					text-decoration: none;
+
+					&:hover{
+						color: lighten($point-blue, 50%);
+					}
+				}
+			
 		}
+
+.alignleft{
+	float: left;
+	margin-right: 2em;
+	clear: left;
+}
+
+.alignright{
+	float: right;
+	margin-left: 2em;
+	clear: right;
+}
+
+@media screen and (max-width: 820px){
+	.section-head{
+		font-size: 3em;
+		margin-bottom: 1em;
 	}
 
+	.section-head-desc{
+		font-size: 1.6em;
+	}
+
+	.buttons .button{
+		float: none;
+		margin: .5em;
+		font-size: 1.2em;
+	}
+
+	.alignleft, .alignright{
+		float: none;
+		margin: 0 0 2em;
+		width: 100%;
+		height: auto;
+	}
+
+}

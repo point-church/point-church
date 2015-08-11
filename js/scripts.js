@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 // get the value of the bottom of the #intro element by adding the offset of that element plus its height, set it as a variable
-var introbottom = $('.promo').offset().top;
+var introbottom = $('body').offset().top;
 
 
 if( $(window).scrollTop() > introbottom ){
@@ -124,7 +124,7 @@ function buildHomepageMap(){
 	  });
 	
 	  var cary = new google.maps.Marker({
-	      position: new google.maps.LatLng( 35.76536, -78.75111 ),
+	      position: new google.maps.LatLng( 35.764780, -78.751460 ),
 	      map: map,
 	      title: 'Cary Campus',
 	      icon: image

@@ -1,13 +1,12 @@
+<?php /* Template Name: Campus Template */ ?>
+
 <?php get_header(); ?>
 
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+<?php if ( have_posts() ) : ?>
 
-<section id="campus-intro" class="photo promo" data-photo="<?php bloginfo('stylesheet_directory');?>/images/home-intro-bg.jpg">
-	<div class="wrapper">
-		<h3 class="section">Locations</h3>
-		<h2 class="campus-title"><?php the_title(); ?></h2>
-	</div>
-</section>
+<?php include('template-page-header.php'); ?>
+
+<?php while ( have_posts() ) : the_post(); ?>
 
 <section id="campus-welcome">
 	<div class="wrapper">
@@ -21,21 +20,21 @@
 	</div>
 </section>
 
-<section id="campus-sermon" class="photo">
+<?php /*<section id="campus-sermon" class="photo">
 	<div class="wrapper">
-		<h3 class="section-head">This Week's Sermon</h3>
+		<h3 class="section-head">Teaching</h3>
 		<?php the_field('this_weeks_sermon_text'); ?>		
 		<?php /*<div class="audio"></div>
 	<!--	<audio controls>
 			<source src="<?php echo bloginfo('stylesheet_directory'); ?>/audio/20150531.mp3" type="audio/mpeg">
 
   Your browser does not support the audio tag.
-		</audio>-->*/?>
+		</audio>-->
 		<div class="buttons">
-			<a href="#" class="button">Listen to More Sermons</a>
+			<a href="http://www.pointchurchsermons.com/" class="button">Listen to Sermons</a>
 		</div>
 	</div>
-</section>
+</section> */?>
 
 <section id="campus-visit">
 	<div class="wrapper">
@@ -67,12 +66,12 @@
 			</div>
 		</div>
 		<div class="buttons">
-			<a class="button" href="#">More questions? Contact us at info@pointchurch.com</a>
+			<a class="button" href="mailto:info@pointchurch.com">More questions? Contact us at info@pointchurch.com</a>
 		</div>
 	</div>
 </section>
 
-<section id="campus-events" class="photo">
+<?php /*<section id="campus-events" class="photo">
 	<div class="wrapper">
 		<h3 class="section-head">Upcoming Events</h3>
 
@@ -175,7 +174,7 @@
 			<a href="#" class="button">Twitter</a>
 		</div>
 	</div>
-</section>
+</section>*/?>
 
 
 <?php endwhile; else : ?>

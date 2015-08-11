@@ -33,6 +33,11 @@ header{
 			font-size: 1.2em;
 			display: inline;
 
+
+			&.current-menu-item, &.current-page-ancestor{
+				a{ color: #fff; }
+			}
+
 			&.menu-item-type-custom{
 			
 				a{ 
@@ -98,4 +103,38 @@ header{
 	}
 
 
+}
+
+@media screen and (max-width: 1024px){
+	header{
+		position: static;
+		text-align: center;
+		background: #333; 
+		padding: 0;
+
+		h1{ float: none; margin: 2em auto 1em; }
+		nav{
+			float: none;
+			margin: 0 auto;
+
+			.menu-global-navigation-container{ float: none; }
+		}
+	}
+}
+
+@media screen and (max-width: 820px){
+	header{
+		nav{
+			width: 100%; 
+
+			ul li{
+				display: block;
+
+				a{
+					padding: .5em;
+				}
+			}
+
+		}
+	}
 }
