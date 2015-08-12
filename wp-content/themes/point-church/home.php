@@ -59,7 +59,7 @@
 		<h4 class="section-head-desc">Compelling. Practical. Biblical.</h4>
 		<p>Each message teaches the truths of the Bible in a compelling and meaningful way you can apply to your life.  You will experience live teaching at each of our campuses from dynamic local pastors. Click below to hear teaching from a campus close to you. </p>
 		<div class="buttons">
-			<a href="#" class="button">Listen to a Message</a>
+			<a href="http://pointchurchsermons.com" class="button">Listen to a Message</a>
 			<!--Latest Message & Series Archive -->
 		</div>
 	</div>
