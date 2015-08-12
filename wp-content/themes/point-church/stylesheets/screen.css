@@ -336,6 +336,12 @@ ul.styled-list > li {
     height: auto;
   }
 }
+@media screen and (max-width: 400px) {
+  /* line 260, ../sass/_global.scss */
+  section.photo {
+    background-attachment: scroll;
+  }
+}
 /* line 1, ../sass/_header.scss */
 header {
   position: fixed;

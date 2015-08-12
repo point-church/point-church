@@ -254,3 +254,11 @@ ul.styled-list{
 	}
 
 }
+
+@media screen and (max-width: 400px){
+
+	section.photo{
+		background-attachment: scroll;
+	}
+
+}
