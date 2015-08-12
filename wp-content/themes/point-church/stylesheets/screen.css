@@ -1610,6 +1610,10 @@ footer .footer-utilities .copyright a {
     padding: 0;
   }
   /* line 87, ../sass/_events.scss */
+  .events .content {
+    width: 100%;
+  }
+  /* line 91, ../sass/_events.scss */
   .events .event-contact {
     border: none;
     padding: 0;

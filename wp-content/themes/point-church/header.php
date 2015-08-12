@@ -8,6 +8,9 @@
 	<link type="text/css" rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/style.css" />
 	<link type="text/css" rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/stylesheets/screen.css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--[if lt IE 9]>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/html5-shiv.min.js"></script>
+	<![endif]-->
 </head>
 <?php
 
