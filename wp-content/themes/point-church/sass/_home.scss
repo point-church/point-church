@@ -205,6 +205,25 @@
 	}
 }
 
+@media screen and (min-width: 800px){
+
+	#home-intro{
+		background-image: url('../images/welcome-bg.jpg');
+	}
+	
+	#home-worship{
+		background-image: url('../images/worship-bg.jpg');
+	}
+
+	#home-sermons{
+		background-image: url('../images/sermons-bg.jpg');
+	}
+
+	#home-leadership{
+		background-image: url('../images/leadership-bg.jpg');
+	}
+}
+
 @media screen and (max-width: 401px){
 
 	.section{

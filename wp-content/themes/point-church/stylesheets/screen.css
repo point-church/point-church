@@ -746,12 +746,33 @@ footer .footer-utilities .copyright a {
     margin-bottom: 2em;
   }
 }
+@media screen and (min-width: 800px) {
+  /* line 210, ../sass/_home.scss */
+  #home-intro {
+    background-image: url("../images/welcome-bg.jpg");
+  }
+
+  /* line 214, ../sass/_home.scss */
+  #home-worship {
+    background-image: url("../images/worship-bg.jpg");
+  }
+
+  /* line 218, ../sass/_home.scss */
+  #home-sermons {
+    background-image: url("../images/sermons-bg.jpg");
+  }
+
+  /* line 222, ../sass/_home.scss */
+  #home-leadership {
+    background-image: url("../images/leadership-bg.jpg");
+  }
+}
 @media screen and (max-width: 401px) {
-  /* line 212, ../sass/_home.scss */
+  /* line 231, ../sass/_home.scss */
   .section .section-head {
     font-size: 2.2em;
   }
-  /* line 216, ../sass/_home.scss */
+  /* line 235, ../sass/_home.scss */
   .section .head-desc {
     font-size: 1.4em;
   }
