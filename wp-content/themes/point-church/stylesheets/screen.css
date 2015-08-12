@@ -345,9 +345,8 @@ ul.styled-list > li {
     width: 100%;
     height: auto;
   }
-}
-@media screen and (max-width: 400px) {
-  /* line 269, ../sass/_global.scss */
+
+  /* line 265, ../sass/_global.scss */
   section.photo {
     background-attachment: scroll;
   }
@@ -467,7 +466,7 @@ header.past-intro, header.opaque {
     float: none;
   }
 }
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 950px) {
   /* line 127, ../sass/_header.scss */
   header nav {
     width: 100%;
@@ -742,14 +741,16 @@ footer .footer-utilities .copyright a {
   /* line 188, ../sass/_home.scss */
   #home-intro h2 dt {
     margin-bottom: 2em;
+    width: 80%;
+    margin: 0 auto 2em;
   }
 
-  /* line 196, ../sass/_home.scss */
+  /* line 198, ../sass/_home.scss */
   #home-kids .paint-splatter span {
     z-index: -1 !important;
   }
 
-  /* line 201, ../sass/_home.scss */
+  /* line 203, ../sass/_home.scss */
   #home-locations .locations li {
     display: block;
     width: 100%;
@@ -757,32 +758,37 @@ footer .footer-utilities .copyright a {
   }
 }
 @media screen and (min-width: 800px) {
-  /* line 210, ../sass/_home.scss */
+  /* line 212, ../sass/_home.scss */
   #home-intro {
     background-image: url("../images/welcome-bg.jpg");
   }
 
-  /* line 214, ../sass/_home.scss */
+  /* line 216, ../sass/_home.scss */
   #home-worship {
     background-image: url("../images/worship-bg.jpg");
   }
 
-  /* line 218, ../sass/_home.scss */
+  /* line 220, ../sass/_home.scss */
   #home-sermons {
     background-image: url("../images/sermons-bg.jpg");
   }
 
-  /* line 222, ../sass/_home.scss */
+  /* line 224, ../sass/_home.scss */
   #home-leadership {
     background-image: url("../images/leadership-bg.jpg");
   }
 }
 @media screen and (max-width: 401px) {
-  /* line 231, ../sass/_home.scss */
+  /* line 232, ../sass/_home.scss */
+  #home-intro {
+    padding: 2em 0;
+  }
+
+  /* line 238, ../sass/_home.scss */
   .section .section-head {
     font-size: 2.2em;
   }
-  /* line 235, ../sass/_home.scss */
+  /* line 242, ../sass/_home.scss */
   .section .head-desc {
     font-size: 1.4em;
   }

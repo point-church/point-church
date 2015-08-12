@@ -187,6 +187,8 @@
 
 			dt{
 				margin-bottom: 2em;
+				width: 80%;
+				margin: 0 auto 2em;
 			}
 
 		}
@@ -225,6 +227,11 @@
 }
 
 @media screen and (max-width: 401px){
+
+
+	#home-intro{
+		padding: 2em 0;
+	}
 
 	.section{
 

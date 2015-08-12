@@ -262,12 +262,13 @@ ul.styled-list{
 		height: auto;
 	}
 
+	section.photo{
+		background-attachment: scroll;
+	}
 }
 
 @media screen and (max-width: 400px){
 
-	section.photo{
-		background-attachment: scroll;
-	}
+
 
 }
