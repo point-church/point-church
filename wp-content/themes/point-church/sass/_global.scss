@@ -107,12 +107,13 @@ h5{
 section{
 	padding: 4em 0;
 	//background: url('../images/texture.png') 0 0 no-repeat;
-	background-size: cover;
 
 	&.photo{
 		background-attachment: fixed;
 		background-position: center center;
-		background-size: cover;
+		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+		-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+		@include background-size(cover);
 		background-repeat: no-repeat;	
 		padding: 20vh 0;
 		color: #fff;

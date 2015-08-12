@@ -190,62 +190,66 @@ h5 {
 /* line 107, ../sass/_global.scss */
 section {
   padding: 4em 0;
-  background-size: cover;
 }
-/* line 112, ../sass/_global.scss */
+/* line 111, ../sass/_global.scss */
 section.photo {
   background-attachment: fixed;
   background-position: center center;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
   padding: 20vh 0;
   color: #fff;
   background-color: #007793;
 }
-/* line 122, ../sass/_global.scss */
+/* line 123, ../sass/_global.scss */
 section.photo .buttons .button {
   border: 1px solid #fff;
   color: #fff;
 }
-/* line 126, ../sass/_global.scss */
+/* line 127, ../sass/_global.scss */
 section.photo .buttons .button:hover {
   background: rgba(0, 0, 0, 0.75);
 }
-/* line 134, ../sass/_global.scss */
+/* line 135, ../sass/_global.scss */
 section .wrapper {
   width: 75%;
   max-width: 960px;
   margin: 0 auto;
 }
 
-/* line 146, ../sass/_global.scss */
+/* line 147, ../sass/_global.scss */
 ol.styled-list li {
   list-style: decimal;
 }
 
-/* line 155, ../sass/_global.scss */
+/* line 156, ../sass/_global.scss */
 ul.styled-list > li {
   background: url("../images/point-bullet.png") no-repeat top left;
   padding-left: 30px;
   margin-left: -48px;
 }
 
-/* line 163, ../sass/_global.scss */
+/* line 164, ../sass/_global.scss */
 .styled-list {
   padding-left: 1.25em;
 }
-/* line 166, ../sass/_global.scss */
+/* line 167, ../sass/_global.scss */
 .styled-list li {
   line-height: 1.6em;
   margin-bottom: 1em;
   font-size: 1.2em;
 }
-/* line 171, ../sass/_global.scss */
+/* line 172, ../sass/_global.scss */
 .styled-list li ul {
   margin-top: 1em;
   margin-bottom: 2em;
 }
-/* line 175, ../sass/_global.scss */
+/* line 176, ../sass/_global.scss */
 .styled-list li ul li {
   display: inline-block;
   font-size: .8em;
@@ -254,29 +258,29 @@ ul.styled-list > li {
   color: #666;
   font-weight: 100;
 }
-/* line 185, ../sass/_global.scss */
+/* line 186, ../sass/_global.scss */
 .styled-list li strong {
   color: #00a0c6;
   display: block;
 }
 
-/* line 193, ../sass/_global.scss */
+/* line 194, ../sass/_global.scss */
 .float-left {
   float: left;
 }
 
-/* line 194, ../sass/_global.scss */
+/* line 195, ../sass/_global.scss */
 .float-right {
   float: right;
 }
 
-/* line 196, ../sass/_global.scss */
+/* line 197, ../sass/_global.scss */
 .standard-header {
   padding-top: 8em;
   padding-bottom: 2em;
 }
 
-/* line 201, ../sass/_global.scss */
+/* line 202, ../sass/_global.scss */
 .breadcrumbs {
   background: #00a0c6;
   color: #fff;
@@ -285,24 +289,24 @@ ul.styled-list > li {
   font-size: .8em;
   font-weight: 100;
 }
-/* line 210, ../sass/_global.scss */
+/* line 211, ../sass/_global.scss */
 .breadcrumbs a {
   color: #fff;
   text-decoration: none;
 }
-/* line 214, ../sass/_global.scss */
+/* line 215, ../sass/_global.scss */
 .breadcrumbs a:hover {
   color: #c6f4ff;
 }
 
-/* line 221, ../sass/_global.scss */
+/* line 222, ../sass/_global.scss */
 .alignleft {
   float: left;
   margin-right: 2em;
   clear: left;
 }
 
-/* line 227, ../sass/_global.scss */
+/* line 228, ../sass/_global.scss */
 .alignright {
   float: right;
   margin-left: 2em;
@@ -310,31 +314,31 @@ ul.styled-list > li {
 }
 
 @media screen and (max-width: 1024px) {
-  /* line 235, ../sass/_global.scss */
+  /* line 236, ../sass/_global.scss */
   section .wrapper {
     width: 90%;
   }
 }
 @media screen and (max-width: 820px) {
-  /* line 242, ../sass/_global.scss */
+  /* line 243, ../sass/_global.scss */
   .section-head {
     font-size: 3em;
     margin-bottom: 1em;
   }
 
-  /* line 247, ../sass/_global.scss */
+  /* line 248, ../sass/_global.scss */
   .section-head-desc {
     font-size: 1.6em;
   }
 
-  /* line 251, ../sass/_global.scss */
+  /* line 252, ../sass/_global.scss */
   .buttons .button {
     float: none;
     margin: .5em;
     font-size: 1.2em;
   }
 
-  /* line 257, ../sass/_global.scss */
+  /* line 258, ../sass/_global.scss */
   .alignleft, .alignright {
     float: none;
     margin: 0 0 2em;
@@ -343,7 +347,7 @@ ul.styled-list > li {
   }
 }
 @media screen and (max-width: 400px) {
-  /* line 268, ../sass/_global.scss */
+  /* line 269, ../sass/_global.scss */
   section.photo {
     background-attachment: scroll;
   }
