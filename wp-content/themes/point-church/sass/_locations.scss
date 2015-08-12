@@ -82,7 +82,6 @@
 
 #campus-sermon{
 
-	background-image: url('../images/home-sermons.jpg');
 
 	.audio{
 		float: left;
@@ -313,4 +312,38 @@
 			}
 		}
 	}
+}
+
+@media screen and (max-width: 1024px){
+
+	#campus-events{
+		.event{ width: 200px; display: block; margin: 1em auto;}
+	}
+}
+
+
+
+@media screen and (max-width: 800px){
+
+
+	#campus-visit{
+		#map-canvas{
+			display: none!important;
+		}
+	}
+
+	#campus-sermon{
+
+		background: #000!important;
+	}
+
+	
+
+	#campus-staff .staff-list li{
+		width: 200px;
+		float: none;
+		margin: 1em auto;
+	}
+
+
 }

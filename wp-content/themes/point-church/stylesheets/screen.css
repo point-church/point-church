@@ -309,26 +309,32 @@ ul.styled-list > li {
   clear: right;
 }
 
+@media screen and (max-width: 1024px) {
+  /* line 235, ../sass/_global.scss */
+  section .wrapper {
+    width: 90%;
+  }
+}
 @media screen and (max-width: 820px) {
-  /* line 234, ../sass/_global.scss */
+  /* line 242, ../sass/_global.scss */
   .section-head {
     font-size: 3em;
     margin-bottom: 1em;
   }
 
-  /* line 239, ../sass/_global.scss */
+  /* line 247, ../sass/_global.scss */
   .section-head-desc {
     font-size: 1.6em;
   }
 
-  /* line 243, ../sass/_global.scss */
+  /* line 251, ../sass/_global.scss */
   .buttons .button {
     float: none;
     margin: .5em;
     font-size: 1.2em;
   }
 
-  /* line 249, ../sass/_global.scss */
+  /* line 257, ../sass/_global.scss */
   .alignleft, .alignright {
     float: none;
     margin: 0 0 2em;
@@ -337,7 +343,7 @@ ul.styled-list > li {
   }
 }
 @media screen and (max-width: 400px) {
-  /* line 260, ../sass/_global.scss */
+  /* line 268, ../sass/_global.scss */
   section.photo {
     background-attachment: scroll;
   }
@@ -370,7 +376,7 @@ header h1 {
 /* line 21, ../sass/_header.scss */
 header nav {
   float: right;
-  font-family: Myriad Pro;
+  font-family: 'myriad-pro';
   width: 75%;
   margin-right: 2em;
 }
@@ -563,7 +569,7 @@ footer .footer-utilities .copyright a {
 }
 /* line 8, ../sass/_home.scss */
 #home-intro h2 {
-  font-family: Myriad Pro;
+  font-family: 'myriad-pro';
   font-size: 4em;
   text-align: center;
   padding-top: 25vh;
@@ -860,11 +866,7 @@ footer .footer-utilities .copyright a {
   width: 100%;
 }
 
-/* line 83, ../sass/_locations.scss */
-#campus-sermon {
-  background-image: url("../images/home-sermons.jpg");
-}
-/* line 87, ../sass/_locations.scss */
+/* line 86, ../sass/_locations.scss */
 #campus-sermon .audio {
   float: left;
   width: 25%;
@@ -872,18 +874,18 @@ footer .footer-utilities .copyright a {
   height: 106px;
 }
 
-/* line 104, ../sass/_locations.scss */
+/* line 103, ../sass/_locations.scss */
 #campus-visit .map-info {
   position: relative;
 }
-/* line 107, ../sass/_locations.scss */
+/* line 106, ../sass/_locations.scss */
 #campus-visit .map-info #map-canvas {
   width: 100%;
   display: block;
   margin: 0;
   border: 2px solid #00a0c6;
 }
-/* line 114, ../sass/_locations.scss */
+/* line 113, ../sass/_locations.scss */
 #campus-visit .map-info .location-info {
   position: absolute;
   top: 2px;
@@ -898,16 +900,16 @@ footer .footer-utilities .copyright a {
   background-position: 1em center;
   background-size: 75px;
 }
-/* line 128, ../sass/_locations.scss */
+/* line 127, ../sass/_locations.scss */
 #campus-visit .map-info .location-info p {
   margin: 0;
 }
-/* line 132, ../sass/_locations.scss */
+/* line 131, ../sass/_locations.scss */
 #campus-visit .visit-questions {
   clear: both;
   padding-top: 2em;
 }
-/* line 136, ../sass/_locations.scss */
+/* line 135, ../sass/_locations.scss */
 #campus-visit .visit-questions .location-info {
   padding: 2em 0;
   background-size: 75px;
@@ -917,25 +919,25 @@ footer .footer-utilities .copyright a {
   width: 100%;
   box-sizing: border-box;
 }
-/* line 145, ../sass/_locations.scss */
+/* line 144, ../sass/_locations.scss */
 #campus-visit .visit-questions .location-info .question-title span {
   background-image: url("../images/map-icon.svg");
 }
-/* line 151, ../sass/_locations.scss */
+/* line 150, ../sass/_locations.scss */
 #campus-visit .visit-questions .location-info p {
   margin: 0;
 }
-/* line 156, ../sass/_locations.scss */
+/* line 155, ../sass/_locations.scss */
 #campus-visit .visit-questions .question {
   width: 45%;
   padding: 2.5%;
   float: left;
 }
-/* line 161, ../sass/_locations.scss */
+/* line 160, ../sass/_locations.scss */
 #campus-visit .visit-questions .question:nth-child(2n+1) {
   clear: left;
 }
-/* line 165, ../sass/_locations.scss */
+/* line 164, ../sass/_locations.scss */
 #campus-visit .visit-questions .question .question-title {
   *zoom: 1;
 }
@@ -945,12 +947,12 @@ footer .footer-utilities .copyright a {
   display: table;
   clear: both;
 }
-/* line 170, ../sass/_locations.scss */
+/* line 169, ../sass/_locations.scss */
 #campus-visit .visit-questions .question-title {
   font-size: 2em;
   margin-bottom: 1em;
 }
-/* line 174, ../sass/_locations.scss */
+/* line 173, ../sass/_locations.scss */
 #campus-visit .visit-questions .question-title span {
   background-image: url("../images/clock-icon.svg");
   background-repeat: no-repeat;
@@ -963,20 +965,20 @@ footer .footer-utilities .copyright a {
   top: -12.5px;
   float: left;
 }
-/* line 187, ../sass/_locations.scss */
+/* line 186, ../sass/_locations.scss */
 #campus-visit .visit-questions .question-title.park span {
   background-image: url("../images/car-icon.svg");
 }
-/* line 188, ../sass/_locations.scss */
+/* line 187, ../sass/_locations.scss */
 #campus-visit .visit-questions .question-title.wear span {
   background-image: url("../images/tshirt-icon.svg");
 }
-/* line 189, ../sass/_locations.scss */
+/* line 188, ../sass/_locations.scss */
 #campus-visit .visit-questions .question-title.kids span {
   background-image: url("../images/lollipop-icon.svg");
 }
 
-/* line 195, ../sass/_locations.scss */
+/* line 194, ../sass/_locations.scss */
 #campus-events {
   background-image: url("../images/events-bg.jpg");
   *zoom: 1;
@@ -988,35 +990,35 @@ footer .footer-utilities .copyright a {
   display: table;
   clear: both;
 }
-/* line 201, ../sass/_locations.scss */
+/* line 200, ../sass/_locations.scss */
 #campus-events .event {
   display: inline-block;
   width: 20%;
   margin: 0 2%;
   position: relative;
 }
-/* line 207, ../sass/_locations.scss */
+/* line 206, ../sass/_locations.scss */
 #campus-events .event a {
   color: #fff;
 }
-/* line 209, ../sass/_locations.scss */
+/* line 208, ../sass/_locations.scss */
 #campus-events .event .event-image {
   height: 200px;
   background-size: cover;
   display: block;
   background-position: center;
 }
-/* line 218, ../sass/_locations.scss */
+/* line 217, ../sass/_locations.scss */
 #campus-events .event .event-title {
   font-size: 1.5em;
   margin-top: 1em;
 }
-/* line 223, ../sass/_locations.scss */
+/* line 222, ../sass/_locations.scss */
 #campus-events .event .event-date, #campus-events .event .event-time {
   font-size: 1.2em;
   margin-top: .5em;
 }
-/* line 228, ../sass/_locations.scss */
+/* line 227, ../sass/_locations.scss */
 #campus-events .event .short-description {
   position: absolute;
   top: 0;
@@ -1035,36 +1037,36 @@ footer .footer-utilities .copyright a {
   -o-transition: all 0.5s;
   transition: all 0.5s;
 }
-/* line 243, ../sass/_locations.scss */
+/* line 242, ../sass/_locations.scss */
 #campus-events .event .short-description:hover {
   opacity: 1;
 }
-/* line 249, ../sass/_locations.scss */
+/* line 248, ../sass/_locations.scss */
 #campus-events .event img {
   width: 100%;
 }
-/* line 258, ../sass/_locations.scss */
+/* line 257, ../sass/_locations.scss */
 #campus-events .buttons {
   clear: both;
 }
 
-/* line 264, ../sass/_locations.scss */
+/* line 263, ../sass/_locations.scss */
 #campus-staff {
   padding: 6em 0;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 268, ../sass/_locations.scss */
+/* line 267, ../sass/_locations.scss */
 #campus-staff .staff-list {
   margin-bottom: 2em;
 }
-/* line 271, ../sass/_locations.scss */
+/* line 270, ../sass/_locations.scss */
 #campus-staff .staff-list li {
   width: 25%;
   float: left;
   text-align: center;
 }
-/* line 277, ../sass/_locations.scss */
+/* line 276, ../sass/_locations.scss */
 #campus-staff .staff-list img {
   width: 150px;
   height: 150px;
@@ -1076,38 +1078,64 @@ footer .footer-utilities .copyright a {
   border-radius: 100%;
   border: 2px solid #aaa;
 }
-/* line 285, ../sass/_locations.scss */
+/* line 284, ../sass/_locations.scss */
 #campus-staff .staff-list dt {
   font-size: 1.4em;
   margin-bottom: .25em;
 }
-/* line 290, ../sass/_locations.scss */
+/* line 289, ../sass/_locations.scss */
 #campus-staff .staff-list dd {
   font-size: 1em;
 }
 
-/* line 296, ../sass/_locations.scss */
+/* line 295, ../sass/_locations.scss */
 #campus-social {
   background-image: url("../images/events-texture.jpg");
   overflow: hidden;
 }
-/* line 299, ../sass/_locations.scss */
+/* line 298, ../sass/_locations.scss */
 #campus-social .wrapper {
   width: 80%;
   max-width: none;
 }
-/* line 305, ../sass/_locations.scss */
+/* line 304, ../sass/_locations.scss */
 #campus-social .instagram img {
   width: 16.166666667%;
   float: left;
   padding: .25%;
   opacity: .8;
 }
-/* line 311, ../sass/_locations.scss */
+/* line 310, ../sass/_locations.scss */
 #campus-social .instagram img:hover {
   opacity: 1;
 }
 
+@media screen and (max-width: 1024px) {
+  /* line 320, ../sass/_locations.scss */
+  #campus-events .event {
+    width: 200px;
+    display: block;
+    margin: 1em auto;
+  }
+}
+@media screen and (max-width: 800px) {
+  /* line 330, ../sass/_locations.scss */
+  #campus-visit #map-canvas {
+    display: none !important;
+  }
+
+  /* line 335, ../sass/_locations.scss */
+  #campus-sermon {
+    background: black !important;
+  }
+
+  /* line 342, ../sass/_locations.scss */
+  #campus-staff .staff-list li {
+    width: 200px;
+    float: none;
+    margin: 1em auto;
+  }
+}
 /* line 3, ../sass/_page.scss */
 .page-section-head span {
   display: block;

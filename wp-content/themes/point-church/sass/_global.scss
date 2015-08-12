@@ -230,6 +230,14 @@ ul.styled-list{
 	clear: right;
 }
 
+@media screen and (max-width: 1024px){
+
+	section .wrapper{
+		width: 90%;
+	}
+
+}
+
 @media screen and (max-width: 820px){
 	.section-head{
 		font-size: 3em;
