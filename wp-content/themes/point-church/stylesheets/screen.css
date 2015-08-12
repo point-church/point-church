@@ -1588,3 +1588,30 @@ footer .footer-utilities .copyright a {
   float: right;
   width: 60%;
 }
+
+@media screen and (max-width: 1024px) {
+  /* line 64, ../sass/_events.scss */
+  .events .details {
+    float: none;
+    width: 70%;
+    margin: 1em auto;
+  }
+  /* line 70, ../sass/_events.scss */
+  .events .content {
+    float: none;
+    width: 70%;
+    margin: 2em auto;
+  }
+}
+@media screen and (max-width: 400px) {
+  /* line 81, ../sass/_events.scss */
+  .events .details dl {
+    background: none;
+    padding: 0;
+  }
+  /* line 87, ../sass/_events.scss */
+  .events .event-contact {
+    border: none;
+    padding: 0;
+  }
+}
