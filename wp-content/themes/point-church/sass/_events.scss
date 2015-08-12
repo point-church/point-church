@@ -1,0 +1,60 @@
+.events{
+
+	section{
+		@include pie-clearfix;
+	}
+
+	.details{
+		border: 2px solid #aaa;
+		padding: 0 2em;
+		width: 30%;
+		background: $point-blue;
+		float: left;
+		position: relative;
+		color: #fff;
+		font-weight: 100;
+
+		h4{
+			font-size: 1.4em;
+			background: lighten($point-blue, 10%);
+			color: #fff;
+			width: 100%;
+			position: absolute;
+			left: 0;
+			top: 1em;
+			padding: .5em 0;
+
+		}
+
+		dl{
+			margin: 2em 0;
+			font-size: 1.2em;
+			background: url('../images/date-icon.svg') no-repeat -15px 0;
+			background-size: 70px;
+			padding-left: 60px;
+
+
+			dt, dd{
+				margin-bottom: .25em;
+				line-height: 1.2em;
+				
+			}
+		}
+	}
+
+	.event-contact{
+		padding: 2em;
+		border: 1px solid #aaa;
+
+		span{
+			font-weight: 100;
+			font-size: 1.2em;
+		}
+	}
+
+	.content{
+		float: right;
+		width: 60%;
+	}
+
+}

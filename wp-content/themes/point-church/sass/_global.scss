@@ -1,0 +1,256 @@
+$point-blue: #00a0c6;
+
+body{
+	font-family: 'myriad-pro';
+}
+
+.image-filter{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	background: rgba(0,0,0,.25);
+}
+
+.section-head{
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 5em;
+	margin-bottom: .5em;
+}
+
+.section-head-desc{
+	font-size: 3em;
+	text-align: center;
+	color: #00a0c6;
+	margin-bottom: 2em;
+	margin-top: -1em;
+}
+
+p{
+	line-height: 1.6em;
+	font-size: 1.2em;
+	margin-bottom: 1.6em;
+}
+
+small{
+	font-size: .8em;
+	line-height: 1.4em;
+	margin: 0 1em 0 0;
+	color: #666;
+	font-weight: 100;
+}
+
+a{ color: $point-blue; &:hover{ color: lighten($point-blue, 5%); }}
+
+strong{
+	font-weight: bold;
+}
+
+em{
+	font-style: italic;
+}
+
+h5{
+	font-weight: 800;
+	font-size: 1.4em;
+	margin: 3em 0 1em;
+}
+
+.scripture{
+	padding: 2em;
+	background: $point-blue;
+	color: #fff;
+
+	small{
+		color: lighten($point-blue, 25%);
+		display: block;
+	}
+}
+
+.buttons{
+	text-align: center;
+	margin-top: 1em;
+
+	.button{
+		border: 1px solid #333;
+		color: #333;
+		text-decoration: none;
+		padding: .75em 2em;
+		margin: 1em;
+		display: inline-block;
+		clear: both;
+		font-size: 1.6em;
+		@include transition(.5s all);
+		line-height: 1.4em;
+
+		&.small{
+			padding: .5em 1.5em;
+			font-size: 1.2em;
+		}
+
+		&:hover{
+			color: $point-blue!important;
+			border-color: $point-blue!important;
+			
+			&:after{
+				//content: "\2192"; 
+				//padding-left: .5em;
+			}
+		}
+	}
+}
+
+section{
+	padding: 4em 0;
+	//background: url('../images/texture.png') 0 0 no-repeat;
+	background-size: cover;
+
+	&.photo{
+		background-attachment: fixed;
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;	
+		padding: 20vh 0;
+		color: #fff;
+		background-color: darken( $point-blue, 10% );
+
+		.buttons{
+			.button{
+				border: 1px solid #fff;
+				color: #fff;
+
+				&:hover{
+					background: rgba(0,0,0,.75);
+				}
+				
+			}
+		}
+	}
+	
+	.wrapper{
+		width: 75%;
+		max-width: 960px;
+		margin: 0 auto;
+	}
+
+
+
+}
+
+ol.styled-list{
+
+		li{
+			list-style: decimal;
+
+		}
+	
+	
+}
+
+ul.styled-list{
+	>li{
+		background: url('../images/point-bullet.png') no-repeat top left;
+		padding-left: 30px;
+		margin-left: -48px;
+
+	}
+}
+
+.styled-list{
+	padding-left: 1.25em;
+
+	li{
+		line-height: 1.6em;
+		margin-bottom: 1em;
+		font-size: 1.2em;
+
+		ul{
+			margin-top: 1em;
+			margin-bottom: 2em;
+
+			li{
+				display: inline-block;
+				font-size: .8em;
+				line-height: 1.4em;
+				margin: 0 1em 0 0;
+				color: #666;
+				font-weight: 100;
+			}
+		}
+
+		strong{
+			color: $point-blue;
+			display: block;
+		}
+	}
+}
+
+
+.float-left{ float: left; }
+.float-right{ float: right; }
+
+.standard-header{
+	padding-top: 8em;
+	padding-bottom: 2em;
+}
+
+.breadcrumbs{
+			background: $point-blue;
+			color: #fff;
+			text-align: center;
+			padding: .5em 0;
+			font-size: .8em;
+			font-weight: 100;
+
+			
+				a{
+					color: #fff;
+					text-decoration: none;
+
+					&:hover{
+						color: lighten($point-blue, 50%);
+					}
+				}
+			
+		}
+
+.alignleft{
+	float: left;
+	margin-right: 2em;
+	clear: left;
+}
+
+.alignright{
+	float: right;
+	margin-left: 2em;
+	clear: right;
+}
+
+@media screen and (max-width: 820px){
+	.section-head{
+		font-size: 3em;
+		margin-bottom: 1em;
+	}
+
+	.section-head-desc{
+		font-size: 1.6em;
+	}
+
+	.buttons .button{
+		float: none;
+		margin: .5em;
+		font-size: 1.2em;
+	}
+
+	.alignleft, .alignright{
+		float: none;
+		margin: 0 0 2em;
+		width: 100%;
+		height: auto;
+	}
+
+}

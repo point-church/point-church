@@ -1,0 +1,316 @@
+/*STYLES FOR LOCATION ARCHIVE */
+
+.locations{
+
+	
+
+	.list{
+		@include pie-clearfix;
+
+
+		a{ 
+			color: #333;
+			@include transition(all .5s);
+
+			&:hover{ color: $point-blue; }
+		}
+	}
+
+	.list-item{
+		width: 21%;
+		margin: 0 2%;
+		float: left;
+		text-align: center;
+
+		.post-title{
+			font-size: 1.4em;
+			margin-top: 1em;
+			font-weight: bold;
+		}
+	}
+
+	.teaching{
+		background-position: top center;
+		position: relative;
+
+		.wrapper{
+			position: relative;
+		}
+	}
+
+}
+
+
+/* STYLES FOR LOCATION SINGLE */
+.page-header{
+
+	&.promo{
+		padding-top: 12em;
+		padding-bottom: 4em;
+
+		h2{
+			text-shadow: 0 0 10px #000;
+		}
+
+	}
+
+	.page-title{
+		font-size: 6em;
+		margin-top: .25em;
+		text-transform:  uppercase;
+		font-weight: bold;
+		letter-spacing: 2px;
+		color: #fff;
+		@include text-shadow(0 0 10px #000);
+	}
+}
+
+#campus-welcome{
+	@include clearfix;
+
+	
+	.video{
+		float: left;
+		width: 45%;
+		margin-right: 5%;
+
+		*{
+			width: 100%;
+		}
+	}
+}
+
+#campus-sermon{
+
+	background-image: url('../images/home-sermons.jpg');
+
+	.audio{
+		float: left;
+		width: 25%;
+		background: url('../images/audio-player.png') no-repeat center;
+		height: 106px;
+	}
+
+	p{
+		//float: right;
+		//width: 75%;
+	}
+}
+
+#campus-visit{
+
+	
+
+	.map-info{
+		position: relative;
+
+		#map-canvas{
+			width: 100%;
+			display: block;
+			margin: 0;
+			border: 2px solid $point-blue;
+		}
+
+		.location-info{
+			position: absolute;
+			top: 2px;
+			right: -2px;
+			background: rgba(255,255,255,.85);
+			border-left: 2px solid $point-blue;
+			border-bottom: 2px solid $point-blue;
+			color: #333;
+			padding: 4em 4em 4em 6em;
+			background-image: url('../images/map-icon.svg');
+			background-repeat: no-repeat;
+			background-position: 1em center;
+			background-size: 75px;
+
+			p{ margin: 0; }
+		}
+	}
+
+	.visit-questions{
+		clear: both;
+		padding-top: 2em;
+
+		.location-info{
+			padding: 2em 0; 
+			background-size: 75px;
+			margin: 1em 0;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			box-sizing: border-box;
+
+			.question-title span{
+				background-image: url('../images/map-icon.svg');
+	
+			}
+
+
+			p{
+				margin: 0;
+			}
+		}
+
+		.question{
+			width: 45%;
+			padding: 2.5%;
+			float: left;
+
+			&:nth-child(2n+1){
+				clear: left;
+			}
+
+			.question-title{
+				@include pie-clearfix;
+			}
+		}
+
+		.question-title{
+			font-size: 2em;
+			margin-bottom: 1em;
+
+			span{
+				background-image: url('../images/clock-icon.svg');
+				background-repeat: no-repeat;
+				background-size: 100%;
+				height: 50px;
+				width: 50px;
+				display: inline-block;
+				margin-right: .25em;
+				position: relative;
+				top: -12.5px;
+    			float: left;
+			}
+	
+			&.park span{ background-image: url('../images/car-icon.svg'); }
+			&.wear span{ background-image: url('../images/tshirt-icon.svg'); }
+			&.kids span{ background-image: url('../images/lollipop-icon.svg'); }
+		}
+	}	
+
+}
+
+#campus-events{
+
+	background-image: url('../images/events-bg.jpg');
+	@include pie-clearfix;
+	text-align: center;
+
+	.event{
+		display: inline-block;
+		width: 20%;
+		margin: 0 2%;
+		position: relative;
+
+		a{ color: #fff; }
+
+		.event-image{
+			height: 200px;
+			background-size: cover;
+			display: block;
+			background-position: center;
+		}
+
+		
+
+		.event-title{
+			font-size: 1.5em;
+			margin-top: 1em;
+		}
+
+		.event-date, .event-time{
+			font-size: 1.2em;
+			margin-top: .5em;
+		}
+
+		.short-description{ 
+			position: absolute;
+    		top: 0;
+    		left: 0;
+    		padding: 20px;
+    		background: #333;
+    		background: rgba(0, 0, 0, 0.75);
+    		text-align: left;
+    		font-size: 1em;
+    		line-height: 1.4em;
+    		opacity: 0;
+    		height: 160px;
+    		font-weight: 100;
+    		@include transition(all .5s);
+
+    		&:hover{
+			
+				opacity: 1;
+			}
+		}
+
+		img{
+			width: 100%;
+		}
+
+		&:hover{
+
+		}
+	}
+
+	.buttons{
+		clear: both;
+	}
+
+}
+
+#campus-staff{
+	padding: 6em 0;
+	@include clearfix;
+
+	.staff-list{
+		margin-bottom: 2em;
+
+		li{
+			width: 25%;
+			float: left;
+			text-align: center;
+		}
+
+		img{
+			width: 150px;
+			height: 150px;
+			margin-bottom: 1em;
+			@include border-radius(100%);
+			border: 2px solid #aaa;
+		}
+
+		dt{
+			font-size: 1.4em;
+			margin-bottom: .25em;
+		}
+
+		dd{
+			font-size: 1em;
+		}
+	}
+}
+
+#campus-social{
+	background-image: url('../images/events-texture.jpg');
+	overflow: hidden;
+	.wrapper{
+		width: 80%;
+		max-width: none;
+	}
+
+	.instagram{
+		img{
+			width: 16.166666667%;
+			float: left;
+			padding: .25%;
+			opacity: .8;
+
+			&:hover{
+				opacity: 1;
+			}
+		}
+	}
+}
