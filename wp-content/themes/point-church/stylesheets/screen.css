@@ -448,7 +448,7 @@ header.past-intro, header.opaque {
   header {
     position: static;
     text-align: center;
-    background: #333;
+    background: #333333 !important;
     padding: 0;
   }
   /* line 115, ../sass/_header.scss */
@@ -1632,4 +1632,9 @@ footer .footer-utilities .copyright a {
 /* line 1, ../sass/_404.scss */
 .not-here {
   padding-top: 10em;
+}
+
+/* line 8, ../sass/_404.scss */
+.page-not-found header {
+  background: rgba(0, 0, 0, 0.5);
 }
