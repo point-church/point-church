@@ -16,7 +16,7 @@
 <?php
 
 ?>
-<?php if(is_home()){ $type = 'home'; }elseif( is_page('mission-vision-values') || is_page('beliefs-baptism') || is_page('staff')){ $type = 'styled-page'; }elseif( $post->post_parent == '4'){ $type = 'locations'; }else{ $type = get_post_type(); } ?>
+<?php if(is_home()){ $type = 'home'; }elseif( is_404() ){ $type = 'page-not-found'; }elseif( is_page('mission-vision-values') || is_page('beliefs-baptism') || is_page('staff')){ $type = 'styled-page'; }elseif( $post->post_parent == '4'){ $type = 'locations'; }else{ $type = get_post_type(); } ?>
 
 <body class="<?php echo $type; ?>">
 	<!-- GA TRACKING -->
