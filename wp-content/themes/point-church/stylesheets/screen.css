@@ -1638,3 +1638,10 @@ footer .footer-utilities .copyright a {
 .page-not-found header {
   background: rgba(0, 0, 0, 0.5);
 }
+
+@media screen and (max-width: 1024px) {
+  /* line 15, ../sass/_404.scss */
+  .not-here {
+    padding-top: 4em;
+  }
+}
