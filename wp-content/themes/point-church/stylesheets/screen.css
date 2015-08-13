@@ -421,7 +421,7 @@ header nav .search-link {
 }
 /* line 71, ../sass/_header.scss */
 header.past-intro, header.opaque {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.5);
 }
 
 @media screen and (max-width: 1300px) {
