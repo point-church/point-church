@@ -229,14 +229,6 @@
 					</dl>
 				</li>
 				<li>
-					<img src="<?php echo get_template_directory_uri(); ?>/images/staff/Steve_Vaughn-Creative_Arts_Director-Central.jpg" />
-					<dl>
-						<dt>Steve Vaughn</dt>
-						<dd>Creative Arts Director</dd>
-						<dd class="location">Raleigh</dd>
-					</dl>
-				</li>
-				<li>
 					<img src="<?php echo get_template_directory_uri(); ?>/images/man-placeholder.jpg" />
 					<dl>
 						<dt>Rob Watson</dt>
