@@ -76,7 +76,7 @@
 				<li class="apex">
 					<dl>
 						<dt>Apex</dt>
-						<dd>9am &amp; 11am</dd>
+						<dd>9:15am &amp; 11am</dd>
 					</dl>
 				</li>
 			</a>
@@ -84,7 +84,7 @@
 				<li class="cary">
 					<dl>
 						<dt>Cary</dt>
-						<dd>9am &amp; 11am</dd>
+						<dd>9:15am &amp; 11am</dd>
 					</dl>
 				</li>
 			</a>
