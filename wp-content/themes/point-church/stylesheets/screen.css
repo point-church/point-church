@@ -68,19 +68,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* line 3, ../sass/_global.scss */
-body {
+html, body {
   font-family: 'myriad-pro';
 }
 /* line 6, ../sass/_global.scss */
-body.off-canvas-open {
+html.off-canvas-open, body.off-canvas-open {
   overflow: hidden;
 }
 /* line 9, ../sass/_global.scss */
-body.off-canvas-open .off-canvas-click-blocker {
+html.off-canvas-open .off-canvas-click-blocker, body.off-canvas-open .off-canvas-click-blocker {
   display: block;
 }
 /* line 14, ../sass/_global.scss */
-body .off-canvas-click-blocker {
+html .off-canvas-click-blocker, body .off-canvas-click-blocker {
   position: fixed;
   top: 0;
   height: 100%;
@@ -504,7 +504,7 @@ nav.off-canvas {
     left: -75vw;
     width: 75vw;
     background: #333;
-    height: 100vh;
+    height: 150%;
     padding: 1em;
     z-index: 9999;
     -webkit-transition: left 0.5s;

@@ -140,7 +140,7 @@ nav.off-canvas{ display: none; }
 		left: -75vw;
 		width: 75vw;
 		background: #333;
-		height: 100vh;
+		height: 150%;
 		padding: 1em;
 		z-index: 9999;
 		@include transition(left .5s);
