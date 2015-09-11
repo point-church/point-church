@@ -345,27 +345,32 @@ ul.styled-list > li {
   section.photo {
     background-attachment: scroll;
   }
+
+  /* line 271, ../sass/_global.scss */
+  .image-filter {
+    background: rgba(0, 0, 0, 0.5);
+  }
 }
 @media screen and (max-width: 820px) {
-  /* line 274, ../sass/_global.scss */
+  /* line 278, ../sass/_global.scss */
   .section-head {
     font-size: 3em;
     margin-bottom: 1em;
   }
 
-  /* line 279, ../sass/_global.scss */
+  /* line 283, ../sass/_global.scss */
   .section-head-desc {
     font-size: 1.6em;
   }
 
-  /* line 283, ../sass/_global.scss */
+  /* line 287, ../sass/_global.scss */
   .buttons .button {
     float: none;
     margin: .5em;
     font-size: 1.2em;
   }
 
-  /* line 289, ../sass/_global.scss */
+  /* line 293, ../sass/_global.scss */
   .alignleft, .alignright {
     float: none;
     margin: 0 0 2em;
