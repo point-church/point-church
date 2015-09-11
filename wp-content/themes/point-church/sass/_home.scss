@@ -44,12 +44,18 @@
 	position: relative;
 	overflow: hidden;
 
+	.text-wrapper{
+		position: relative;
+		z-index: 10;
+	}
+
 	.buttons{
 		position: relative;
 		z-index: 2;
 	}
 
 	.paint-splatter{
+		opacity: .25;
 
 		span{ 
 			display: block; 

@@ -256,8 +256,16 @@ ul.styled-list{
 
 @media screen and (max-width: 1024px){
 
-	section .wrapper{
-		width: 90%;
+	section{
+
+		.wrapper{
+			width: 90%;
+		}
+
+		&.photo{
+			background-attachment: scroll;
+		}
+
 	}
 
 }
