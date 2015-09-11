@@ -32,6 +32,8 @@
 </script>
 <!-- end GA -->
 
+	<div class="off-canvas-click-blocker"></div><?php // to prevent accidental clicking when menu is open ?>
+
 	<header>
 		<a href="<?php bloginfo('url'); ?>"><h1><?php bloginfo('name'); ?></h1></a>
 

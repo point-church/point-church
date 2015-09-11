@@ -272,8 +272,10 @@ function operateMenu(){
 
 	if( $('.off-canvas').hasClass('open') ){
 		$('.off-canvas').removeClass('open');
+		$('body').removeClass('off-canvas-open');
 	}else{
 		$('.off-canvas').addClass('open');
+		$('body').addClass('off-canvas-open');
 	}
 
 }
@@ -284,9 +286,10 @@ function operateMenu(){
 if($('body').hasClass('home')){ buildHomepageMap(); }
 if($('body').hasClass('locations')){ buildCampusMap(); }
 //if($('body').hasClass('events')){ buildEventsMap(); }
-$('.off-canvas-control').click(function(){
+$('.off-canvas-control, .off-canvas-click-blocker').click(function(){
 	event.preventDefault();
 	operateMenu();
 }); //controller for mobile nav
+
 
 });

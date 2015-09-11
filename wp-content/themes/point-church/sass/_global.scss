@@ -2,6 +2,24 @@ $point-blue: #00a0c6;
 
 body{
 	font-family: 'myriad-pro';
+
+	&.off-canvas-open{
+		overflow: hidden;
+
+		.off-canvas-click-blocker{
+			display: block;
+		}
+	}
+
+	.off-canvas-click-blocker{
+		position: fixed;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		background: rgba(0,0,0,.5);
+		z-index: 9998;
+		display: none;
+	}
 }
 
 .image-filter{
