@@ -35,10 +35,17 @@
 	<header>
 		<a href="<?php bloginfo('url'); ?>"><h1><?php bloginfo('name'); ?></h1></a>
 
-		
-
-		<nav>
+		<nav class="on-canvas">
 			<?php wp_nav_menu(array('menu' => 'global_nav' )); ?>
 		</nav>
+
 	</header>
+
+
+
+	<nav class="off-canvas">
+		<a href="#" class="off-canvas-control">Menu</a>
+		<ul><li><a href="<?php bloginfo('url'); ?>">Home</a></li></ul>
+		<?php wp_nav_menu(array('menu' => 'global_nav' )); ?>
+	</nav>
 

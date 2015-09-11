@@ -1,7 +1,7 @@
 
 
 #home-intro{
-	background-image: url('../images/welcome-bg-800.jpg');
+	background-image: url('../images/welcome-bg-600.jpg');
 	height: 100vh;
 	padding: 0;
 
@@ -9,14 +9,18 @@
 		font-family: 'myriad-pro';
 		font-size: 4em;
 		text-align: center;
-		padding-top: 25vh;
+		padding-top: 30vh;
 
 		dt{
 			text-indent: -9999em;
 			background: url('../images/point-logo-large.png') bottom center no-repeat; 
 			background-size: contain;
-			height: 300px;
-			margin-bottom: 5%;
+			height: 225px;
+			margin-bottom: 1%;
+		}
+
+		dd{
+			font-size: .8em;
 		}
 	}
 		
@@ -25,15 +29,15 @@
 }
 
 #home-worship{
-	background-image: url('../images/worship-bg-800.jpg');
+	background-image: url('../images/worship-bg-600.jpg');
 }
 
 #home-sermons{
-	background-image: url('../images/sermons-bg-800.jpg');
+	background-image: url('../images/sermons-bg-600.jpg');
 }
 
 #home-leadership{
-	background-image: url('../images/leadership-bg-800.jpg');
+	background-image: url('../images/leadership-bg-600.jpg');
 }
 
 #home-kids{

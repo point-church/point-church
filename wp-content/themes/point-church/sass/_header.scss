@@ -18,7 +18,7 @@ header{
 		background-size: 100%;
 	}
 
-	nav{
+	nav.on-canvas{
 		float: right;
 		font-family: 'myriad-pro';
 		width: 75%;
@@ -74,6 +74,8 @@ header{
 	}
 }
 
+nav.off-canvas{ display: none; }
+
 @media screen and (max-width: 1300px){
 
 	header{
@@ -83,7 +85,7 @@ header{
 			height: 52px;
 		}
 
-		nav{
+		nav.on-canvas{
 			width: 85%;
 
 			ul li{
@@ -112,8 +114,8 @@ header{
 		background: #333!important;
 		padding: 0;
 
-		h1{ float: none; margin: 2em auto 1em; }
-		nav{
+		h1{ float: none; margin: 1em auto; }
+		nav.on-canvas{
 			float: none;
 			margin: 0 auto;
 
@@ -124,17 +126,47 @@ header{
 
 @media screen and (max-width: 950px){
 	header{
-		nav{
-			width: 100%; 
 
-			ul li{
-				display: block;
+		nav.on-canvas{
+			display: none;
+		}
+	}
+	
+	nav.off-canvas{
+		display: block;
+		box-sizing: border-box;
+		position: fixed;
+		top: -5px;
+		left: -75vw;
+		width: 75vw;
+		background: #333;
+		height: 100vh;
+		padding: 1em;
+		z-index: 9999;
+		@include transition(left .5s);
 
-				a{
-					padding: .5em;
-				}
-			}
+		ul li a{
+			padding: 1em 0;
+			display: block;
+			border-bottom: 1px solid #666;
+			text-decoration: none;
+			text-align: center;
+		}
+
+		.off-canvas-control{
+			position: absolute;
+			right: -60px;
+			width: 60px;
+			height: 60px;
+			text-indent: -9999em;
+			display: block;
+			background: #333 url('../images/hamburger.png') no-repeat center;
 
 		}
+
+		&.open{
+			left: 0;
+		}
+
 	}
 }

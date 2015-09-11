@@ -39,7 +39,7 @@
 					<img src="<?php echo get_template_directory_uri(); ?>/images/staff/Jay_Cook-Care_Pastor-Central_and_Cary.jpg" />
 					<dl>
 						<dt>Jay Cook</dt>
-						<dd>Cary Pastor</dd>
+						<dd>Asst. Campus &amp; Care Pastor</dd>
 						<dd class="location">Cary</dd>
 					</dl>
 				</li>

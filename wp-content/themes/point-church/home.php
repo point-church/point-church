@@ -1,11 +1,12 @@
 <?php get_header(); ?>
 
 <section id="home-intro" class="photo promo" data-photo="<?php bloginfo('stylesheet_directory');?>/images/home-intro-bg.jpg">
+	<div class="image-filter"></div>
 	<div class="wrapper">
 		<h2>
 			<dl>
 				<dt>The Point Church</dt>
-				<dd>Pointing people to Jesus</dd>
+				<dd>Pointing People to Jesus</dd>
 			</dl>
 		</h2>
 	</div>
@@ -23,6 +24,7 @@
 </section>
 
 <section id="home-worship" class="photo">
+	<div class="image-filter"></div>
 	<div class="wrapper">
 		<h3 class="section-head">Worship</h3>
 		<h4 class="section-head-desc">Dynamic. Passionate. Diverse.</h4>
@@ -54,6 +56,7 @@
 </section>
 
 <section id="home-sermons" class="photo">
+	<div class="image-filter"></div>
 	<div class="wrapper">
 		<h3 class="section-head">Teaching</h3>
 		<h4 class="section-head-desc">Compelling. Practical. Biblical.</h4>
@@ -115,6 +118,7 @@
 <section id="map-canvas"></section>
 
 <section id="home-leadership" class="photo">
+	<div class="image-filter"></div>
 	<div class="wrapper">
 		<h3 class="section-head">Leadership</h3>
 		<p>The Point Church is not built around the personality of one person but operates with a team of leaders devoted to pointing people to Jesus.</p>

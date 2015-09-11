@@ -118,6 +118,11 @@ section{
 		padding: 20vh 0;
 		color: #fff;
 		background-color: darken( $point-blue, 10% );
+		position: relative;
+
+		.wrapper{
+			position: relative;
+		}
 
 		.buttons{
 			.button{
@@ -262,9 +267,6 @@ ul.styled-list{
 		height: auto;
 	}
 
-	section.photo{
-		background-attachment: scroll;
-	}
 }
 
 @media screen and (max-width: 400px){
