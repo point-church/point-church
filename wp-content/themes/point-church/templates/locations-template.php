@@ -20,6 +20,14 @@
 	</div>
 </section>
 
+<?php
+	if( get_field('sermon_link') != null){
+		$sermonURL = get_field('sermon_link');
+	}else{
+		$sermonURL = 'http://pointchurchsermons.com';
+	}
+?>
+
 <section id="campus-sermon" class="photo teaching" style="background-image: url('<?php the_field('this_weeks_sermon_image'); ?>');">
 	<div class="image-filter"></div>
 	<div class="wrapper">
@@ -32,7 +40,7 @@
   Your browser does not support the audio tag.
 		</audio>-->
 		<div class="buttons">
-			<a href="http://www.pointchurchsermons.com/" class="button">Listen to Sermons</a>
+			<a href="<?php echo esc_url( $sermonURL ); ?>" class="button">Listen to Sermons</a>
 		</div>
 	</div>
 </section>
