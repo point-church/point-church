@@ -99,8 +99,8 @@
 			<a href="<?php bloginfo('url'); ?>/locations/raleigh">
 				<li class="raleigh">
 					<dl>
-						<dt>Raleigh</dt>
-						<dd>10am</dd>
+						<dt>South Raleigh</dt>
+						<dd>11am</dd>
 					</dl>
 				</li>	
 			</a>
