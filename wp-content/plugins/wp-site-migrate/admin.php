@@ -16,12 +16,20 @@ if (!function_exists('bvWPEAdminUrl')) :
 	}
 endif;
 
-if (!function_exists('bvAddStyleSheet')) :
-	function bvAddStyleSheet() {
-		wp_register_style('form-styles', plugins_url('form-styles.css',__FILE__ ));
-		wp_enqueue_style('form-styles');
+if (!function_exists('bvWPEAddStyleSheet')) :
+	function bvWPEAddStyleSheet($hook) {
+		if('toplevel_page_wpe-automated-migration' != $hook){
+			return;
+		}
+
+		wp_register_style('bvwpe_normalize', plugins_url('assets/css/normalize.css',__FILE__ ));
+		wp_register_style('bvwpe_skeleton', plugins_url('assets/css/skeleton.css',__FILE__ ));
+		wp_register_style('bvwpe_form-styles', plugins_url('assets/css/form-styles.css',__FILE__ ));
+		wp_enqueue_style('bvwpe_normalize');
+		wp_enqueue_style('bvwpe_skeleton');
+		wp_enqueue_style('bvwpe_form-styles');
 	}
-add_action( 'admin_init','bvAddStyleSheet');
+add_action( 'admin_enqueue_scripts','bvWPEAddStyleSheet');
 endif;
 
 if (!function_exists('bvWPEAdminInitHandler')) :
@@ -42,7 +50,7 @@ if (!function_exists('bvWPEAdminInitHandler')) :
 					$bvNotice = "<b>Activated!</b> blogVault is now backing up your site.<br/><br/>";
 					if (isset($_REQUEST['redirect'])) {
 						$location = $_REQUEST['redirect'];
-						wp_redirect("https://webapp.blogvault.net/migration/".$location);
+						wp_redirect("https://wpengine.blogvault.net/migration/".$location);
 						exit();
 					}
 				} else {
@@ -62,7 +70,7 @@ endif;
 if (!function_exists('bvWpeAdminMenu')) :
 	function bvWpeAdminMenu() {
 		global $bvWPEAdminPage;
-		add_menu_page('WP Engine Migrate', 'WP Engine Migrate', 'manage_options', $bvWPEAdminPage, 'bvWpEMigrate', plugins_url( 'favicon.ico', __FILE__ ));
+		add_menu_page('WP Engine Migrate', 'Site Migration', 'manage_options', $bvWPEAdminPage, 'bvWpEMigrate', plugins_url( 'assets/images/favicon.ico', __FILE__ ));
 	}
 	if (function_exists('is_multisite') && is_multisite()) {
 		add_action('network_admin_menu', 'bvWpeAdminMenu');
@@ -89,19 +97,27 @@ if ( !function_exists('bvWpEMigrate') ) :
 			$_error = $_REQUEST['error'];
 		}
 ?>
-		<div class="logo-container" style="padding: 50px 0px 10px 20px">
-			<a href="http://blogvault.net/" style="padding-right: 20px;"><img src="<?php echo plugins_url('logo.png', __FILE__); ?>" /></a>
-			<a href="http://wpengine.com/"><img src="<?php echo plugins_url('wpengine-logo.png', __FILE__); ?>" /></a>
-		</div>
+<div class="wrap">
+	<header>
+	<a href="http://wpengine.com/"><img src="<?php echo plugins_url('assets/images/wpengine-logo.png', __FILE__); ?>" width="180px" /></a>
+  <p class="poweredBy u-pull-right"><a href="http://blogvault.net"><img src="<?php echo plugins_url('assets/images/blogvault-logo-120.png', __FILE__); ?>" width="140px"/></a></p>
+	</header>
 
-		<div id="wrapper toplevel_page_wpe-automated-migration">
-			<form id="wpe_migrate_form" dummy=">" action="https://webapp.blogvault.net/home/migrate" style="padding:0 2% 2em 1%;" method="post" name="signup">
-				<h1>Migrate Site to WP Engine</h1>
-				<p><font size="3">This plugin makes it very easy to migrate your site to WP Engine</font></p>
-<?php if ($_error == "email") { 
+	<hr/>
+	<div class="row">
+
+		<div class="seven columns">
+			<form id="wpe_migrate_form" dummy=">" action="https://wpengine.blogvault.net/home/migrate" method="post" name="signup">
+				<h1>Migrate My Site to WP Engine</h1>
+				<p>The WP Engine Automated Migration plugin allows you to easily migrate your entire WordPress site from
+					your previous hosting service to WP Engine for free.</p>
+				<p>Take the information from the migration page of your <a href="http://my.wpengine.com">WP Engine User Portal</a>, and paste
+				those values into the fields below, and click "Migrate".</p>
+<?php if ($_error == "email") {
 	echo '<div class="error" style="padding-bottom:0.5%;"><p>There is already an account with this email.</p></div>';
 } else if ($_error == "blog") {
-	echo '<div class="error" style="padding-bottom:0.5%;"><p>Could not create an account. Please contact <a href="http://blogvault.net/contact/">blogVault Support</a></p></div>';
+	echo '<div class="error" style="padding-bottom:0.5%;"><p>Could not create an account. Please contact <a href="http://blogvault.net/contact/">blogVault Support</a><br />
+		<font color="red">NOTE: We do not support automated migration of locally hosted sites.</font></p></div>';
 } else if (($_error == "custom") && isset($_REQUEST['bvnonce']) && wp_verify_nonce($_REQUEST['bvnonce'], "bvnonce")) {
 	echo '<div class="error" style="padding-bottom:0.5%;"><p>'.base64_decode($_REQUEST['message']).'</p></div>';
 }
@@ -116,96 +132,119 @@ if ( !function_exists('bvWpEMigrate') ) :
 				<input type='hidden' name='serverip' value='<?php echo $_SERVER["SERVER_ADDR"] ?>'>
 				<input type='hidden' name='adminurl' value='<?php echo bvWPEAdminUrl(); ?>'>
 				<input type="hidden" name="multisite" value="<?php var_export($blogvault->isMultisite()); ?>" />
-				<div class="row-fluid">
-					<div class="span5" style="border-right: 1px solid #EEE; padding-top:1%;">
-						<label id='label_email'>Email</label>
-			 			<div class="control-group">
-							<div class="controls">
-								<input type="text" id="email" name="email" placeholder="ex. user@mydomain.com">
-							</div>
-						</div>
-						<label class="control-label" for="input02">Destination Site URL</label>
-						<div class="control-group">
-							<div class="controls">
-								<input type="text" class="input-large" name="newurl" placeholder="http://example.wpengine.com">
-							</div>
-						</div>
-						<label class="control-label" for="inputip">
-							SFTP Server Address
-							<span style="color:#162A33">(of the destination server)</span>
-						</label>
-						<div class="control-group">
-							<div class="controls">
-								<input type="text" class="input-large" placeholder="ex. 123.456.789.101" name="address">
+				<div class="row">
+						<div class="six columns">
+								<label id='label_email'>Email</label>
+								<input class="u-full-width" type="text" id="email" name="email">
 								<p class="help-block"></p>
-							</div>
 						</div>
-						<label class="control-label" for="input01">SFTP Username</label>
-						<div class="control-group">
-							<div class="controls">
-								<input type="text" class="input-large" placeholder="ex. installname" name="username">
-								<p class="help-block"></p>
-							</div>
-						</div>
-						<label class="control-label" for="input02">SFTP Password</label>
-						<div class="control-group">
-							<div class="controls">
-								<input type="password" class="input-large" name="passwd">
-							</div>
-						</div>
-<?php if (array_key_exists('auth_required_source', $_REQUEST)) { ?>
-						<div id="source-auth">
-							<label class="control-label" for="input02" style="color:red">User <small>(for this site)</small></label>
-							<div class="control-group">
-								<div class="controls">
-									<input type="text" class="input-large" name="httpauth_src_user">
-								</div>
-							</div>
-							<label class="control-label" for="input02" style="color:red">Password <small>(for this site)</small></label>
-							<div class="control-group">
-								<div class="controls">
-									<input type="password" class="input-large" name="httpauth_src_password">
-								</div>
-							</div>
-						</div>
-<?php } ?>
-						<a id="advanced-options-toggle" href="javascript:;">Advanced Options</a>
-						<script type="text/javascript">
-							jQuery(document).ready(function () {
-<?php if (array_key_exists('auth_required_dest', $_REQUEST)) { ?>
-								jQuery('#dest-auth').show();
-<?php } ?>
-								jQuery('#advanced-options-toggle').click(function() {
-									jQuery('#dest-auth').toggle();
-								});
-							});
-						</script>
-						<div id="dest-auth" style="display:none;">
-							<p>WP Engine Install is Password Protected</p>
-							<label class="control-label" for="input02" style="color:red">Username <small>(for WP Engine Install)</small></label>
-							<div class="control-group">
-								<div class="controls">
-									<input type="text" class="input-large" name="httpauth_dest_user">
-								</div>
-							</div>
-							<label class="control-label" for="input02" style="color:red">Password <small>(for WP Engine Install)</small></label>
-							<div class="control-group">
-								<div class="controls">
-									<input type="password" class="input-large" name="httpauth_dest_password">
-								</div>
-							</div>
-						</div>
-						<p style="font-size: 11px;">By pressing the "Migrate" button, you are agreeing to <a href="http://wpengine.com/terms-of-service/">WP Engine's Terms of Service</a></p>
+						<div class="six columns">
+								<label class="control-label" for="input02">Destination Site URL</label>
+								<input type="text" class="u-full-width" name="newurl" placeholder="site.wpengine.com">
 					</div>
 				</div>
-				<input type='submit' value='Migrate'>
+				<div class="row">
+					<div class="six columns">
+								<label class="control-label" for="inputip"> SFTP Host </label>
+								<input type="text" class="u-full-width" placeholder="ex. 123.456.789.101" name="address">
+								<p class="help-block"></p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="six columns">
+						<label class="control-label" for="input01">SFTP Username</label>
+								<input type="text" class="u-full-width" placeholder="See WP Engine User Portal" name="username">
+								<p class="help-block"></p>
+					</div>
+					<div class="six columns">
+						<label class="control-label" for="input02">SFTP Password</label>
+								<input type="password" class="u-full-width" placeholder="See WP Engine User Portal" name="passwd">
+					</div>
+				</div>
+					<hr/>
+
+							<h3>Is Your Site Password Protected?</h3>
+							<p>If your current host or your WP Engine install is password protected, you'll need to enter that information here so
+							that the migration plugin can access all of your site.
+							</p>
+
+								<button name="password-protected" id="advanced-options-toggle" class="button" onclick="javascript; return false">My sites is password protected</button>
+
+							<div id="password-auth" style="display:none">
+								<div id="source-auth" class="six columns">
+									<div class="row">
+										<div class="twelve columns">
+											<h3>Current</h3>
+											<label class="control-label" for="httpauth_src_user">User</label>
+											<input type="text" class="u-full-width" name="httpauth_src_user">
+											<p class="help-block"></p>
+										</div>
+									</div>
+									<div class="row">
+										<div class="twelve columns">
+											<label class="control-label" for="httpauth_src_password">Password</label>
+											<input type="password" class="u-full-width" name="httpauth_src_password">
+											<p class="help-block sourceAuthError error" style="display:none">It appears that your current site that does not exist on WP Engine is password protected. Please provide your username and password
+											   for this password protection.</p>
+										</div>
+									</div>
+								</div>
+
+							<div id="dest-auth" class="six columns">
+								<div class="row">
+									<div class="twelve columns">
+										<h3>WP Engine</h3>
+										<label class="control-label" for="httpauth_dest_user">Username</label>
+										<input type="text" class="u-full-width" name="httpauth_dest_user">
+										<p class="help-block"></p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="twelve columns">
+										<label class="control-label" for="httpauth_dest_password">Password</label>
+										<input type="password" class="u-full-width" name="httpauth_dest_password">
+										<p class="help-block destAuthError error" style="display:none">It appears that your site on WP Engine is password protected. Please provide your username and password
+											 for the password protection.</p>
+									</div>
+								</div>
+						</div>
+					</div>
+
+				<hr/>
+				<p style="font-size: 11px;">By pressing the "Migrate" button, you are agreeing to <a href="http://wpengine.com/terms-of-service/">WP Engine's Terms of Service</a></p>
+					<?php submit_button("Migrate", "primary", "migrate-my-site", true); ?>
 			</form>
-			<div style="max-width: 650px; padding-left: 20px;">
-				<h1>How to Use This Plugin</h1>
-				<iframe src="//fast.wistia.net/embed/iframe/0rrkl3w1vu?videoFoam=true" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="500" height="313"></iframe><script src="//fast.wistia.net/assets/external/E-v1.js"></script>
-				<p><i>For full instructions and solutions to common errors, please visit our <a href="http://wpengine.com/support/wp-engine-automatic-migration/">WP Engine Automated Migration</a> support garage article.</i></p>
+		</div>
+
+			<div class="five columns">
+				<h1>Resources</h1>
+				<div style="padding:10px; background-color:#FFF; margin-top:15px;">
+					<iframe src="//fast.wistia.net/embed/iframe/0rrkl3w1vu?videoFoam=true" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="500" height="313"></iframe><script src="//fast.wistia.net/assets/external/E-v1.js"></script>
+					<p><i>For full instructions and solutions to common errors, please visit our <a href="http://wpengine.com/support/wp-engine-automatic-migration/">WP Engine Automated Migration</a> support garage article.</i></p>
+				</div>
 			</div>
-		</div> <!-- wrapper ends here -->
+		</div><!--row end-->
+	</div><!-- wrap ends here -->
+
+	<script type="text/javascript">
+		jQuery(document).ready(function () {
+			<?php if (array_key_exists('auth_required_dest', $_REQUEST)) { ?>
+					jQuery('#password-auth').show();
+					jQuery('.sourceAuthError').show();
+					jQuery('#dest-auth').addClass("attentionNeeded");
+			<?php } ?>
+
+			<?php if (array_key_exists('auth_required_source', $_REQUEST)) { ?>
+					jQuery('#password-auth').show();
+					jQuery('.destAuthError').show();
+					jQuery('#source-auth').addClass("attentionNeeded");
+			<?php } ?>
+			jQuery('#advanced-options-toggle').click(function() {
+				jQuery('#password-auth').toggle();
+				return false;
+			});
+		});
+	</script>
 <?php
 	}
 endif;

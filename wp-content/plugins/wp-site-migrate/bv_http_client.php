@@ -138,8 +138,6 @@ class BVHttpClient {
 		$request = strtoupper($method)." ".$url." HTTP/1.1\r\n";
 		if (null != $body) {
 			$headers["Content-length"] = strlen($body);
-		} else {
-			$headers["Content-length"] = 0;
 		}
 		foreach($headers as $key=>$val) {
 			$request .= $key.":".$val."\r\n";

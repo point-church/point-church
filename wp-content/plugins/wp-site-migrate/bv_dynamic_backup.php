@@ -211,21 +211,26 @@ class BVDynamicBackup {
 		return array_unique(array_merge($defaults, $ignored_options));
 	}
 
-	function option_handler($option_name) {
-		$should_ping = true;
+	function get_ping_permission($option_name) {
+		$ping_permitted = true;
 		$ignored_options = $this->get_ignored_options();
 		foreach($ignored_options as $val) {
 			if ($val{0} == '/') {
 				if (preg_match($val, $option_name))
-					$should_ping = false;
+					$ping_permitted = false;
 			} else {
 				if ($val == $option_name)
-					$should_ping = false;
+					$ping_permitted = false;
 			}
-			if (!$should_ping)
+			if (!$ping_permitted)
 				break;
 		}
-		if ($should_ping)
+		return $ping_permitted;
+	}
+
+	function option_handler($option_name) {
+		$ping_permitted = $this->get_ping_permission($option_name);
+		if ($ping_permitted)
 			$this->add_db_event('options', array('option_name' => $option_name));
 		if ($option_name == '_transient_doing_cron')
 			$this->send_updates();
@@ -252,7 +257,10 @@ class BVDynamicBackup {
 
 	function sitemeta_handler($option) {
 		global $wpdb;
-		$this->add_db_event('sitemeta', array('site_id' => $wpdb->siteid, 'meta_key' => $option));
+		$ping_permitted = $this->get_ping_permission($option);
+		if ($ping_permitted)
+			$this->add_db_event('sitemeta', array('site_id' => $wpdb->siteid, 'meta_key' => $option));
+		return $ping_permitted;
 	}
 
 	/* WOOCOMMERCE SUPPORT FUNCTIONS BEGINS FROM HERE*/

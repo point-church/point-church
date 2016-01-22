@@ -5,7 +5,7 @@ Plugin URI: http://wpengine.com
 Description: The easiest way to migrate your site to WP Engine
 Author: WP Engine
 Author URI: http://blogvault.net/
-Version: 1.17
+Version: 1.20
 Network: True
  */
 
@@ -29,7 +29,7 @@ Network: True
 global $bvVersion;
 global $blogvault;
 global $bvDynamicEvents;
-$bvVersion = '1.17';
+$bvVersion = '1.20';
 
 if (is_admin())
 	require_once dirname( __FILE__ ) . '/admin.php';
@@ -45,11 +45,6 @@ if (!class_exists('BlogVault')) {
 
 if (!class_exists('BVDynamicBackup')) {
 	require_once dirname( __FILE__ ) . '/bv_dynamic_backup.php';
-
-	$isdynsyncactive = $blogvault->getOption('bvDynSyncActive');
-		if ($isdynsyncactive == 'yes') {
-			BVDynamicBackup::init();
-		}
 }
 
 if (!class_exists('BVSecurity')) {
@@ -98,11 +93,16 @@ if ( !function_exists('bvDeactivateHandler') ) :
 	register_deactivation_hook(__FILE__, 'bvDeactivateHandler');
 endif;
 
-
 if ((array_key_exists('apipage', $_REQUEST)) && stristr($_REQUEST['apipage'], 'blogvault')) {
 	if (array_key_exists('afterload', $_REQUEST)) {
 		add_action('wp_loaded', array($blogvault, 'processApiRequest'));
 	} else {
 		$blogvault->processApiRequest();
+	}
+} else {
+	# Do not load dynamic sync for callback requests
+	$isdynsyncactive = $blogvault->getOption('bvDynSyncActive');
+	if ($isdynsyncactive == 'yes') {
+		BVDynamicBackup::init();
 	}
 }

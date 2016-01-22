@@ -1,8 +1,8 @@
 === WP Engine Automated Migration ===
-Contributors: wpengine, blogvault, akshatc
+Contributors: wpengine, blogvault, akshatc, taylor4484
 Tags: wpe, wpengine, migration
 Requires at least: 3.0.1
-Tested up to: 4.2.2
+Tested up to: 4.4
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -59,9 +59,9 @@ Yes! This has been fully developed to work with Multisite. If moving a Multisite
 
 No. This plugin is designed to migrate sites as is. This plugin will not support single WordPress sites being migrated into a Multisite or a Multisite sub-site being migrated to a single WordPress site.
 
-4) Are their any known incompatiblities?
+4) Are their any known incompatibilities?
 
-Currently, you can not migrate a site from WordPress.com or any propritary hosting solution. (Squarespace.com, Wix.com, and similar hosting providers)
+Currently, you can not migrate a site from WordPress.com or any proprietary hosting solution. (Squarespace.com, Wix.com, and similar hosting providers)
 
 5) Other than running the plugin, anything else I need to do?
 
@@ -73,10 +73,17 @@ That's easy! [Signup here](http://wpengine.com/plans/).
 
 == Screenshots ==
 
-1. Adding information to the WP Engine Migration Tool.
-2. Blog Vault dashboard showing live updates.
+1. Adding information to the WP Engine Migration Tool in the WP-Admin.
+2. WP Engine User Portal Migration Page, https://my.wpengine.com
+2. BlogVault dashboard showing live updates.
 
 == Changelog ==
+= 1.20 =
+* Adding DB Signature and Server Signature to uniquely identify a site
+* Adding the stats api to the WordPress Backup plugin.
+* Sending tablename/rcount as part of the callback
+* Updated UI and added helpful content to provide a better migration experience.
+
 = 1.17 =
 * Add support for repair table so that the backup plugin itself can be used to repair tables without needing PHPMyAdmin access
 * Making the plugin to be available network wide.

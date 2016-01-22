@@ -131,8 +131,15 @@
 
 		<? 
 
+		$staffArgs = array(
+			'posts_per_page' => 4,
+			'post_type' => 'staff', 
+			'order' => 'ASC', 
+			'meta_key' => 'campus', 
+			'meta_value' => $campusname
+		);
 
-		$staff = new WP_Query( array( 'post_type' => 'staff', 'order' => 'ASC', 'meta_key' => 'campus', 'meta_value' => $campusname));
+		$staff = new WP_Query( $staffArgs );
 
 		if ( $staff->have_posts() ) : ?>
 
