@@ -101,11 +101,11 @@
 					</dl>
 				</li>
 			</a>
-			<a href="<?php bloginfo('url'); ?>/locations/raleigh">
+			<a href="<?php bloginfo('url'); ?>/locations/south-raleigh">
 				<li class="raleigh">
 					<dl>
-						<dt>Raleigh</dt>
-						<dd>10am</dd>
+						<dt>S. Raleigh</dt>
+						<dd>11am</dd>
 					</dl>
 				</li>	
 			</a>
