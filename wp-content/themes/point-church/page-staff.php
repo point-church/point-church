@@ -10,6 +10,41 @@
 		<div class="wrapper">
 
 			<ul class="profiles">
+
+				<?php 
+				// the query
+				$args = array(
+					'post_type' => 'staff',
+					'posts_per_page' => -1,
+					'orderby' => 'title',
+					'order' => 'ASC'
+				);
+				$the_query = new WP_Query( $args ); ?>
+				
+				<?php if ( $the_query->have_posts() ) : ?>
+				
+					<!-- pagination here -->
+				
+					<!-- the loop -->
+					<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+						<li>
+							<img src="<?php echo get_field('profile_image'); ?>" />
+							<dl>
+								<dt><?php the_title(); ?></dt>
+								<dd><?php echo get_field('title'); ?></dd>
+								<dd class="location"><?php echo ucwords( get_field('campus')); ?></dd>
+							</dl>
+						</li>
+					<?php endwhile; ?>
+					<!-- end of the loop -->
+				
+					<!-- pagination here -->
+				
+					<?php wp_reset_postdata(); ?>
+				
+				<?php else : ?>
+					<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+				<?php endif; /* ?>
 				
 				<li>
 					<img src="<?php echo get_template_directory_uri(); ?>/images/staff/Matthew_Bradham-Campus_Pastor-Apex.jpg" />
@@ -244,6 +279,8 @@
 						<dd class="location">Raleigh</dd>
 					</dl>
 				</li>
+
+				*/ ?>
 
 			</ul>
 			<div class="buttons">
