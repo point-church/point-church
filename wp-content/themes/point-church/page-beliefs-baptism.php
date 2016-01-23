@@ -57,7 +57,7 @@
 					</ul>
 				</li>
 				<li><strong>The Son - God became man</strong>
-				Jesus Christ is completely human but, at the same time, completely God. He is the only plan for bringing people who are far from God back into a right relationship with God. He lived a perfect life, so that He could be a substitution for us in satisfying God's demands for perfection. He defeated death in His resurrection so that we could have life.
+				Jesus Christ is completely human, but at the same time completely God. He is the only plan for bringing people who are enemies of God back into a right relationship with God. He was born of a virgin and lived a perfect life, so that He could be a substitution for us in satisfying God's demands for perfection. He defeated death in His resurrection so that we could have life.  He will one day return to earth to set all things right.	
 					<ul>
 						<li>Isaiah 7:14, 53</li>
 						<li>Matthew 1:18-23; 3:17; 8:29; 14:33; 16:16; 28:5-6</li>
