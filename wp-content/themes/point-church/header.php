@@ -18,7 +18,16 @@
 ?>
 <?php if(is_home()){ $type = 'home'; }elseif( is_404() ){ $type = 'page-not-found'; }elseif( is_page('mission-vision-values') || is_page('beliefs-baptism') || is_page('staff')){ $type = 'styled-page'; }elseif( $post->post_parent == '4'){ $type = 'locations'; }else{ $type = get_post_type(); } ?>
 
-<body class="<?php echo $type; ?>">
+<?php
+	$alert = get_option( 'alert_bar_setting');
+	
+	if( $alert['checkbox'] == true ){
+		$alertClass = 'promo-active';
+	}
+
+?>
+
+<body class="<?php echo $type . ' ' . $alertClass; ?>">
 	<!-- GA TRACKING -->
 	<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -33,6 +42,30 @@
 <!-- end GA -->
 
 	<div class="off-canvas-click-blocker"></div><?php // to prevent accidental clicking when menu is open ?>
+
+	<?php 
+
+
+
+		if( $alert['checkbox'] == true){
+
+			if( $alert['url'] != null ){
+				echo '<a href="' . esc_url( $alert['url'] ) . '" class="promo-bar">';
+			}else{
+				echo '<div class="promo-bar">';
+			}
+
+			echo '<span>' . esc_html( $alert['text'] ) . '</span>'; 
+
+			if( $alert['url'] != null ){
+				echo '</a>';
+			}else{
+				echo '</div>';
+			}
+		}
+
+	?>
+
 
 	<header>
 		<a href="<?php bloginfo('url'); ?>"><h1><?php bloginfo('name'); ?></h1></a>

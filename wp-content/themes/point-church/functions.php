@@ -42,4 +42,8 @@ function remove_content_editor() {
 
 add_action( 'init', 'remove_content_editor' );
 
+// ALERT BAR SETTINGS
+
+include_once('includes/alert-bar.php');
+
 ?>

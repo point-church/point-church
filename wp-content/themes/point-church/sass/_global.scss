@@ -3,6 +3,10 @@ $point-blue: #00a0c6;
 html, body{
 	font-family: 'myriad-pro';
 
+	&.promo-active{
+		padding-top: 40px;
+	}
+
 	&.off-canvas-open{
 		overflow: hidden;
 
@@ -272,6 +276,13 @@ ul.styled-list{
 		background: rgba(0,0,0,.5);
 	}
 
+}
+
+@media screen and (max-width: 950px){
+
+	body.promo-active{
+		padding-top: 0;
+	}
 }
 
 @media screen and (max-width: 820px){
