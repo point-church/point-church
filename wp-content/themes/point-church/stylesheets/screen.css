@@ -1731,15 +1731,90 @@ footer .footer-utilities .copyright a {
   float: right;
   width: 60%;
 }
+/* line 62, ../sass/_events.scss */
+.events .events-archive.list-item a {
+  width: 20%;
+  float: left;
+  margin: 2em 2.5%;
+  display: block;
+  position: relative;
+}
+/* line 69, ../sass/_events.scss */
+.events .events-archive.list-item a span {
+  opacity: 0;
+  -moz-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #aaa;
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5%;
+  padding: 1em;
+  box-sizing: border-box;
+  line-height: 1.4em;
+  font-weight: 100;
+}
+/* line 87, ../sass/_events.scss */
+.events .events-archive.list-item a span .event-header {
+  color: #00a0c6;
+  margin-top: 1em;
+  display: block;
+}
+/* line 94, ../sass/_events.scss */
+.events .events-archive.list-item a img {
+  width: 100%;
+  border-radius: 5%;
+}
+/* line 101, ../sass/_events.scss */
+.events .events-archive.list-item a:hover span {
+  opacity: 1;
+}
 
+@media screen and (max-width: 1200px) {
+  /* line 116, ../sass/_events.scss */
+  .events .events-archive.list-item a {
+    width: 90%;
+    border-bottom: 1px solid #00a0c6;
+    padding: 2em 0;
+    margin: 0 0 0 5%;
+    text-decoration: none;
+    overflow: hidden;
+    *zoom: 1;
+  }
+  /* line 124, ../sass/_events.scss */
+  .events .events-archive.list-item a img {
+    width: 33%;
+    margin: 0;
+    float: left;
+  }
+  /* line 130, ../sass/_events.scss */
+  .events .events-archive.list-item a span {
+    opacity: 1;
+    width: 60%;
+    padding: 0;
+    margin-left: 35%;
+    position: static;
+    display: block;
+    border-radius: 0;
+    background: none;
+    color: #111;
+  }
+}
 @media screen and (max-width: 1024px) {
-  /* line 64, ../sass/_events.scss */
+  /* line 149, ../sass/_events.scss */
   .events .details {
     float: none;
     width: 70%;
     margin: 1em auto;
   }
-  /* line 70, ../sass/_events.scss */
+  /* line 155, ../sass/_events.scss */
   .events .content {
     float: none;
     width: 70%;
@@ -1747,19 +1822,31 @@ footer .footer-utilities .copyright a {
   }
 }
 @media screen and (max-width: 400px) {
-  /* line 81, ../sass/_events.scss */
+  /* line 166, ../sass/_events.scss */
   .events .details dl {
     background: none;
     padding: 0;
   }
-  /* line 87, ../sass/_events.scss */
+  /* line 172, ../sass/_events.scss */
   .events .content {
     width: 100%;
   }
-  /* line 91, ../sass/_events.scss */
+  /* line 176, ../sass/_events.scss */
   .events .event-contact {
     border: none;
     padding: 0;
+  }
+  /* line 184, ../sass/_events.scss */
+  .events .events-archive.list-item a img {
+    width: 80%;
+    margin: 0 10% 2em;
+    float: none;
+  }
+  /* line 190, ../sass/_events.scss */
+  .events .events-archive.list-item a span {
+    width: 80%;
+    padding: 0;
+    margin: 0 10%;
   }
 }
 /* line 1, ../sass/_404.scss */

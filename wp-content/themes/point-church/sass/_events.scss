@@ -57,6 +57,91 @@
 		width: 60%;
 	}
 
+	.events-archive.list-item{
+
+		a{
+			width: 20%;
+			float: left;
+			margin: 2em 2.5%;
+			display: block;
+			position: relative;
+
+			span{
+				opacity: 0;
+				@include transition(opacity .5s);
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 100%;
+				width: 100%;
+				background: #aaa;
+				background: rgba(0,0,0,.75);
+				color: #fff;
+				text-decoration: none;
+				border-radius: 5%;
+				padding: 1em;
+				box-sizing: border-box;
+				line-height: 1.4em;
+				font-weight: 100;
+
+				.event-header{
+					color: $point-blue;
+					margin-top: 1em;
+					display: block;
+				}
+			}
+
+			img{
+				width: 100%;
+				border-radius: 5%;
+			}
+
+			&:hover{
+
+				span{
+					opacity: 1;
+				}
+			}
+		}
+
+	}
+
+}
+
+@media screen and (max-width: 1200px){
+
+	.events{
+
+		.events-archive.list-item{
+			a{
+				width: 90%;
+				border-bottom: 1px solid $point-blue;
+				padding: 2em 0;
+				margin: 0 0 0 5%;
+				text-decoration: none;
+				@include clearfix;
+
+				img{
+					width: 33%;
+					margin: 0;
+					float: left;
+				}
+
+				span{
+					opacity: 1;
+					width: 60%;
+					padding: 0;
+					margin-left: 35%;
+					position: static;
+					display: block;
+					border-radius: 0;
+					background: none;
+					color: #111;
+				}
+			}
+		}
+	}
+
 }
 
 @media screen and (max-width: 1024px){
@@ -91,6 +176,24 @@
 		.event-contact{
 			border: none;
 			padding: 0;
+		}
+
+		.events-archive.list-item{
+
+			a{
+				img{
+					width: 80%;
+					margin: 0 10% 2em;
+					float: none;
+				}
+
+				span{
+					width: 80%;
+					padding: 0;
+					margin: 0 10%;
+				}
+			}
+
 		}
 	}
 }
