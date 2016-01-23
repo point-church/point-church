@@ -4,8 +4,8 @@
 
 .promo-bar{
 	height: 50px;
-	background: $point-blue;
-	color: #fff;
+	background: #f00000;
+	color: #000;
 	z-index:9999;
 	position: fixed;
 	top: 0;
@@ -25,8 +25,8 @@
 }
 
 a.promo-bar:hover{
-	color: #fff;
-	background: darken($point-blue, 5%);
+	color: #000;
+	background: lighten(#f00000, 5%);
 
 }
 

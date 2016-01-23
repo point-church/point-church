@@ -396,8 +396,8 @@ ul.styled-list > li {
 /* line 5, ../sass/_header.scss */
 .promo-bar {
   height: 50px;
-  background: #00a0c6;
-  color: #fff;
+  background: #f00000;
+  color: #000;
   z-index: 9999;
   position: fixed;
   top: 0;
@@ -421,8 +421,8 @@ ul.styled-list > li {
 
 /* line 27, ../sass/_header.scss */
 a.promo-bar:hover {
-  color: #fff;
-  background: #008bad;
+  color: #000;
+  background: #ff0b0b;
 }
 
 /* line 33, ../sass/_header.scss */
