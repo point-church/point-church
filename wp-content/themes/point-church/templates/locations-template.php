@@ -21,8 +21,8 @@
 </section>
 
 <?php
-	if( get_field('sermon_link') != null){
-		$sermonURL = get_field('sermon_link');
+	if( get_field('sermons_link') != null){
+		$sermonURL = get_field('sermons_link');
 	}else{
 		$sermonURL = 'http://pointchurchsermons.com';
 	}
