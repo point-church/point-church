@@ -73,7 +73,7 @@ html, body {
 }
 /* line 6, ../sass/_global.scss */
 html.promo-active, body.promo-active {
-  padding-top: 40px;
+  padding-top: 50px;
 }
 /* line 10, ../sass/_global.scss */
 html.off-canvas-open, body.off-canvas-open {
@@ -390,12 +390,12 @@ ul.styled-list > li {
 }
 /* line 1, ../sass/_header.scss */
 .promo-active header {
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
 /* line 5, ../sass/_header.scss */
 .promo-bar {
-  height: 40px;
+  height: 50px;
   background: #00a0c6;
   color: #fff;
   z-index: 9999;
@@ -404,12 +404,13 @@ ul.styled-list > li {
   left: 0;
   width: 100vw;
   box-sizing: border-box;
-  padding-top: .6em;
+  padding-top: .9em;
   text-align: center;
   padding-left: 5vw;
   padding-right: 5vw;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
+  font-weight: bold;
   text-decoration: none;
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -418,13 +419,13 @@ ul.styled-list > li {
   display: block;
 }
 
-/* line 26, ../sass/_header.scss */
+/* line 27, ../sass/_header.scss */
 a.promo-bar:hover {
   color: #fff;
   background: #008bad;
 }
 
-/* line 32, ../sass/_header.scss */
+/* line 33, ../sass/_header.scss */
 header {
   position: fixed;
   top: 0;
@@ -439,7 +440,7 @@ header {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 42, ../sass/_header.scss */
+/* line 43, ../sass/_header.scss */
 header h1 {
   text-indent: -9999em;
   background: url("../images/point-logo-header.png") 0 0 no-repeat;
@@ -449,121 +450,122 @@ header h1 {
   margin: 1em 0;
   background-size: 100%;
 }
-/* line 52, ../sass/_header.scss */
+/* line 53, ../sass/_header.scss */
 header nav.on-canvas {
   float: right;
   font-family: 'myriad-pro';
   width: 75%;
   margin-right: 2em;
 }
-/* line 59, ../sass/_header.scss */
+/* line 60, ../sass/_header.scss */
 header nav.on-canvas .menu-global-navigation-container {
   float: right;
 }
-/* line 63, ../sass/_header.scss */
+/* line 64, ../sass/_header.scss */
 header nav.on-canvas ul li {
   font-size: 1.2em;
   display: inline;
 }
-/* line 69, ../sass/_header.scss */
+/* line 70, ../sass/_header.scss */
 header nav.on-canvas ul li.current-menu-item a, header nav.on-canvas ul li.current-page-ancestor a {
   color: #fff;
 }
-/* line 74, ../sass/_header.scss */
+/* line 75, ../sass/_header.scss */
 header nav.on-canvas ul li.menu-item-type-custom a {
   border-left: 1px solid rgba(255, 255, 255, 0.1);
   background: url(../images/search-icon.png) no-repeat center;
   text-indent: -9999em;
   padding: 2.15em 3em;
 }
-/* line 83, ../sass/_header.scss */
+/* line 84, ../sass/_header.scss */
 header nav.on-canvas ul li a {
   color: #ccc;
   text-decoration: none;
   padding: 2.15em 2em;
   display: inline-block;
 }
-/* line 89, ../sass/_header.scss */
+/* line 90, ../sass/_header.scss */
 header nav.on-canvas ul li a:hover {
   color: #fff;
   background-color: rgba(0, 0, 0, 0.5);
 }
-/* line 97, ../sass/_header.scss */
+/* line 98, ../sass/_header.scss */
 header nav.on-canvas .search-link {
   display: inline-block;
 }
-/* line 102, ../sass/_header.scss */
+/* line 103, ../sass/_header.scss */
 header.past-intro, header.opaque {
   background: rgba(0, 0, 0, 0.5);
 }
 
-/* line 108, ../sass/_header.scss */
+/* line 109, ../sass/_header.scss */
 nav.off-canvas {
   display: none;
 }
 
 @media screen and (max-width: 1300px) {
-  /* line 114, ../sass/_header.scss */
+  /* line 115, ../sass/_header.scss */
   header h1 {
     width: 120px;
     height: 52px;
   }
-  /* line 119, ../sass/_header.scss */
+  /* line 120, ../sass/_header.scss */
   header nav.on-canvas {
     width: 85%;
   }
-  /* line 125, ../sass/_header.scss */
+  /* line 126, ../sass/_header.scss */
   header nav.on-canvas ul li.menu-item-type-custom a {
     padding: 1.7em 2.5em;
   }
-  /* line 130, ../sass/_header.scss */
+  /* line 131, ../sass/_header.scss */
   header nav.on-canvas ul li a {
     padding: 1.7em 1.5em;
   }
 }
 @media screen and (max-width: 1024px) {
-  /* line 142, ../sass/_header.scss */
+  /* line 143, ../sass/_header.scss */
   header {
     position: static;
     text-align: center;
     background: #333 !important;
     padding: 0;
   }
-  /* line 148, ../sass/_header.scss */
+  /* line 149, ../sass/_header.scss */
   header h1 {
     float: none;
     margin: 1em auto;
   }
-  /* line 149, ../sass/_header.scss */
+  /* line 150, ../sass/_header.scss */
   header nav.on-canvas {
     float: none;
     margin: 0 auto;
   }
-  /* line 153, ../sass/_header.scss */
+  /* line 154, ../sass/_header.scss */
   header nav.on-canvas .menu-global-navigation-container {
     float: none;
   }
 }
 @media screen and (max-width: 950px) {
-  /* line 160, ../sass/_header.scss */
+  /* line 161, ../sass/_header.scss */
   .promo-active header {
     margin-top: 0;
   }
 
-  /* line 164, ../sass/_header.scss */
+  /* line 165, ../sass/_header.scss */
   .promo-bar {
     position: static;
-    padding: .5em 20vw;
+    padding: 1em 20vw;
     font-size: .8em;
     height: auto;
+    line-height: 1.4em;
   }
 
-  /* line 173, ../sass/_header.scss */
+  /* line 175, ../sass/_header.scss */
   header nav.on-canvas {
     display: none;
   }
 
-  /* line 178, ../sass/_header.scss */
+  /* line 180, ../sass/_header.scss */
   nav.off-canvas {
     display: block;
     box-sizing: border-box;
@@ -580,7 +582,7 @@ nav.off-canvas {
     -webkit-transition: left 0.5s;
     transition: left 0.5s;
   }
-  /* line 191, ../sass/_header.scss */
+  /* line 193, ../sass/_header.scss */
   nav.off-canvas ul li a {
     padding: 1em 0;
     display: block;
@@ -588,7 +590,7 @@ nav.off-canvas {
     text-decoration: none;
     text-align: center;
   }
-  /* line 199, ../sass/_header.scss */
+  /* line 201, ../sass/_header.scss */
   nav.off-canvas .off-canvas-control {
     position: absolute;
     right: -60px;
@@ -598,7 +600,7 @@ nav.off-canvas {
     display: block;
     background: #333 url("../images/hamburger.png") no-repeat center;
   }
-  /* line 210, ../sass/_header.scss */
+  /* line 212, ../sass/_header.scss */
   nav.off-canvas.open {
     left: 0;
   }

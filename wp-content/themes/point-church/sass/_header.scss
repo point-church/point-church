@@ -1,9 +1,9 @@
 .promo-active header{
-	margin-top: 40px;
+	margin-top: 50px;
 }
 
 .promo-bar{
-	height: 40px;
+	height: 50px;
 	background: $point-blue;
 	color: #fff;
 	z-index:9999;
@@ -12,12 +12,13 @@
 	left: 0;
 	width: 100vw;
 	box-sizing: border-box;
-	padding-top: .6em;
+	padding-top: .9em;
 	text-align: center;
 	padding-left: 5vw;
 	padding-right: 5vw;
 	text-transform: uppercase;
-	letter-spacing: 1px;
+	letter-spacing: 2px;
+	font-weight: bold;
 	text-decoration: none;
 	@include transition(all .5s);
 	display: block;
@@ -163,9 +164,10 @@ nav.off-canvas{ display: none; }
 	
 	.promo-bar{
 		position: static;
-		padding: .5em 20vw;	
+		padding: 1em 20vw;	
 		font-size: .8em;
 		height: auto;
+		line-height: 1.4em;
 	}
 
 	header{
