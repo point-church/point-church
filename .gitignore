@@ -17,6 +17,11 @@ wp-content/advanced-cache.php
 wp-content/wp-cache-config.php
 wp-content/cache/*
 wp-content/cache/supercache/*
+wp-content/themes/twentytwelve
+wp-content/themes/twentythirteen
+wp-content/themes/twentyfourteen
+wp-content/themes/twentyfifteen
+wp-content/themes/point-church/.sass-cache
 
 # wpengine specific
 .smushit-status
