@@ -108,6 +108,42 @@
 
 }
 
+@media screen and (max-width: 1200px){
+
+	.events{
+
+		.events-archive.list-item{
+			a{
+				width: 90%;
+				border-bottom: 1px solid $point-blue;
+				padding: 2em 0;
+				margin: 0 0 0 5%;
+				text-decoration: none;
+				@include clearfix;
+
+				img{
+					width: 33%;
+					margin: 0;
+					float: left;
+				}
+
+				span{
+					opacity: 1;
+					width: 60%;
+					padding: 0;
+					margin-left: 35%;
+					position: static;
+					display: block;
+					border-radius: 0;
+					background: none;
+					color: #111;
+				}
+			}
+		}
+	}
+
+}
+
 @media screen and (max-width: 1024px){
 	.events{
 		.details{
@@ -140,6 +176,24 @@
 		.event-contact{
 			border: none;
 			padding: 0;
+		}
+
+		.events-archive.list-item{
+
+			a{
+				img{
+					width: 80%;
+					margin: 0 10% 2em;
+					float: none;
+				}
+
+				span{
+					width: 80%;
+					padding: 0;
+					margin: 0 10%;
+				}
+			}
+
 		}
 	}
 }
