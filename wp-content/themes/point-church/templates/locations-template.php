@@ -89,6 +89,7 @@
 		$campusname = strtolower(get_the_title()); 
 
 		if($campusname == 'español'){ $campusname = 'espanol'; }
+		if($campusname == 'north raleigh'){ $campusname = 'north-raleigh'; }
 		
 		$events = new WP_Query( array( 'post_type' => 'events', 'order' => 'ASC'));
 
