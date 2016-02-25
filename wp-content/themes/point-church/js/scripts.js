@@ -278,7 +278,7 @@ function buildCampusMap(){
 	  var location = new google.maps.Marker({
 	      position: new google.maps.LatLng( lat, lng ),
 	      map: map,
-	      title: 'Cary Campus',
+	      title: 'Location',
 	      icon: image
 	  });
 	

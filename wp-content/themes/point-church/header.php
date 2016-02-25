@@ -13,9 +13,6 @@
     <script src="<?php echo get_template_directory_uri(); ?>/js/html5-shiv.min.js"></script>
 	<![endif]-->
 </head>
-<?php
-
-?>
 <?php if(is_home()){ $type = 'home'; }elseif( is_404() ){ $type = 'page-not-found'; }elseif( is_page('mission-vision-values') || is_page('beliefs-baptism') || is_page('staff')){ $type = 'styled-page'; }elseif( $post->post_parent == '4'){ $type = 'locations'; }else{ $type = get_post_type(); } ?>
 
 <?php
