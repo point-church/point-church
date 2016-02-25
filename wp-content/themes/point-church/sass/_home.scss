@@ -134,7 +134,7 @@
 
 			li{
 				display: inline-block;
-				width: 24%;
+				width: 19%;
 				text-align: center;
 				background-repeat: no-repeat;
 				background-position: top center;
@@ -153,8 +153,12 @@
 					background-image: url(../images/espanol-icon.jpg);
 				}
 
-				&.raleigh{
+				&.s-raleigh{
 					background-image: url(../images/raleigh-icon.jpg);
+				}
+
+				&.n-raleigh{
+					background-image: url(../images/espanol-icon.jpg);
 				}
 			}
 

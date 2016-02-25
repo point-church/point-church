@@ -818,7 +818,7 @@ footer .footer-utilities .copyright a {
 /* line 135, ../sass/_home.scss */
 #home-locations .locations li {
   display: inline-block;
-  width: 24%;
+  width: 19%;
   text-align: center;
   background-repeat: no-repeat;
   background-position: top center;
@@ -839,55 +839,59 @@ footer .footer-utilities .copyright a {
   background-image: url(../images/espanol-icon.jpg);
 }
 /* line 156, ../sass/_home.scss */
-#home-locations .locations li.raleigh {
+#home-locations .locations li.s-raleigh {
   background-image: url(../images/raleigh-icon.jpg);
 }
-/* line 161, ../sass/_home.scss */
+/* line 160, ../sass/_home.scss */
+#home-locations .locations li.n-raleigh {
+  background-image: url(../images/espanol-icon.jpg);
+}
+/* line 165, ../sass/_home.scss */
 #home-locations .locations dt {
   font-size: 2em;
   color: #00a0c6;
 }
 
-/* line 169, ../sass/_home.scss */
+/* line 173, ../sass/_home.scss */
 #map-canvas {
   display: none;
   height: 600px;
 }
-/* line 173, ../sass/_home.scss */
+/* line 177, ../sass/_home.scss */
 #map-canvas.expand {
   display: block;
 }
-/* line 177, ../sass/_home.scss */
+/* line 181, ../sass/_home.scss */
 #map-canvas .campus-name {
   font-size: 1.4em;
   margin-bottom: 1em;
 }
 
 @media screen and (max-width: 820px) {
-  /* line 189, ../sass/_home.scss */
+  /* line 193, ../sass/_home.scss */
   #home-intro {
     height: auto;
     padding: 2em 0;
   }
-  /* line 193, ../sass/_home.scss */
+  /* line 197, ../sass/_home.scss */
   #home-intro h2 {
     padding: 0 0 2em;
     font-size: 2.5em;
     line-height: 1.2em;
   }
-  /* line 198, ../sass/_home.scss */
+  /* line 202, ../sass/_home.scss */
   #home-intro h2 dt {
     margin-bottom: 2em;
     width: 80%;
     margin: 0 auto 2em;
   }
 
-  /* line 208, ../sass/_home.scss */
+  /* line 212, ../sass/_home.scss */
   #home-kids .paint-splatter span {
     z-index: -1 !important;
   }
 
-  /* line 213, ../sass/_home.scss */
+  /* line 217, ../sass/_home.scss */
   #home-locations .locations li {
     display: block;
     width: 100%;
@@ -895,37 +899,37 @@ footer .footer-utilities .copyright a {
   }
 }
 @media screen and (min-width: 800px) {
-  /* line 222, ../sass/_home.scss */
+  /* line 226, ../sass/_home.scss */
   #home-intro {
     background-image: url("../images/welcome-bg.jpg");
   }
 
-  /* line 226, ../sass/_home.scss */
+  /* line 230, ../sass/_home.scss */
   #home-worship {
     background-image: url("../images/worship-bg.jpg");
   }
 
-  /* line 230, ../sass/_home.scss */
+  /* line 234, ../sass/_home.scss */
   #home-sermons {
     background-image: url("../images/sermons-bg.jpg");
   }
 
-  /* line 234, ../sass/_home.scss */
+  /* line 238, ../sass/_home.scss */
   #home-leadership {
     background-image: url("../images/leadership-bg.jpg");
   }
 }
 @media screen and (max-width: 401px) {
-  /* line 242, ../sass/_home.scss */
+  /* line 246, ../sass/_home.scss */
   #home-intro {
     padding: 2em 0;
   }
 
-  /* line 248, ../sass/_home.scss */
+  /* line 252, ../sass/_home.scss */
   .section .section-head {
     font-size: 2.2em;
   }
-  /* line 252, ../sass/_home.scss */
+  /* line 256, ../sass/_home.scss */
   .section .head-desc {
     font-size: 1.4em;
   }

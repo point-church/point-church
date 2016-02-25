@@ -102,10 +102,18 @@
 				</li>
 			</a>
 			<a href="<?php bloginfo('url'); ?>/locations/south-raleigh">
-				<li class="raleigh">
+				<li class="s-raleigh">
 					<dl>
 						<dt>S. Raleigh</dt>
 						<dd>11am</dd>
+					</dl>
+				</li>	
+			</a>
+			<a href="<?php bloginfo('url'); ?>/locations/north-raleigh">
+				<li class="n-raleigh">
+					<dl>
+						<dt>N. Raleigh</dt>
+						<dd>9:15am &amp; 11am</dd>
 					</dl>
 				</li>	
 			</a>

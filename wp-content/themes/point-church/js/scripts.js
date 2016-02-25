@@ -70,7 +70,7 @@ function buildHomepageMap(){
 	  ];
 	
 	  var mapOptions = {
-	    zoom: 12,
+	    zoom: 11,
 	    mapTypeControlOptions: {
 	      mapTypeIds: [google.maps.MapTypeId.ROADMAP, MY_MAPTYPE_ID]
 	    },
@@ -107,20 +107,36 @@ function buildHomepageMap(){
 	      content: apexContent
 	  });
 	
-	  var raleigh = new google.maps.Marker({
-	      position: new google.maps.LatLng( 35.77959, -78.67595 ),
+	  var sRaleigh = new google.maps.Marker({
+	      position: new google.maps.LatLng( 35.730623, -78.683347 ),
 	      map: map,
-	      title: 'Raleigh Campus',
+	      title: 'South Raleigh Campus',
 	      icon: image
 	  });
 	
-	  var raleighContent = '<div id="map-info">'+
-	      '<h4 class="campus-name">Raleigh Campus<h4>'+
-	      '<p class="address">2109 Avent Ferry Rd, Raleigh, NC 27606</p>'+
+	  var sRaleighContent = '<div id="map-info">'+
+	      '<h4 class="campus-name">South Raleigh Campus<h4>'+
+	      '<p class="address">3700 Lake Wheeler Rd, Raleigh, NC 27603</p>'+
 	      '</div>';
 	
-	  var raleighInfo = new google.maps.InfoWindow({
-	      content: raleighContent
+	  var sRaleighInfo = new google.maps.InfoWindow({
+	      content: sRaleighContent
+	  });
+
+	  var nRaleigh = new google.maps.Marker({
+	      position: new google.maps.LatLng( 35.864017, -78.712082 ),
+	      map: map,
+	      title: 'North Raleigh Campus',
+	      icon: image
+	  });
+
+	  var nRaleighContent = '<div id="map-info">'+
+	      '<h4 class="campus-name">North Raleigh Campus<h4>'+
+	      '<p class="address">6904 Glenwood Ave Raleigh, NC 27612</p>'+
+	      '</div>';
+	
+	  var nRaleighInfo = new google.maps.InfoWindow({
+	      content: nRaleighContent
 	  });
 	
 	  var cary = new google.maps.Marker({
@@ -143,12 +159,16 @@ function buildHomepageMap(){
 	    apexInfo.open(map,apex);
 	  });
 	
-	  google.maps.event.addListener(raleigh, 'click', function() {
-	    raleighInfo.open(map,raleigh);
+	  google.maps.event.addListener(sRaleigh, 'click', function() {
+	    sRaleighInfo.open(map,sRaleigh);
 	  });
 	
 	  google.maps.event.addListener(cary, 'click', function() {
 	    caryInfo.open(map,cary);
+	  });  
+
+	  google.maps.event.addListener(nRaleigh, 'click', function() {
+	    nRaleighInfo.open(map,nRaleigh);
 	  });
 	
 	
