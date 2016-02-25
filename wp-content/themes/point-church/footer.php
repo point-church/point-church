@@ -24,7 +24,7 @@
 	echo '<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>';
 
 ?>
-<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/scripts.js"></script>
+<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/scripts.js?2.24.16"></script>
 <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/jPlayer-2.9.2/dist/jplayer/jquery.jplayer.min.js"></script>
 
 </body>
