@@ -273,7 +273,7 @@ function buildCampusMap(){
 	
 	  map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
 	
-	  var image = '/point-church/wp-content/themes/point-church/images/piont-church-marker.png';
+	  var image = 'wp-content/themes/point-church/images/piont-church-marker.png';
 	
 	  var location = new google.maps.Marker({
 	      position: new google.maps.LatLng( lat, lng ),
