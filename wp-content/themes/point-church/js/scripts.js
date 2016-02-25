@@ -89,7 +89,7 @@ function buildHomepageMap(){
 	
 	  map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
 	
-	  var image = 'wp-content/themes/point-church/images/piont-church-marker.png';
+	  var image = '/wp-content/themes/point-church/images/piont-church-marker.png';
 	
 	  var apex = new google.maps.Marker({
 	      position: new google.maps.LatLng( 35.712722, -78.840252 ),
@@ -273,7 +273,7 @@ function buildCampusMap(){
 	
 	  map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
 	
-	  var image = 'wp-content/themes/point-church/images/piont-church-marker.png';
+	  var image = '/wp-content/themes/point-church/images/piont-church-marker.png';
 	
 	  var location = new google.maps.Marker({
 	      position: new google.maps.LatLng( lat, lng ),
