@@ -89,9 +89,9 @@
 		$campusname = strtolower(get_the_title()); 
 
 		if($campusname == 'español'){ $campusname = 'espanol'; }
-		if($campusname == 'north raleigh*'){ $campusname  = 'north raleigh'; }
+		
+		if(strpos ( $campusname, 'north raleigh') !== false){ $campusname  = 'north raleigh'; }
 
-		print_r($campusname);
 		
 		$events = new WP_Query( array( 'post_type' => 'events', 'order' => 'ASC'));
 
@@ -109,9 +109,12 @@
 				<span class="short-description"><?php the_field('short_description'); ?></span>
 			</a>
 		</div>
-	<?php else: ?>
+
+		<?php else: ?>
+
 
 		<?php endif; ?>
+
 		<?php endwhile; ?>
 	<!-- end of the loop -->
 
@@ -120,7 +123,8 @@
 	<?php wp_reset_postdata(); ?>
 
 <?php else : ?>
-	<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+	<p>There are currently no events scheduled for <?php echo $campusname; ?></p>
+
 <?php endif; ?>
 		<?php /*<div class="buttons">
 			<a href="<?php echo bloginfo('url'); ?>/events" class="button">See more events at <?php the_title(); ?></a>
