@@ -105,7 +105,7 @@
 				<li class="s-raleigh">
 					<dl>
 						<dt>S. Raleigh</dt>
-						<dd>11am</dd>
+						<dd>9:15 &amp; 11am</dd>
 					</dl>
 				</li>	
 			</a>
