@@ -138,7 +138,7 @@
 		<ul class="staff-list">
 		<?php
 
-		/*$staffList = get_field('featured_staff');
+		$staffList = get_field('featured_staff');
 		foreach( $staffList as $staff ){
 			echo '<li>' .
 				'<dl>' .
@@ -147,7 +147,7 @@
 					'<dd>' . get_field('title', $staff->ID) . '</dd>' .
 				'</dl>' .
 			'</li>';
-		}*/
+		}
 		?>
 		</ul>
 		
