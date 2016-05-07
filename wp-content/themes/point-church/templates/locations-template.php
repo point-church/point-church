@@ -135,44 +135,21 @@
 <section id="campus-staff">
 	<div class="wrapper">
 		<h3 class="section-head">The Staff @ <?php the_title(); ?></h3>
-
-		<? 
-
-		$staffArgs = array(
-			'posts_per_page' => 4,
-			'post_type' => 'staff', 
-			'order' => 'ASC', 
-			'meta_key' => 'campus', 
-			'meta_value' => $campusname
-		);
-
-		$staff = new WP_Query( $staffArgs );
-
-		if ( $staff->have_posts() ) : ?>
-
 		<ul class="staff-list">
+		<?php
 
-		<?php while ( $staff->have_posts() ) : $staff->the_post(); ?>
-			
-		<li>
-				<dl>
-					<img src="<?php the_field('profile_image'); ?>" />
-					<dt><?php the_title(); ?></dt>
-					<dd><?php the_field('title'); ?></dd>
-				</dl>
-		</li>
-
-		<?php endwhile; ?>
-	<!-- end of the loop -->
-
-	<!-- pagination here -->
+		$staffList = get_field('featured_staff');
+		foreach( $staffList as $staff ){
+			echo '<li>' .
+				'<dl>' .
+					'<img src="' . get_field('profile_image', $staff->ID) . '" />' .
+					'<dt>' . get_the_title($staff->ID) . '</dt>' .
+					'<dd>' . get_field('title', $staff->ID) . '</dd>' .
+				'</dl>' .
+			'</li>';
+		}
+		?>
 		</ul>
-
-	<?php wp_reset_postdata(); ?>
-
-<?php else : ?>
-	<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
-<?php endif; ?>
 		
 			
 			
