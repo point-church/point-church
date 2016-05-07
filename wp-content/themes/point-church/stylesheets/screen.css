@@ -1216,8 +1216,9 @@ footer .footer-utilities .copyright a {
   width: 25%;
   float: left;
   text-align: center;
+  margin-bottom: 2em;
 }
-/* line 276, ../sass/_locations.scss */
+/* line 277, ../sass/_locations.scss */
 #campus-staff .staff-list img {
   width: 150px;
   height: 150px;
@@ -1227,40 +1228,40 @@ footer .footer-utilities .copyright a {
   border-radius: 100%;
   border: 2px solid #aaa;
 }
-/* line 284, ../sass/_locations.scss */
+/* line 285, ../sass/_locations.scss */
 #campus-staff .staff-list dt {
   font-size: 1.4em;
   margin-bottom: .25em;
 }
-/* line 289, ../sass/_locations.scss */
+/* line 290, ../sass/_locations.scss */
 #campus-staff .staff-list dd {
   font-size: 1em;
 }
 
-/* line 295, ../sass/_locations.scss */
+/* line 296, ../sass/_locations.scss */
 #campus-social {
   background-image: url("../images/events-texture.jpg");
   overflow: hidden;
 }
-/* line 298, ../sass/_locations.scss */
+/* line 299, ../sass/_locations.scss */
 #campus-social .wrapper {
   width: 80%;
   max-width: none;
 }
-/* line 304, ../sass/_locations.scss */
+/* line 305, ../sass/_locations.scss */
 #campus-social .instagram img {
   width: 16.166666667%;
   float: left;
   padding: .25%;
   opacity: .8;
 }
-/* line 310, ../sass/_locations.scss */
+/* line 311, ../sass/_locations.scss */
 #campus-social .instagram img:hover {
   opacity: 1;
 }
 
 @media screen and (max-width: 1024px) {
-  /* line 320, ../sass/_locations.scss */
+  /* line 321, ../sass/_locations.scss */
   #campus-events .event {
     width: 200px;
     display: block;
@@ -1268,17 +1269,17 @@ footer .footer-utilities .copyright a {
   }
 }
 @media screen and (max-width: 800px) {
-  /* line 330, ../sass/_locations.scss */
+  /* line 331, ../sass/_locations.scss */
   #campus-visit #map-canvas {
     display: none !important;
   }
 
-  /* line 335, ../sass/_locations.scss */
+  /* line 336, ../sass/_locations.scss */
   #campus-sermon {
     background: #000 !important;
   }
 
-  /* line 342, ../sass/_locations.scss */
+  /* line 343, ../sass/_locations.scss */
   #campus-staff .staff-list li {
     width: 200px;
     float: none;
