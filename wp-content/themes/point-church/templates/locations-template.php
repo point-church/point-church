@@ -135,24 +135,25 @@
 <section id="campus-staff">
 	<div class="wrapper">
 		<h3 class="section-head">The Staff @ <?php the_title(); ?></h3>
+		
 		<ul class="staff-list">
-		<?php
 
-		$staffList = get_field('featured_staff');
-		foreach( $staffList as $staff ){
+		<?php 
+		$staffList = get_field('staff_list');
+
+		foreach( $staffList as $staff){
 			echo '<li>' .
 				'<dl>' .
-					'<img src="' . get_field('profile_image', $staff->ID) . '" />' .
-					'<dt>' . get_the_title($staff->ID) . '</dt>' .
-					'<dd>' . get_field('title', $staff->ID) . '</dd>' .
+					'<img src="' . get_field('profile_image', $staff['staff_member']->ID) . '" />' .
+					'<dt>' . get_the_title($staff['staff_member']->ID) . '</dt>' .
+					'<dd>' . get_field('title', $staff['staff_member']->ID) . '</dd>' .
 				'</dl>' .
 			'</li>';
 		}
 		?>
+
 		</ul>
-		
-			
-			
+				
 	</div>
 </section>
 <?php /*
