@@ -43,7 +43,7 @@
 			<h4 class="section-head-desc">Engaging. Secure. Intentional.</h4>
 			<p>We believe families are our first mission field and place a high priority on making sure your kids have an awesome experience. Not only will they be safe and secure, Kid Point uses age-appropriate teaching styles to point your kids to Jesus. Your kids will be begging to come back.</p>
 			<div class="buttons">
-				<a href="<?php echo bloginfo('url'); ?>/ministries/family-ministries" class="button">Family Ministries</a>
+				<a href="<?php echo bloginfo('url'); ?>/ministries/kidpoint" class="button">Family Ministries</a>
 				<!-- Kid Point & Students -->
 			</div>
 		</div>
