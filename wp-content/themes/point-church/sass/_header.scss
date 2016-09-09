@@ -1,0 +1,217 @@
+.promo-active header{
+	margin-top: 50px;
+}
+
+.promo-bar{
+	height: 50px;
+	background: #f00000;
+	color: #000;
+	z-index:9999;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	box-sizing: border-box;
+	padding-top: .9em;
+	text-align: center;
+	padding-left: 5vw;
+	padding-right: 5vw;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: bold;
+	text-decoration: none;
+	@include transition(all .5s);
+	display: block;
+}
+
+a.promo-bar:hover{
+	color: #000;
+	background: lighten(#f00000, 5%);
+
+}
+
+header{
+	position: fixed;
+	top: 0;
+	border-bottom: 1px solid rgba(255,255,255,.1);
+	padding: 0 2em;
+	width: 100%;
+	z-index: 9999;
+	@include transition(all .5s);
+	@include clearfix;
+
+	h1{
+		text-indent: -9999em;
+		background: url('../images/point-logo-header.png') 0 0 no-repeat;
+		width: 145px;
+		height: 67px;
+		float: left;
+		margin: 1em 0;
+		background-size: 100%;
+	}
+
+	nav.on-canvas{
+		float: right;
+		font-family: 'myriad-pro';
+		width: 75%;
+		margin-right: 2em;
+		//padding: 1em 4em 1em 0;
+
+		.menu-global-navigation-container{
+			float: right;
+		}
+
+		ul li{
+			font-size: 1.2em;
+			display: inline;
+
+
+			&.current-menu-item, &.current-page-ancestor{
+				a{ color: #fff; }
+			}
+
+			&.menu-item-type-custom{
+			
+				a{ 
+					border-left: 1px solid rgba(255,255,255,.1); 
+					background: url(../images/search-icon.png) no-repeat center ;
+					text-indent: -9999em;
+					padding: 2.15em 3em;
+
+				}			
+			}
+
+			a{
+				color: #ccc;
+				text-decoration: none;
+				padding: 2.15em 2em;
+				display: inline-block;
+
+				&:hover{
+					color: #fff;
+					background-color: rgba(0,0,0,.5);
+
+				}
+			}
+		}
+
+		.search-link{
+			display: inline-block;
+		}
+	}
+
+	&.past-intro, &.opaque{
+		background: rgba(0,0,0,.5);
+		//border-bottom: none;
+	}
+}
+
+nav.off-canvas{ display: none; }
+
+@media screen and (max-width: 1300px){
+
+	header{
+
+		h1{
+			width: 120px;
+			height: 52px;
+		}
+
+		nav.on-canvas{
+			width: 85%;
+
+			ul li{
+
+				&.menu-item-type-custom{
+					a{
+						padding: 1.7em 2.5em;
+					}
+				}
+
+				a{
+					padding: 1.7em 1.5em;
+				}
+			}
+		}
+
+	}
+
+
+}
+
+@media screen and (max-width: 1024px){
+	header{
+		position: static;
+		text-align: center;
+		background: #333!important;
+		padding: 0;
+
+		h1{ float: none; margin: 1em auto; }
+		nav.on-canvas{
+			float: none;
+			margin: 0 auto;
+
+			.menu-global-navigation-container{ float: none; }
+		}
+	}
+}
+
+@media screen and (max-width: 950px){
+
+	.promo-active header{
+		margin-top: 0;
+	}
+	
+	.promo-bar{
+		position: static;
+		padding: 1em 20vw;	
+		font-size: .8em;
+		height: auto;
+		line-height: 1.4em;
+	}
+
+	header{
+
+		nav.on-canvas{
+			display: none;
+		}
+	}
+	
+	nav.off-canvas{
+		display: block;
+		box-sizing: border-box;
+		position: fixed;
+		top: -5px;
+		left: -75vw;
+		width: 75vw;
+		background: #333;
+		height: 150%;
+		padding: 1em;
+		z-index: 9999;
+		@include transition(left .5s);
+
+		ul li a{
+			padding: 1em 0;
+			display: block;
+			border-bottom: 1px solid #666;
+			text-decoration: none;
+			text-align: center;
+		}
+
+		.off-canvas-control{
+			position: absolute;
+			right: -60px;
+			width: 60px;
+			height: 60px;
+			text-indent: -9999em;
+			display: block;
+			background: #333 url('../images/hamburger.png') no-repeat center;
+
+		}
+
+		&.open{
+			left: 0;
+		}
+
+	}
+}
