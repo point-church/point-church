@@ -1,0 +1,1873 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 3, ../sass/_global.scss */
+html, body {
+  font-family: 'myriad-pro';
+}
+/* line 6, ../sass/_global.scss */
+html.promo-active, body.promo-active {
+  padding-top: 50px;
+}
+/* line 10, ../sass/_global.scss */
+html.off-canvas-open, body.off-canvas-open {
+  overflow: hidden;
+}
+/* line 13, ../sass/_global.scss */
+html.off-canvas-open .off-canvas-click-blocker, body.off-canvas-open .off-canvas-click-blocker {
+  display: block;
+}
+/* line 18, ../sass/_global.scss */
+html .off-canvas-click-blocker, body .off-canvas-click-blocker {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9998;
+  display: none;
+}
+
+/* line 29, ../sass/_global.scss */
+.image-filter {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+/* line 39, ../sass/_global.scss */
+.section-head {
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 4em;
+  margin-bottom: 1em;
+}
+
+/* line 47, ../sass/_global.scss */
+.section-head-desc {
+  font-size: 3em;
+  text-align: center;
+  color: #00a0c6;
+  margin-bottom: 2em;
+  margin-top: -1em;
+}
+
+/* line 55, ../sass/_global.scss */
+p {
+  line-height: 1.6em;
+  font-size: 1.2em;
+  margin-bottom: 1.6em;
+}
+
+/* line 61, ../sass/_global.scss */
+small {
+  font-size: .8em;
+  line-height: 1.4em;
+  margin: 0 1em 0 0;
+  color: #666;
+  font-weight: 100;
+}
+
+/* line 69, ../sass/_global.scss */
+a {
+  color: #00a0c6;
+}
+/* line 69, ../sass/_global.scss */
+a:hover {
+  color: #00b5e0;
+}
+
+/* line 71, ../sass/_global.scss */
+strong {
+  font-weight: bold;
+}
+
+/* line 75, ../sass/_global.scss */
+em {
+  font-style: italic;
+}
+
+/* line 79, ../sass/_global.scss */
+h5 {
+  font-weight: 800;
+  font-size: 1.4em;
+  margin: 3em 0 1em;
+}
+
+/* line 85, ../sass/_global.scss */
+.scripture {
+  padding: 2em;
+  background: #00a0c6;
+  color: #fff;
+}
+/* line 90, ../sass/_global.scss */
+.scripture small {
+  color: #47dcff;
+  display: block;
+}
+
+/* line 96, ../sass/_global.scss */
+.buttons {
+  text-align: center;
+  margin-top: 1em;
+}
+/* line 100, ../sass/_global.scss */
+.buttons .button {
+  border: 1px solid #333;
+  color: #333;
+  text-decoration: none;
+  padding: .75em 2em;
+  margin: 1em;
+  display: inline-block;
+  clear: both;
+  font-size: 1.2em;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  line-height: 1.4em;
+}
+/* line 112, ../sass/_global.scss */
+.buttons .button.small {
+  padding: .5em 1.5em;
+  font-size: 1em;
+}
+/* line 117, ../sass/_global.scss */
+.buttons .button:hover {
+  color: #00a0c6 !important;
+  border-color: #00a0c6 !important;
+}
+
+/* line 129, ../sass/_global.scss */
+section {
+  padding: 4em 0;
+}
+/* line 133, ../sass/_global.scss */
+section.photo {
+  background-attachment: fixed;
+  background-position: center center;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20vh 0;
+  color: #fff;
+  background-color: #007793;
+  position: relative;
+}
+/* line 145, ../sass/_global.scss */
+section.photo .wrapper {
+  position: relative;
+}
+/* line 150, ../sass/_global.scss */
+section.photo .buttons .button {
+  border: 1px solid #fff;
+  color: #fff;
+}
+/* line 154, ../sass/_global.scss */
+section.photo .buttons .button:hover {
+  background: rgba(0, 0, 0, 0.75);
+}
+/* line 162, ../sass/_global.scss */
+section .wrapper {
+  width: 75%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* line 174, ../sass/_global.scss */
+ol.styled-list li {
+  list-style: decimal;
+}
+
+/* line 183, ../sass/_global.scss */
+ul.styled-list > li {
+  background: url("../images/point-bullet.png") no-repeat top left;
+  padding-left: 30px;
+  margin-left: -48px;
+}
+
+/* line 191, ../sass/_global.scss */
+.styled-list {
+  padding-left: 1.25em;
+}
+/* line 194, ../sass/_global.scss */
+.styled-list li {
+  line-height: 1.6em;
+  margin-bottom: 1em;
+  font-size: 1.2em;
+}
+/* line 199, ../sass/_global.scss */
+.styled-list li ul {
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+/* line 203, ../sass/_global.scss */
+.styled-list li ul li {
+  display: inline-block;
+  font-size: .8em;
+  line-height: 1.4em;
+  margin: 0 1em 0 0;
+  color: #666;
+  font-weight: 100;
+}
+/* line 213, ../sass/_global.scss */
+.styled-list li strong {
+  color: #00a0c6;
+  display: block;
+}
+
+/* line 221, ../sass/_global.scss */
+.float-left {
+  float: left;
+}
+
+/* line 222, ../sass/_global.scss */
+.float-right {
+  float: right;
+}
+
+/* line 224, ../sass/_global.scss */
+.standard-header {
+  padding-top: 8em;
+  padding-bottom: 2em;
+}
+
+/* line 229, ../sass/_global.scss */
+.breadcrumbs {
+  background: #00a0c6;
+  color: #fff;
+  text-align: center;
+  padding: .5em 0;
+  font-size: .8em;
+  font-weight: 100;
+}
+/* line 238, ../sass/_global.scss */
+.breadcrumbs a {
+  color: #fff;
+  text-decoration: none;
+}
+/* line 242, ../sass/_global.scss */
+.breadcrumbs a:hover {
+  color: #c6f4ff;
+}
+
+/* line 249, ../sass/_global.scss */
+.alignleft {
+  float: left;
+  margin-right: 2em;
+  clear: left;
+}
+
+/* line 255, ../sass/_global.scss */
+.alignright {
+  float: right;
+  margin-left: 2em;
+  clear: right;
+}
+
+@media screen and (max-width: 1024px) {
+  /* line 265, ../sass/_global.scss */
+  section .wrapper {
+    width: 90%;
+  }
+  /* line 269, ../sass/_global.scss */
+  section.photo {
+    background-attachment: scroll;
+  }
+
+  /* line 275, ../sass/_global.scss */
+  .image-filter {
+    background: rgba(0, 0, 0, 0.5);
+  }
+}
+@media screen and (max-width: 950px) {
+  /* line 283, ../sass/_global.scss */
+  body.promo-active {
+    padding-top: 0;
+  }
+}
+@media screen and (max-width: 820px) {
+  /* line 289, ../sass/_global.scss */
+  .section-head {
+    font-size: 2em;
+    margin-bottom: 1em;
+  }
+
+  /* line 294, ../sass/_global.scss */
+  .section-head-desc {
+    font-size: 1.6em;
+  }
+
+  /* line 298, ../sass/_global.scss */
+  .buttons .button {
+    float: none;
+    margin: .5em;
+    font-size: 1em;
+  }
+
+  /* line 304, ../sass/_global.scss */
+  .alignleft, .alignright {
+    float: none;
+    margin: 0 0 2em;
+    width: 100%;
+    height: auto;
+  }
+}
+/* line 1, ../sass/_header.scss */
+.promo-active header {
+  margin-top: 50px;
+}
+
+/* line 5, ../sass/_header.scss */
+.promo-bar {
+  height: 50px;
+  background: #f00000;
+  color: #000;
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  box-sizing: border-box;
+  padding-top: .9em;
+  text-align: center;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-decoration: none;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  display: block;
+}
+
+/* line 27, ../sass/_header.scss */
+a.promo-bar:hover {
+  color: #000;
+  background: #ff0b0b;
+}
+
+/* line 33, ../sass/_header.scss */
+header {
+  position: fixed;
+  top: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0 2em;
+  width: 100%;
+  z-index: 9999;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 43, ../sass/_header.scss */
+header h1 {
+  text-indent: -9999em;
+  background: url("../images/point-logo-header.png") 0 0 no-repeat;
+  width: 145px;
+  height: 67px;
+  float: left;
+  margin: 1em 0;
+  background-size: 100%;
+}
+/* line 53, ../sass/_header.scss */
+header nav.on-canvas {
+  float: right;
+  font-family: 'myriad-pro';
+  width: 75%;
+  margin-right: 2em;
+}
+/* line 60, ../sass/_header.scss */
+header nav.on-canvas .menu-global-navigation-container {
+  float: right;
+}
+/* line 64, ../sass/_header.scss */
+header nav.on-canvas ul li {
+  font-size: 1.2em;
+  display: inline;
+}
+/* line 70, ../sass/_header.scss */
+header nav.on-canvas ul li.current-menu-item a, header nav.on-canvas ul li.current-page-ancestor a {
+  color: #fff;
+}
+/* line 75, ../sass/_header.scss */
+header nav.on-canvas ul li.menu-item-type-custom a {
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  background: url(../images/search-icon.png) no-repeat center;
+  text-indent: -9999em;
+  padding: 2.15em 3em;
+}
+/* line 84, ../sass/_header.scss */
+header nav.on-canvas ul li a {
+  color: #ccc;
+  text-decoration: none;
+  padding: 2.15em 2em;
+  display: inline-block;
+}
+/* line 90, ../sass/_header.scss */
+header nav.on-canvas ul li a:hover {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/* line 98, ../sass/_header.scss */
+header nav.on-canvas .search-link {
+  display: inline-block;
+}
+/* line 103, ../sass/_header.scss */
+header.past-intro, header.opaque {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* line 109, ../sass/_header.scss */
+nav.off-canvas {
+  display: none;
+}
+
+@media screen and (max-width: 1300px) {
+  /* line 115, ../sass/_header.scss */
+  header h1 {
+    width: 120px;
+    height: 52px;
+  }
+  /* line 120, ../sass/_header.scss */
+  header nav.on-canvas {
+    width: 85%;
+  }
+  /* line 126, ../sass/_header.scss */
+  header nav.on-canvas ul li.menu-item-type-custom a {
+    padding: 1.7em 2.5em;
+  }
+  /* line 131, ../sass/_header.scss */
+  header nav.on-canvas ul li a {
+    padding: 1.7em 1.5em;
+  }
+}
+@media screen and (max-width: 1024px) {
+  /* line 143, ../sass/_header.scss */
+  header {
+    position: static;
+    text-align: center;
+    background: #333 !important;
+    padding: 0;
+  }
+  /* line 149, ../sass/_header.scss */
+  header h1 {
+    float: none;
+    margin: 1em auto;
+  }
+  /* line 150, ../sass/_header.scss */
+  header nav.on-canvas {
+    float: none;
+    margin: 0 auto;
+  }
+  /* line 154, ../sass/_header.scss */
+  header nav.on-canvas .menu-global-navigation-container {
+    float: none;
+  }
+}
+@media screen and (max-width: 950px) {
+  /* line 161, ../sass/_header.scss */
+  .promo-active header {
+    margin-top: 0;
+  }
+
+  /* line 165, ../sass/_header.scss */
+  .promo-bar {
+    position: static;
+    padding: 1em 20vw;
+    font-size: .8em;
+    height: auto;
+    line-height: 1.4em;
+  }
+
+  /* line 175, ../sass/_header.scss */
+  header nav.on-canvas {
+    display: none;
+  }
+
+  /* line 180, ../sass/_header.scss */
+  nav.off-canvas {
+    display: block;
+    box-sizing: border-box;
+    position: fixed;
+    top: -5px;
+    left: -75vw;
+    width: 75vw;
+    background: #333;
+    height: 150%;
+    padding: 1em;
+    z-index: 9999;
+    -moz-transition: left 0.5s;
+    -o-transition: left 0.5s;
+    -webkit-transition: left 0.5s;
+    transition: left 0.5s;
+  }
+  /* line 193, ../sass/_header.scss */
+  nav.off-canvas ul li a {
+    padding: 1em 0;
+    display: block;
+    border-bottom: 1px solid #666;
+    text-decoration: none;
+    text-align: center;
+  }
+  /* line 201, ../sass/_header.scss */
+  nav.off-canvas .off-canvas-control {
+    position: absolute;
+    right: -60px;
+    width: 60px;
+    height: 60px;
+    text-indent: -9999em;
+    display: block;
+    background: #333 url("../images/hamburger.png") no-repeat center;
+  }
+  /* line 212, ../sass/_header.scss */
+  nav.off-canvas.open {
+    left: 0;
+  }
+}
+/* line 1, ../sass/_footer.scss */
+footer {
+  background: #333;
+  padding: 2em;
+  color: #999;
+  font-weight: 100;
+  clear: both;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 9, ../sass/_footer.scss */
+footer .footer-title {
+  background: url(../images/footer-logo.png) no-repeat 0 0;
+  text-indent: -9999em;
+  height: 66px;
+  width: 150px;
+}
+/* line 16, ../sass/_footer.scss */
+footer .footer-address {
+  margin-top: 2em;
+  line-height: 1.4em;
+  font-size: 1.2em;
+  font-weight: 100;
+}
+/* line 23, ../sass/_footer.scss */
+footer .footer-utilities {
+  clear: both;
+  border-top: 1px solid #999;
+  margin-top: 1em;
+  padding-top: 1em;
+}
+/* line 29, ../sass/_footer.scss */
+footer .footer-utilities .button {
+  width: 15%;
+  border: 1px solid #999;
+  padding: 1%;
+  text-align: center;
+  text-decoration: none;
+  color: #999;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+/* line 38, ../sass/_footer.scss */
+footer .footer-utilities .button:hover {
+  background: #444;
+}
+/* line 43, ../sass/_footer.scss */
+footer .footer-utilities .copyright {
+  float: left;
+  text-align: center;
+  width: 64%;
+  padding-top: 1%;
+}
+/* line 49, ../sass/_footer.scss */
+footer .footer-utilities .copyright a {
+  color: #ccc;
+}
+
+@media screen and (max-width: 820px) {
+  /* line 57, ../sass/_footer.scss */
+  footer {
+    text-align: center;
+  }
+  /* line 60, ../sass/_footer.scss */
+  footer .footer-title {
+    margin: 0 auto;
+  }
+  /* line 66, ../sass/_footer.scss */
+  footer .footer-utilities .button {
+    float: none !important;
+    display: block;
+    width: 80%;
+    padding: .5em;
+    margin: 1em auto;
+  }
+  /* line 74, ../sass/_footer.scss */
+  footer .footer-utilities .copyright {
+    float: none;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+/* line 3, ../sass/_home.scss */
+#home-intro {
+  background-image: url("../images/welcome-bg-600.jpg");
+  height: 100vh;
+  padding: 0;
+}
+/* line 8, ../sass/_home.scss */
+#home-intro h2 {
+  font-family: 'myriad-pro';
+  font-size: 4em;
+  text-align: center;
+  padding-top: 30vh;
+}
+/* line 14, ../sass/_home.scss */
+#home-intro h2 dt {
+  text-indent: -9999em;
+  background: url("../images/point-logo-large.png") bottom center no-repeat;
+  background-size: contain;
+  height: 225px;
+  margin-bottom: 1%;
+}
+/* line 22, ../sass/_home.scss */
+#home-intro h2 dd {
+  font-size: .8em;
+}
+
+/* line 31, ../sass/_home.scss */
+#home-worship {
+  background-image: url("../images/worship-bg-600.jpg");
+}
+
+/* line 35, ../sass/_home.scss */
+#home-sermons {
+  background-image: url("../images/sermons-bg-600.jpg");
+}
+
+/* line 39, ../sass/_home.scss */
+#home-leadership {
+  background-image: url("../images/leadership-bg-600.jpg");
+}
+
+/* line 43, ../sass/_home.scss */
+#home-kids {
+  position: relative;
+  overflow: hidden;
+}
+/* line 47, ../sass/_home.scss */
+#home-kids .text-wrapper {
+  position: relative;
+  z-index: 10;
+}
+/* line 52, ../sass/_home.scss */
+#home-kids .buttons {
+  position: relative;
+  z-index: 2;
+}
+/* line 57, ../sass/_home.scss */
+#home-kids .paint-splatter {
+  opacity: .25;
+}
+/* line 60, ../sass/_home.scss */
+#home-kids .paint-splatter span {
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+/* line 72, ../sass/_home.scss */
+#home-kids .paint-splatter #orange {
+  /*height: 296px;
+  width: 237px;
+  top: -85px;
+  left: 120px;*/
+  background-image: url("../images/home-kids-paint-orange.png");
+  z-index: 1;
+  background-position: 8% 14%;
+}
+/* line 82, ../sass/_home.scss */
+#home-kids .paint-splatter #purple {
+  background-image: url("../images/home-kids-paint-purple.png");
+  /*height: 680px;
+  width: 538px;
+  top: -60px;
+  left: 0;*/
+  background-position: 0 10%;
+}
+/* line 91, ../sass/_home.scss */
+#home-kids .paint-splatter #green {
+  background-image: url("../images/home-kids-paint-green.png");
+  			/*height: 325px;
+   			width: 579px;
+    			right: 0px;
+    			top: -105px;*/
+  background-position: 100% 15%;
+}
+/* line 100, ../sass/_home.scss */
+#home-kids .paint-splatter #pink {
+  background-image: url("../images/home-kids-paint-pink.png");
+  			/*height: 224px;
+    			width: 209px;
+    			bottom: 20px;
+    			right: 10px;*/
+  background-position: 95% 95%;
+}
+/* line 109, ../sass/_home.scss */
+#home-kids .paint-splatter #pink2 {
+  background-image: url("../images/home-kids-paint-pink-2.png");
+  background-position: 85% 90%;
+}
+
+/* line 127, ../sass/_home.scss */
+#home-locations .locations {
+  margin-bottom: 4em;
+}
+/* line 130, ../sass/_home.scss */
+#home-locations .locations a {
+  text-decoration: none;
+}
+/* line 132, ../sass/_home.scss */
+#home-locations .locations a dd {
+  color: #333;
+}
+/* line 135, ../sass/_home.scss */
+#home-locations .locations li {
+  display: inline-block;
+  width: 19%;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding-top: 170px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+/* line 144, ../sass/_home.scss */
+#home-locations .locations li.apex {
+  background-image: url(../images/apex-icon.jpg);
+}
+/* line 148, ../sass/_home.scss */
+#home-locations .locations li.cary {
+  background-image: url(../images/cary-icon.jpg);
+}
+/* line 152, ../sass/_home.scss */
+#home-locations .locations li.espanol {
+  background-image: url(../images/espanol-icon.jpg);
+}
+/* line 156, ../sass/_home.scss */
+#home-locations .locations li.s-raleigh {
+  background-image: url(../images/s-raleigh-icon.jpg);
+}
+/* line 160, ../sass/_home.scss */
+#home-locations .locations li.n-raleigh {
+  background-image: url(../images/n-raleigh-icon.jpg);
+}
+/* line 165, ../sass/_home.scss */
+#home-locations .locations dt {
+  font-size: 2em;
+  color: #00a0c6;
+}
+
+/* line 173, ../sass/_home.scss */
+#map-canvas {
+  display: none;
+  height: 600px;
+}
+/* line 177, ../sass/_home.scss */
+#map-canvas.expand {
+  display: block;
+}
+/* line 181, ../sass/_home.scss */
+#map-canvas .campus-name {
+  font-size: 1.4em;
+  margin-bottom: 1em;
+}
+
+@media screen and (max-width: 820px) {
+  /* line 193, ../sass/_home.scss */
+  #home-intro {
+    height: auto;
+    padding: 2em 0;
+  }
+  /* line 197, ../sass/_home.scss */
+  #home-intro h2 {
+    padding: 0 0 2em;
+    font-size: 2.5em;
+    line-height: 1.2em;
+  }
+  /* line 202, ../sass/_home.scss */
+  #home-intro h2 dt {
+    margin-bottom: 2em;
+    width: 80%;
+    margin: 0 auto 2em;
+  }
+
+  /* line 212, ../sass/_home.scss */
+  #home-kids .paint-splatter span {
+    z-index: -1 !important;
+  }
+
+  /* line 217, ../sass/_home.scss */
+  #home-locations .locations li {
+    display: block;
+    width: 100%;
+    margin-bottom: 2em;
+  }
+}
+@media screen and (min-width: 800px) {
+  /* line 226, ../sass/_home.scss */
+  #home-intro {
+    background-image: url("../images/welcome-bg.jpg");
+  }
+
+  /* line 230, ../sass/_home.scss */
+  #home-worship {
+    background-image: url("../images/worship-bg.jpg");
+  }
+
+  /* line 234, ../sass/_home.scss */
+  #home-sermons {
+    background-image: url("../images/sermons-bg.jpg");
+  }
+
+  /* line 238, ../sass/_home.scss */
+  #home-leadership {
+    background-image: url("../images/leadership-bg.jpg");
+  }
+}
+@media screen and (max-width: 401px) {
+  /* line 246, ../sass/_home.scss */
+  #home-intro {
+    padding: 2em 0;
+  }
+
+  /* line 252, ../sass/_home.scss */
+  .section .section-head {
+    font-size: 2.2em;
+  }
+  /* line 256, ../sass/_home.scss */
+  .section .head-desc {
+    font-size: 1.4em;
+  }
+}
+/*STYLES FOR LOCATION ARCHIVE */
+/* line 7, ../sass/_locations.scss */
+.locations .list {
+  *zoom: 1;
+}
+/* line 38, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
+.locations .list:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 11, ../sass/_locations.scss */
+.locations .list a {
+  color: #333;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+/* line 15, ../sass/_locations.scss */
+.locations .list a:hover {
+  color: #00a0c6;
+}
+/* line 19, ../sass/_locations.scss */
+.locations .list-item {
+  width: 21%;
+  margin: 0 2%;
+  float: left;
+  text-align: center;
+}
+/* line 25, ../sass/_locations.scss */
+.locations .list-item .post-title {
+  font-size: 1.4em;
+  margin-top: 1em;
+  font-weight: bold;
+}
+/* line 32, ../sass/_locations.scss */
+.locations .teaching {
+  background-position: top center;
+  position: relative;
+}
+/* line 36, ../sass/_locations.scss */
+.locations .teaching .wrapper {
+  position: relative;
+}
+
+/* STYLES FOR LOCATION SINGLE */
+/* line 47, ../sass/_locations.scss */
+.page-header.promo {
+  padding-top: 12em;
+  padding-bottom: 4em;
+}
+/* line 51, ../sass/_locations.scss */
+.page-header.promo h2 {
+  text-shadow: 0 0 10px #000;
+}
+/* line 57, ../sass/_locations.scss */
+.page-header .page-title {
+  font-size: 4em;
+  margin-top: .25em;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #fff;
+  text-shadow: 0 0 10px #000;
+}
+
+/* line 68, ../sass/_locations.scss */
+#campus-welcome {
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 72, ../sass/_locations.scss */
+#campus-welcome .video {
+  float: left;
+  width: 45%;
+  margin-right: 5%;
+}
+/* line 77, ../sass/_locations.scss */
+#campus-welcome .video * {
+  width: 100%;
+}
+
+/* line 86, ../sass/_locations.scss */
+#campus-sermon .audio {
+  float: left;
+  width: 25%;
+  background: url("../images/audio-player.png") no-repeat center;
+  height: 106px;
+}
+
+/* line 103, ../sass/_locations.scss */
+#campus-visit .map-info {
+  position: relative;
+}
+/* line 106, ../sass/_locations.scss */
+#campus-visit .map-info #map-canvas {
+  width: 100%;
+  display: block;
+  margin: 0;
+  border: 2px solid #00a0c6;
+}
+/* line 113, ../sass/_locations.scss */
+#campus-visit .map-info .location-info {
+  position: absolute;
+  top: 2px;
+  right: -2px;
+  background: rgba(255, 255, 255, 0.85);
+  border-left: 2px solid #00a0c6;
+  border-bottom: 2px solid #00a0c6;
+  color: #333;
+  padding: 4em 4em 4em 6em;
+  background-image: url("../images/map-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 1em center;
+  background-size: 75px;
+}
+/* line 127, ../sass/_locations.scss */
+#campus-visit .map-info .location-info p {
+  margin: 0;
+}
+/* line 131, ../sass/_locations.scss */
+#campus-visit .visit-questions {
+  clear: both;
+  padding-top: 2em;
+}
+/* line 135, ../sass/_locations.scss */
+#campus-visit .visit-questions .location-info {
+  padding: 2em 0;
+  background-size: 75px;
+  margin: 1em 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+/* line 144, ../sass/_locations.scss */
+#campus-visit .visit-questions .location-info .question-title span {
+  background-image: url("../images/map-icon.svg");
+}
+/* line 150, ../sass/_locations.scss */
+#campus-visit .visit-questions .location-info p {
+  margin: 0;
+}
+/* line 155, ../sass/_locations.scss */
+#campus-visit .visit-questions .question {
+  width: 45%;
+  padding: 2.5%;
+  float: left;
+}
+/* line 160, ../sass/_locations.scss */
+#campus-visit .visit-questions .question:nth-child(2n+1) {
+  clear: left;
+}
+/* line 164, ../sass/_locations.scss */
+#campus-visit .visit-questions .question .question-title {
+  *zoom: 1;
+}
+/* line 38, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
+#campus-visit .visit-questions .question .question-title:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 169, ../sass/_locations.scss */
+#campus-visit .visit-questions .question-title {
+  font-size: 1.6em;
+  margin-bottom: 1em;
+}
+/* line 173, ../sass/_locations.scss */
+#campus-visit .visit-questions .question-title span {
+  background-image: url("../images/clock-icon.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  margin-right: .25em;
+  position: relative;
+  top: -12.5px;
+  float: left;
+}
+/* line 186, ../sass/_locations.scss */
+#campus-visit .visit-questions .question-title.park span {
+  background-image: url("../images/car-icon.svg");
+}
+/* line 187, ../sass/_locations.scss */
+#campus-visit .visit-questions .question-title.wear span {
+  background-image: url("../images/tshirt-icon.svg");
+}
+/* line 188, ../sass/_locations.scss */
+#campus-visit .visit-questions .question-title.kids span {
+  background-image: url("../images/lollipop-icon.svg");
+}
+
+/* line 194, ../sass/_locations.scss */
+#campus-events {
+  background-image: url("../images/events-bg.jpg");
+  *zoom: 1;
+  text-align: center;
+}
+/* line 38, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
+#campus-events:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 200, ../sass/_locations.scss */
+#campus-events .event {
+  display: inline-block;
+  width: 20%;
+  margin: 0 2%;
+  position: relative;
+}
+/* line 206, ../sass/_locations.scss */
+#campus-events .event a {
+  color: #fff;
+}
+/* line 208, ../sass/_locations.scss */
+#campus-events .event .event-image {
+  height: 200px;
+  background-size: cover;
+  display: block;
+  background-position: center;
+}
+/* line 217, ../sass/_locations.scss */
+#campus-events .event .event-title {
+  font-size: 1.5em;
+  margin-top: 1em;
+}
+/* line 222, ../sass/_locations.scss */
+#campus-events .event .event-date, #campus-events .event .event-time {
+  font-size: 1.2em;
+  margin-top: .5em;
+}
+/* line 227, ../sass/_locations.scss */
+#campus-events .event .short-description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  background: #333;
+  background: rgba(0, 0, 0, 0.75);
+  text-align: left;
+  font-size: 1em;
+  line-height: 1.4em;
+  opacity: 0;
+  height: 160px;
+  font-weight: 100;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+/* line 242, ../sass/_locations.scss */
+#campus-events .event .short-description:hover {
+  opacity: 1;
+}
+/* line 248, ../sass/_locations.scss */
+#campus-events .event img {
+  width: 100%;
+}
+/* line 257, ../sass/_locations.scss */
+#campus-events .buttons {
+  clear: both;
+}
+
+/* line 263, ../sass/_locations.scss */
+#campus-staff {
+  padding: 6em 0;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 267, ../sass/_locations.scss */
+#campus-staff .staff-list {
+  margin-bottom: 2em;
+}
+/* line 270, ../sass/_locations.scss */
+#campus-staff .staff-list li {
+  width: 25%;
+  float: left;
+  text-align: center;
+  margin-bottom: 2em;
+}
+/* line 277, ../sass/_locations.scss */
+#campus-staff .staff-list img {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 1em;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  border: 2px solid #aaa;
+}
+/* line 285, ../sass/_locations.scss */
+#campus-staff .staff-list dt {
+  font-size: 1.4em;
+  margin-bottom: .25em;
+}
+/* line 290, ../sass/_locations.scss */
+#campus-staff .staff-list dd {
+  font-size: 1em;
+}
+
+/* line 296, ../sass/_locations.scss */
+#campus-social {
+  background-image: url("../images/events-texture.jpg");
+  overflow: hidden;
+}
+/* line 299, ../sass/_locations.scss */
+#campus-social .wrapper {
+  width: 80%;
+  max-width: none;
+}
+/* line 305, ../sass/_locations.scss */
+#campus-social .instagram img {
+  width: 16.166666667%;
+  float: left;
+  padding: .25%;
+  opacity: .8;
+}
+/* line 311, ../sass/_locations.scss */
+#campus-social .instagram img:hover {
+  opacity: 1;
+}
+
+@media screen and (max-width: 1024px) {
+  /* line 321, ../sass/_locations.scss */
+  #campus-events .event {
+    width: 200px;
+    display: block;
+    margin: 1em auto;
+  }
+}
+@media screen and (max-width: 800px) {
+  /* line 331, ../sass/_locations.scss */
+  #campus-visit #map-canvas {
+    display: none !important;
+  }
+
+  /* line 336, ../sass/_locations.scss */
+  #campus-sermon {
+    background: #000 !important;
+  }
+
+  /* line 343, ../sass/_locations.scss */
+  #campus-staff .staff-list li {
+    width: 200px;
+    float: none;
+    margin: 1em auto;
+  }
+}
+/* line 3, ../sass/_page.scss */
+.page-section-head span {
+  display: block;
+}
+
+/* line 7, ../sass/_page.scss */
+.page-section-subhead {
+  font-size: 1.8em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+}
+
+/* line 16, ../sass/_page.scss */
+.page section {
+  padding: 4em 0;
+  *zoom: 1;
+}
+/* line 38, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
+.page section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 22, ../sass/_page.scss */
+.page #campus-events .section-head {
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  border: none;
+}
+
+/* line 34, ../sass/_page.scss */
+.mission, .vision, .values {
+  margin-bottom: 6em;
+}
+
+/* line 36, ../sass/_page.scss */
+.mission {
+  background: url("../images/mission.png") no-repeat 0 0;
+  padding-left: 250px;
+  margin-left: -250px;
+  min-height: 140px;
+}
+
+/* line 43, ../sass/_page.scss */
+.vision {
+  background: url("../images/vision.jpeg") no-repeat 0 0;
+  padding-left: 250px;
+  margin-left: -250px;
+  min-height: 160px;
+}
+
+/* line 50, ../sass/_page.scss */
+.values {
+  background: url("../images/values.jpeg") no-repeat 0 0;
+  padding-left: 250px;
+  margin-left: -250px;
+}
+
+/* line 57, ../sass/_page.scss */
+#staff {
+  *zoom: 1;
+}
+/* line 38, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
+#staff:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 60, ../sass/_page.scss */
+#staff .profiles {
+  *zoom: 1;
+}
+/* line 38, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
+#staff .profiles:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 64, ../sass/_page.scss */
+#staff li {
+  width: 16%;
+  margin: 2%;
+  float: left;
+}
+/* line 69, ../sass/_page.scss */
+#staff li:nth-child(5n+1) {
+  clear: left;
+}
+/* line 71, ../sass/_page.scss */
+#staff li dl {
+  text-align: center;
+  margin-top: 1em;
+  line-height: 1.4em;
+}
+/* line 76, ../sass/_page.scss */
+#staff li dl dt {
+  color: #00a0c6;
+  font-size: 1.2em;
+}
+/* line 78, ../sass/_page.scss */
+#staff li dl .location {
+  color: #666;
+  font-weight: 100;
+}
+/* line 84, ../sass/_page.scss */
+#staff li img {
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  border: 2px solid #aaa;
+  width: 100%;
+}
+
+@media screen and (max-width: 1460px) {
+  /* line 94, ../sass/_page.scss */
+  #mission-vision-values .mission, #mission-vision-values .vision, #mission-vision-values .values {
+    background: none;
+    min-height: 0;
+  }
+}
+/* line 101, ../sass/_page.scss */
+.page-header {
+  background: #333;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+  text-align: center;
+  padding: 8em 0 4em;
+}
+/* line 111, ../sass/_page.scss */
+.page-header .header-filter {
+  background: rgba(0, 0, 0, 0.25);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+/* line 122, ../sass/_page.scss */
+.page-header .wrapper {
+  position: relative;
+}
+
+/* line 132, ../sass/_page.scss */
+.page .featured-video, .styled-page .featured-video {
+  background: #008bad;
+  padding: 2em;
+  text-align: center;
+  display: block;
+}
+/* line 139, ../sass/_page.scss */
+.page h3, .styled-page h3 {
+  font-size: 2.4em;
+  font-weight: 100;
+  color: #00a0c6;
+  padding-bottom: .25em;
+  margin-bottom: 1em;
+  border-bottom: 1px solid #333;
+  line-height: 1.2em;
+}
+/* line 148, ../sass/_page.scss */
+.page h3 strong, .styled-page h3 strong {
+  font-weight: 100;
+}
+/* line 149, ../sass/_page.scss */
+.page h3 em, .styled-page h3 em {
+  font-style: normal;
+}
+/* line 152, ../sass/_page.scss */
+.page h4, .styled-page h4 {
+  font-size: 1.8em;
+  font-weight: 100;
+  margin-bottom: 1em;
+}
+/* line 158, ../sass/_page.scss */
+.page p + h3, .page ul + h3, .page ol + h3, .page .buttons + h3, .styled-page p + h3, .styled-page ul + h3, .styled-page ol + h3, .styled-page .buttons + h3 {
+  margin-top: 1em;
+}
+
+/* line 167, ../sass/_page.scss */
+.page section ul {
+  margin-bottom: 2em;
+}
+/* line 169, ../sass/_page.scss */
+.page section ul li {
+  list-style: disc;
+  font-size: 1.2em;
+  line-height: 1.4em;
+  margin-bottom: 1em;
+  margin-left: 2em;
+}
+/* line 177, ../sass/_page.scss */
+.page section ol {
+  margin-bottom: 2em;
+}
+/* line 179, ../sass/_page.scss */
+.page section ol li {
+  list-style: decimal;
+  font-size: 1.2em;
+  line-height: 1.4em;
+  margin-bottom: 1em;
+  margin-left: 2em;
+}
+
+/* line 190, ../sass/_page.scss */
+.page .tiles {
+  *zoom: 1;
+  margin: 0;
+  padding: 0;
+}
+/* line 38, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
+.page .tiles:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 197, ../sass/_page.scss */
+.page .tiles .tile {
+  float: left;
+  height: 350px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+/* line 204, ../sass/_page.scss */
+.page .tiles .tile.two-by {
+  width: 50%;
+}
+/* line 208, ../sass/_page.scss */
+.page .tiles .tile.three-by {
+  width: 33.3333%;
+}
+/* line 212, ../sass/_page.scss */
+.page .tiles .tile .tile-filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.25);
+  opacity: 1;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+/* line 223, ../sass/_page.scss */
+.page .tiles .tile img {
+  width: 100%;
+}
+/* line 225, ../sass/_page.scss */
+.page .tiles .tile h3 {
+  font-size: 1.6em;
+  text-align: center;
+  padding: 0;
+  position: relative;
+  color: #000;
+  margin: .5em 0 0;
+  line-height: 1.2em;
+  border: 0;
+  background: rgba(255, 255, 255, 0.75);
+  padding: .5em 0;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+/* line 240, ../sass/_page.scss */
+.page .tiles .tile:hover .tile-filter {
+  background: rgba(255, 255, 255, 0);
+}
+/* line 244, ../sass/_page.scss */
+.page .tiles .tile:hover h3 {
+  background: #00a0c6;
+  color: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+  /* line 256, ../sass/_page.scss */
+  .page h3, .styled-page h3 {
+    font-size: 3em;
+  }
+
+  /* line 261, ../sass/_page.scss */
+  .page-header {
+    padding: 2em 0;
+  }
+  /* line 264, ../sass/_page.scss */
+  .page-header .page-title {
+    font-size: 4em;
+  }
+
+  /* line 269, ../sass/_page.scss */
+  #campus-visit .map-info .location-info {
+    padding: 2em;
+    background-image: none;
+  }
+
+  /* line 274, ../sass/_page.scss */
+  #staff li {
+    width: 29%;
+  }
+  /* line 278, ../sass/_page.scss */
+  #staff li:nth-child(5n+1) {
+    clear: none;
+  }
+  /* line 282, ../sass/_page.scss */
+  #staff li:nth-child(3n+1) {
+    clear: left;
+  }
+}
+@media screen and (max-width: 820px) {
+  /* line 292, ../sass/_page.scss */
+  .page h3, .styled-page h3 {
+    font-size: 2.4em;
+  }
+
+  /* line 297, ../sass/_page.scss */
+  iframe {
+    width: 100% !important;
+    height: 250px;
+  }
+
+  /* line 302, ../sass/_page.scss */
+  .page-header {
+    padding: 2em 0;
+  }
+  /* line 305, ../sass/_page.scss */
+  .page-header .page-title {
+    font-size: 2em;
+  }
+
+  /* line 310, ../sass/_page.scss */
+  #campus-visit .map-info .location-info {
+    position: static;
+    border: none;
+    border-bottom: 2px solid #00a0c6;
+    width: auto;
+    padding: 1em 0;
+    margin-bottom: 2em;
+  }
+
+  /* line 319, ../sass/_page.scss */
+  #campus-visit .visit-questions .question {
+    float: none;
+    width: 100%;
+  }
+
+  /* line 324, ../sass/_page.scss */
+  #campus-visit .visit-questions .question-title {
+    font-size: 1.4em;
+  }
+
+  /* line 331, ../sass/_page.scss */
+  .page .tiles a {
+    text-decoration: none;
+  }
+  /* line 333, ../sass/_page.scss */
+  .page .tiles .tile.two-by, .page .tiles .tile.three-by {
+    width: 100%;
+    float: none;
+    margin: 0;
+    padding: 0;
+  }
+  /* line 340, ../sass/_page.scss */
+  .page .tiles .tile h3 {
+    margin: 0;
+  }
+
+  /* line 346, ../sass/_page.scss */
+  #staff li {
+    width: 46%;
+  }
+  /* line 349, ../sass/_page.scss */
+  #staff li:nth-child(3n+1) {
+    clear: none;
+  }
+  /* line 353, ../sass/_page.scss */
+  #staff li:nth-child(5n+1) {
+    clear: none;
+  }
+  /* line 357, ../sass/_page.scss */
+  #staff li:nth-child(2n+1) {
+    clear: left;
+  }
+}
+/* line 3, ../sass/_events.scss */
+.events section {
+  *zoom: 1;
+}
+/* line 38, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
+.events section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 7, ../sass/_events.scss */
+.events .details {
+  border: 2px solid #aaa;
+  padding: 0 2em;
+  width: 30%;
+  background: #00a0c6;
+  float: left;
+  position: relative;
+  color: #fff;
+  font-weight: 100;
+}
+/* line 17, ../sass/_events.scss */
+.events .details h4 {
+  font-size: 1.4em;
+  background: #00c9f9;
+  color: #fff;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 1em;
+  padding: .5em 0;
+}
+/* line 29, ../sass/_events.scss */
+.events .details dl {
+  margin: 2em 0;
+  font-size: 1.2em;
+  background: url("../images/date-icon.svg") no-repeat -15px 0;
+  background-size: 70px;
+  padding-left: 60px;
+}
+/* line 37, ../sass/_events.scss */
+.events .details dl dt, .events .details dl dd {
+  margin-bottom: .25em;
+  line-height: 1.2em;
+}
+/* line 45, ../sass/_events.scss */
+.events .event-contact {
+  padding: 2em;
+  border: 1px solid #aaa;
+}
+/* line 49, ../sass/_events.scss */
+.events .event-contact span {
+  font-weight: 100;
+  font-size: 1.2em;
+}
+/* line 55, ../sass/_events.scss */
+.events .content {
+  float: right;
+  width: 60%;
+}
+/* line 62, ../sass/_events.scss */
+.events .events-archive.list-item a {
+  width: 20%;
+  float: left;
+  margin: 2em 2.5%;
+  display: block;
+  position: relative;
+}
+/* line 69, ../sass/_events.scss */
+.events .events-archive.list-item a span {
+  opacity: 0;
+  -moz-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #aaa;
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5%;
+  padding: 1em;
+  box-sizing: border-box;
+  line-height: 1.4em;
+  font-weight: 100;
+}
+/* line 87, ../sass/_events.scss */
+.events .events-archive.list-item a span .event-header {
+  color: #00a0c6;
+  margin-top: 1em;
+  display: block;
+}
+/* line 94, ../sass/_events.scss */
+.events .events-archive.list-item a img {
+  width: 100%;
+  border-radius: 5%;
+}
+/* line 101, ../sass/_events.scss */
+.events .events-archive.list-item a:hover span {
+  opacity: 1;
+}
+
+@media screen and (max-width: 1200px) {
+  /* line 116, ../sass/_events.scss */
+  .events .events-archive.list-item a {
+    width: 90%;
+    border-bottom: 1px solid #00a0c6;
+    padding: 2em 0;
+    margin: 0 0 0 5%;
+    text-decoration: none;
+    overflow: hidden;
+    *zoom: 1;
+  }
+  /* line 124, ../sass/_events.scss */
+  .events .events-archive.list-item a img {
+    width: 33%;
+    margin: 0;
+    float: left;
+  }
+  /* line 130, ../sass/_events.scss */
+  .events .events-archive.list-item a span {
+    opacity: 1;
+    width: 60%;
+    padding: 0;
+    margin-left: 35%;
+    position: static;
+    display: block;
+    border-radius: 0;
+    background: none;
+    color: #111;
+  }
+}
+@media screen and (max-width: 1024px) {
+  /* line 149, ../sass/_events.scss */
+  .events .details {
+    float: none;
+    width: 70%;
+    margin: 1em auto;
+  }
+  /* line 155, ../sass/_events.scss */
+  .events .content {
+    float: none;
+    width: 70%;
+    margin: 2em auto;
+  }
+}
+@media screen and (max-width: 400px) {
+  /* line 166, ../sass/_events.scss */
+  .events .details dl {
+    background: none;
+    padding: 0;
+  }
+  /* line 172, ../sass/_events.scss */
+  .events .content {
+    width: 100%;
+  }
+  /* line 176, ../sass/_events.scss */
+  .events .event-contact {
+    border: none;
+    padding: 0;
+  }
+  /* line 184, ../sass/_events.scss */
+  .events .events-archive.list-item a img {
+    width: 80%;
+    margin: 0 10% 2em;
+    float: none;
+  }
+  /* line 190, ../sass/_events.scss */
+  .events .events-archive.list-item a span {
+    width: 80%;
+    padding: 0;
+    margin: 0 10%;
+  }
+}
+/* line 1, ../sass/_404.scss */
+.not-here {
+  padding-top: 10em;
+}
+
+/* line 8, ../sass/_404.scss */
+.page-not-found header {
+  background: #333;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+@media screen and (max-width: 1024px) {
+  /* line 16, ../sass/_404.scss */
+  .not-here {
+    padding-top: 4em;
+  }
+}

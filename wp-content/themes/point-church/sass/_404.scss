@@ -1,0 +1,20 @@
+.not-here{
+	padding-top: 10em;
+
+
+}
+
+.page-not-found{
+	header{
+		background: #333;
+		background: rgba(0,0,0,.8);
+	}
+}
+
+@media screen and (max-width: 1024px){
+
+	.not-here{
+		padding-top: 4em;
+	}
+
+}
