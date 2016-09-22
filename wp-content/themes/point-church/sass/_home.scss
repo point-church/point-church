@@ -40,6 +40,17 @@
 	background-image: url('../images/leadership-bg-600.jpg');
 }
 
+#home-whatif{
+	background-image: url('../images/whatif-bg-600.jpg');
+	text-align: center;
+
+	img{
+		margin: 0 auto 2em;
+		display: block;
+		max-width: 80%;
+	}
+}
+
 #home-kids{
 	position: relative;
 	overflow: hidden;
@@ -237,6 +248,10 @@
 
 	#home-leadership{
 		background-image: url('../images/leadership-bg.jpg');
+	}
+
+	#home-whatif{
+		background-image: url('../images/whatif-bg.jpg');
 	}
 }
 

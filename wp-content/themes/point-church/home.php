@@ -138,6 +138,17 @@
 	</div>
 </section>
 
+<section id="home-whatif" class="photo">
+	<div class="image-filter"></div>
+	<div class="wrapper">
+		<img src="<?php echo get_template_directory_uri(); ?>/images/whatif-logo.png" />
+		<p>What if we could go from 6 to 10 healthy campuses over the next 2 years?</p>
+		<div class="buttons">
+			<a href="<?php echo bloginfo('url'); ?>/whatif" class="button">Learn More</a>
+		</div>
+	</div>
+</section>
+
 
 
 
