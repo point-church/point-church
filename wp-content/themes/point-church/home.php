@@ -18,7 +18,7 @@
 		<h3 class="section-head" id="poc-text">The Politics of Jesus</h3>
 		<p>We can't escape it. Politics are everywhere. Leading up to election day, let's take a break. Let's explore the politics of Jesus. Join us at a campus near you this week.</p>
 		<div class="buttons">
-			<a href="#" class="button">Watch Promo</a>
+			<a href="https://vimeo.com/185998771" target="_blank" class="button">Watch Promo</a>
 			<a href="#home-locations" class="button">Find a campus</a>
 		</div>
 	</div>
