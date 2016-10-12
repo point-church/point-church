@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section id="home-intro" class="photo promo" data-photo="<?php bloginfo('stylesheet_directory');?>/images/home-intro-bg.jpg">
+<!--<section id="home-intro" class="photo promo" data-photo="<?php bloginfo('stylesheet_directory');?>/images/home-intro-bg.jpg">
 	<div class="image-filter"></div>
 	<div class="wrapper">
 		<h2>
@@ -9,6 +9,18 @@
 				<dd>Pointing People to Jesus</dd>
 			</dl>
 		</h2>
+	</div>
+</section>-->
+
+<section id="home-poc" class="photo promo" data-photo="<?php bloginfo('stylesheet_directory');?>/images/poc-bg.jpg">
+	<div class="image-filter"></div>
+	<div class="wrapper">
+		<h3 class="section-head" id="poc-text">The Politics of Jesus</h3>
+		<p>We can't escape it. Politics are everywhere. Leading up to election day, let's take a break. Let's explore the politics of Jesus. Join us at a campus near you this week.</p>
+		<div class="buttons">
+			<a href="#" class="button">Watch Promo</a>
+			<a href="#home-locations" class="button">Find a campus</a>
+		</div>
 	</div>
 </section>
 

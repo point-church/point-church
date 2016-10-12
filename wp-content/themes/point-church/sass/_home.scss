@@ -28,6 +28,10 @@
 
 }
 
+#home-poc{
+	background-image: url('../images/poj-bg-600.jpg');
+}
+
 #home-worship{
 	background-image: url('../images/worship-bg-600.jpg');
 }
@@ -236,6 +240,19 @@
 
 	#home-intro{
 		background-image: url('../images/welcome-bg.jpg');
+	}
+
+	#home-poc{
+
+		background-image: url('../images/poj-bg.jpg');
+
+		#poc-text{
+			text-indent: -9999em;
+			background: url('../images/poc-text.png') no-repeat left center;
+			background-size: contain;
+			height: 300px;
+			max-width: 100%;
+		}
 	}
 
 	#home-worship{
