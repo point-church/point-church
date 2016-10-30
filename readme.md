@@ -20,7 +20,9 @@ We are moving toward using the Airbnb javascript style guide. All javascript ref
 
 ## Staging Environment
 
-WPEngine includes a 1-click staging environment. It works great for keeping a staging environment in-sync with production. Additionally we use git deployments to both production and staging.
+WPEngine includes a 1-click staging environment. It works great for keeping a staging environment in-sync with production. Additionally we use git deployments to both production and staging. [Read the documentation](https://wpengine.com/support/set-git-push-user-portal)
+
+The URL for the staging repo is currently: git@git.wpengine.com:staging/pointchurch.git
 
 ## Major To-Dos:
 
