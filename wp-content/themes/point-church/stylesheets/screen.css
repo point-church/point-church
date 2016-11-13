@@ -835,80 +835,85 @@ footer .footer-utilities .copyright a {
 /* line 150, ../sass/_home.scss */
 #home-locations .locations li {
   display: inline-block;
-  width: 19%;
+  width: 33%;
   text-align: center;
   background-repeat: no-repeat;
   background-position: top center;
   padding-top: 170px;
+  margin-bottom: 2em;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
-/* line 159, ../sass/_home.scss */
+/* line 160, ../sass/_home.scss */
 #home-locations .locations li.apex {
   background-image: url(../images/apex-icon.jpg);
 }
-/* line 163, ../sass/_home.scss */
+/* line 164, ../sass/_home.scss */
 #home-locations .locations li.cary {
   background-image: url(../images/cary-icon.jpg);
 }
-/* line 167, ../sass/_home.scss */
+/* line 168, ../sass/_home.scss */
 #home-locations .locations li.espanol {
   background-image: url(../images/espanol-icon.jpg);
 }
-/* line 171, ../sass/_home.scss */
+/* line 172, ../sass/_home.scss */
 #home-locations .locations li.s-raleigh {
   background-image: url(../images/s-raleigh-icon.jpg);
 }
-/* line 175, ../sass/_home.scss */
+/* line 176, ../sass/_home.scss */
 #home-locations .locations li.n-raleigh {
   background-image: url(../images/n-raleigh-icon.jpg);
 }
 /* line 180, ../sass/_home.scss */
+#home-locations .locations li.chapel-hill {
+  background-image: url(../images/chapel-hill-icon.jpg);
+}
+/* line 185, ../sass/_home.scss */
 #home-locations .locations dt {
   font-size: 2em;
   color: #00a0c6;
 }
 
-/* line 188, ../sass/_home.scss */
+/* line 193, ../sass/_home.scss */
 #map-canvas {
   display: none;
   height: 600px;
 }
-/* line 192, ../sass/_home.scss */
+/* line 197, ../sass/_home.scss */
 #map-canvas.expand {
   display: block;
 }
-/* line 196, ../sass/_home.scss */
+/* line 201, ../sass/_home.scss */
 #map-canvas .campus-name {
   font-size: 1.4em;
   margin-bottom: 1em;
 }
 
 @media screen and (max-width: 820px) {
-  /* line 208, ../sass/_home.scss */
+  /* line 213, ../sass/_home.scss */
   #home-intro {
     height: auto;
     padding: 2em 0;
   }
-  /* line 212, ../sass/_home.scss */
+  /* line 217, ../sass/_home.scss */
   #home-intro h2 {
     padding: 0 0 2em;
     font-size: 2.5em;
     line-height: 1.2em;
   }
-  /* line 217, ../sass/_home.scss */
+  /* line 222, ../sass/_home.scss */
   #home-intro h2 dt {
     margin-bottom: 2em;
     width: 80%;
     margin: 0 auto 2em;
   }
 
-  /* line 227, ../sass/_home.scss */
+  /* line 232, ../sass/_home.scss */
   #home-kids .paint-splatter span {
     z-index: -1 !important;
   }
 
-  /* line 232, ../sass/_home.scss */
+  /* line 237, ../sass/_home.scss */
   #home-locations .locations li {
     display: block;
     width: 100%;
@@ -916,16 +921,16 @@ footer .footer-utilities .copyright a {
   }
 }
 @media screen and (min-width: 800px) {
-  /* line 241, ../sass/_home.scss */
+  /* line 246, ../sass/_home.scss */
   #home-intro {
     background-image: url("../images/welcome-bg.jpg");
   }
 
-  /* line 245, ../sass/_home.scss */
+  /* line 250, ../sass/_home.scss */
   #home-poc {
     background-image: url("../images/poj-bg.jpg");
   }
-  /* line 249, ../sass/_home.scss */
+  /* line 254, ../sass/_home.scss */
   #home-poc #poc-text {
     text-indent: -9999em;
     background: url("../images/poc-text.png") no-repeat left center;
@@ -934,37 +939,37 @@ footer .footer-utilities .copyright a {
     max-width: 100%;
   }
 
-  /* line 258, ../sass/_home.scss */
+  /* line 263, ../sass/_home.scss */
   #home-worship {
     background-image: url("../images/worship-bg.jpg");
   }
 
-  /* line 262, ../sass/_home.scss */
+  /* line 267, ../sass/_home.scss */
   #home-sermons {
     background-image: url("../images/sermons-bg.jpg");
   }
 
-  /* line 266, ../sass/_home.scss */
+  /* line 271, ../sass/_home.scss */
   #home-leadership {
     background-image: url("../images/leadership-bg.jpg");
   }
 
-  /* line 270, ../sass/_home.scss */
+  /* line 275, ../sass/_home.scss */
   #home-whatif {
     background-image: url("../images/whatif-bg.jpg");
   }
 }
 @media screen and (max-width: 401px) {
-  /* line 278, ../sass/_home.scss */
+  /* line 283, ../sass/_home.scss */
   #home-intro {
     padding: 2em 0;
   }
 
-  /* line 284, ../sass/_home.scss */
+  /* line 289, ../sass/_home.scss */
   .section .section-head {
     font-size: 2.2em;
   }
-  /* line 288, ../sass/_home.scss */
+  /* line 293, ../sass/_home.scss */
   .section .head-desc {
     font-size: 1.4em;
   }

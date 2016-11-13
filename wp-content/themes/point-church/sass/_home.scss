@@ -149,11 +149,12 @@
 
 			li{
 				display: inline-block;
-				width: 19%;
+				width: 33%;
 				text-align: center;
 				background-repeat: no-repeat;
 				background-position: top center;
 				padding-top: 170px;
+				margin-bottom: 2em;
 				@include filter(grayscale(100%));
 
 				&.apex{
@@ -174,6 +175,10 @@
 
 				&.n-raleigh{
 					background-image: url(../images/n-raleigh-icon.jpg);
+				}
+
+				&.chapel-hill{
+					background-image: url(../images/chapel-hill-icon.jpg);
 				}
 			}
 

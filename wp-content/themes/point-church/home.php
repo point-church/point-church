@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<!--<section id="home-intro" class="photo promo" data-photo="<?php bloginfo('stylesheet_directory');?>/images/home-intro-bg.jpg">
+<section id="home-intro" class="photo promo" data-photo="<?php bloginfo('stylesheet_directory');?>/images/home-intro-bg.jpg">
 	<div class="image-filter"></div>
 	<div class="wrapper">
 		<h2>
@@ -10,9 +10,9 @@
 			</dl>
 		</h2>
 	</div>
-</section>-->
+</section>
 
-<section id="home-poc" class="photo promo" data-photo="<?php bloginfo('stylesheet_directory');?>/images/poc-bg.jpg">
+<!-- <section id="home-poc" class="photo promo" data-photo="<?php bloginfo('stylesheet_directory');?>/images/poc-bg.jpg">
 	<div class="image-filter"></div>
 	<div class="wrapper">
 		<h3 class="section-head" id="poc-text">The Politics of Jesus</h3>
@@ -22,7 +22,7 @@
 			<a href="#home-locations" class="button">Find a campus</a>
 		</div>
 	</div>
-</section>
+</section> -->
 
 <section id="home-welcome">
 	<div class="wrapper">
@@ -105,6 +105,14 @@
 					</dl>
 				</li>
 			</a>
+			<a href="<?php bloginfo('url'); ?>/locations/chapel-hill">
+				<li class="chapel-hill">
+					<dl>
+						<dt>Chapel Hill</dt>
+						<dd>10am</dd>
+					</dl>
+				</li>	
+			</a>
 			<a href="<?php bloginfo('url'); ?>/locations/espanol">
 				<li class="espanol">
 					<dl>
@@ -131,9 +139,9 @@
 			</a>
 		</ul>
 
-		<div class="buttons">
+		<!--<div class="buttons">
 			<a href="#" class="button" id="map-expand">Find Campus Closest to Me</a>
-		</div>
+		</div>-->
 	</div>
 </section>
 
