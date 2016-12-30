@@ -1946,7 +1946,11 @@ footer .footer-utilities .copyright a {
   max-width: 800px;
   margin: 0 auto;
 }
-/* line 6, ../sass/_typography.scss */
+/* line 2, ../sass/_typography.scss */
+.blog h1 {
+  font-size: 3em;
+}
+/* line 9, ../sass/_typography.scss */
 .blog h2 {
   font-size: 1.6em;
   margin-top: .25em;
@@ -1955,15 +1959,15 @@ footer .footer-utilities .copyright a {
   letter-spacing: 1px;
   margin-bottom: 1em;
 }
-/* line 15, ../sass/_typography.scss */
+/* line 18, ../sass/_typography.scss */
 .blog a {
   text-decoration: none;
 }
-/* line 18, ../sass/_typography.scss */
+/* line 21, ../sass/_typography.scss */
 .blog a:hover {
   text-decoration: underline;
 }
-/* line 23, ../sass/_typography.scss */
+/* line 26, ../sass/_typography.scss */
 .blog .meta {
   margin-top: -1em;
   color: #666;
