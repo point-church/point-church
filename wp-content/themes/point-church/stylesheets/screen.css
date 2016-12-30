@@ -340,47 +340,77 @@ ul.styled-list > li {
   clear: right;
 }
 
+/* line 263, ../sass/_global.scss */
+.post-list-item {
+  padding: 2em;
+}
+/* line 266, ../sass/_global.scss */
+.post-list-item + .post-list-item {
+  border-top: 1px solid #eee;
+}
+
+/* line 271, ../sass/_global.scss */
+.pagination {
+  padding: 2em 0;
+  border-top: 1px solid #eee;
+}
+/* line 275, ../sass/_global.scss */
+.pagination dd {
+  margin-top: .5em;
+}
+/* line 279, ../sass/_global.scss */
+.pagination .prev-post {
+  float: left;
+  width: 40%;
+}
+/* line 284, ../sass/_global.scss */
+.pagination .next-post {
+  float: right;
+  width: 40%;
+  text-align: right;
+}
+
 @media screen and (max-width: 1024px) {
-  /* line 265, ../sass/_global.scss */
+  /* line 295, ../sass/_global.scss */
   section .wrapper {
     width: 90%;
   }
-  /* line 269, ../sass/_global.scss */
+  /* line 299, ../sass/_global.scss */
   section.photo {
     background-attachment: scroll;
   }
 
-  /* line 275, ../sass/_global.scss */
+  /* line 305, ../sass/_global.scss */
   .image-filter {
     background: rgba(0, 0, 0, 0.5);
   }
 }
 @media screen and (max-width: 950px) {
-  /* line 283, ../sass/_global.scss */
+  /* line 313, ../sass/_global.scss */
   body.promo-active {
     padding-top: 0;
   }
 }
 @media screen and (max-width: 820px) {
-  /* line 289, ../sass/_global.scss */
+  /* line 319, ../sass/_global.scss */
   .section-head {
     font-size: 2em;
     margin-bottom: 1em;
   }
 
-  /* line 294, ../sass/_global.scss */
+  /* line 324, ../sass/_global.scss */
   .section-head-desc {
     font-size: 1.6em;
   }
 
-  /* line 298, ../sass/_global.scss */
+  /* line 328, ../sass/_global.scss */
   .buttons .button {
     float: none;
     margin: .5em;
     font-size: 1em;
   }
 
-  /* line 304, ../sass/_global.scss */
+  /* line 334, ../sass/_global.scss */
   .alignleft, .alignright {
     float: none;
     margin: 0 0 2em;
@@ -1910,4 +1940,33 @@ footer .footer-utilities .copyright a {
   .not-here {
     padding-top: 4em;
   }
+}
+/* line 1, ../sass/_typography.scss */
+.blog {
+  max-width: 800px;
+  margin: 0 auto;
+}
+/* line 6, ../sass/_typography.scss */
+.blog h2 {
+  font-size: 1.6em;
+  margin-top: .25em;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 1em;
+}
+/* line 15, ../sass/_typography.scss */
+.blog a {
+  text-decoration: none;
+}
+/* line 18, ../sass/_typography.scss */
+.blog a:hover {
+  text-decoration: underline;
+}
+/* line 23, ../sass/_typography.scss */
+.blog .meta {
+  margin-top: -1em;
+  color: #666;
+  font-weight: 100;
+  font-size: 1em;
 }

@@ -258,6 +258,36 @@ ul.styled-list{
 	clear: right;
 }
 
+
+
+.post-list-item{
+	padding: 2em;
+
+	+ .post-list-item{
+		border-top: 1px solid #eee;
+	}
+}
+
+.pagination{
+	padding: 2em 0;
+	border-top: 1px solid #eee;
+
+	dd{
+		margin-top: .5em;
+	}
+
+	.prev-post{
+		float: left;
+		width: 40%;
+	}
+
+	.next-post{
+		float: right;
+		width: 40%;
+		text-align: right;
+	}
+}
+
 @media screen and (max-width: 1024px){
 
 	section{

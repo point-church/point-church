@@ -1,19 +1,31 @@
 <?php get_header(); ?>
 
-
-
 <?php if ( have_posts() ) : ?>
 
-<?php include('page-header.php'); ?>
+<div class="page-header" style="background-image: url(<?php echo wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>);">
+	<div class="header-filter"></div>
+	<div class="wrapper">
+		<h2 class="page-title">Blog</h2>
+	</div>
+</div>
+<div class="breadcrumbs sub-title" xmlns:v="http://rdf.data-vocabulary.org/#">
+    <?php if(function_exists('bcn_display'))
+    {
+        bcn_display();
+    }?>
+</div>
+
+<div class="post-list blog">
 <?php while ( have_posts() ) : the_post(); ?>
 
-		<div class="list-item">
-			<h3 class="post-title"><a href="<?php echo get_the_permalink(); ?>"><?php the_title(); ?></a></h3>
+		<div class="post-list-item">
+			<h2 class="post-title"><a href="<?php echo get_the_permalink(); ?>"><?php the_title(); ?></a></h2>
+			<p class="meta"><?php the_date(); ?></p>
 			<?php the_excerpt(); ?>
 		</div>
 
-
 <?php endwhile; ?>
+</div>
 	</div>
 </section>
 <?php else : ?>
