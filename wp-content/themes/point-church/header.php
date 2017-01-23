@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<!--testing git-->
 	<script src="//use.typekit.net/wjo1hsm.js"></script>
 	<script>try{Typekit.load({ async: true });}catch(e){}</script>
 	<title><?php bloginfo('name'); ?></title>
 	<link type="text/css" rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/style.css" />
-	<link type="text/css" rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/stylesheets/screen.css?12.30.2016" />
+	<link type="text/css" rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/stylesheets/screen.css?1.22.2017" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" type="image/png" href="<?php bloginfo('stylesheet_directory'); ?>/images/fav-icon.png" />
 	<!--[if lt IE 9]>
