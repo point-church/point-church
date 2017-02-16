@@ -10,7 +10,7 @@ CMS: Wordpress
 
 Hosting: WPEngine
 
-SASS Build tool: Compass
+SASS Build tool: Gulp
 
 JS Library: jQuery
 
