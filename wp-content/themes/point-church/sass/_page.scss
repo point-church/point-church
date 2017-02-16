@@ -15,7 +15,7 @@
 
 	section{
 		padding: 4em 0;
-		@include pie-clearfix;
+		@include clearfix;
 	}
 
 	#campus-events{
@@ -55,10 +55,10 @@
 
 
 #staff{
-	@include pie-clearfix;
+	@include clearfix;
 
 	.profiles{
-		@include pie-clearfix;
+		@include clearfix;
 	}
 
 	li{
@@ -82,7 +82,7 @@
 		}
 
 		img{
-			@include border-radius(100%);
+			border-radius: 100%;
 			border: 2px solid #aaa;
 			width: 100%;
 		}
@@ -188,7 +188,7 @@
 }
 
 .page .tiles{
-	@include pie-clearfix;
+	@include clearfix;
 	margin: 0;
 	padding: 0;
 
@@ -217,7 +217,7 @@
 			height: 100%;
 			background: rgba(255,255,255,.25);
 			opacity: 1;
-			@include transition(all .5s);
+			transition: all .5s;
 		}
 		
 		img{ width: 100%; }
@@ -233,7 +233,7 @@
 			border: 0;
 			background: rgba(255,255,255,.75);
 			padding: .5em 0;
-			@include transition(all .5s);
+			transition: all .5s;
 		}
 
 		&:hover{

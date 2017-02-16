@@ -1,7 +1,7 @@
 .events{
 
 	section{
-		@include pie-clearfix;
+		@include clearfix;
 	}
 
 	.details{
@@ -68,7 +68,7 @@
 
 			span{
 				opacity: 0;
-				@include transition(opacity .5s);
+				transition: opacity .5s;
 				position: absolute;
 				top: 0;
 				left: 0;

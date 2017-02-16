@@ -1,5 +1,17 @@
 $point-blue: #00a0c6;
 
+@mixin clearfix{
+	zoom: 1;
+
+	&:after{
+		content: '';
+		height: 0;
+		visibility: hidden;
+		display: block;
+		clear: both;
+	}
+}
+
 html, body{
 	font-family: 'myriad-pro';
 
@@ -106,7 +118,7 @@ h5{
 		display: inline-block;
 		clear: both;
 		font-size: 1.2em;
-		@include transition(.5s all);
+		transition: all .5s;
 		line-height: 1.4em;
 
 		&.small{
@@ -135,7 +147,7 @@ section{
 		background-position: center center;
 		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
 		-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
-		@include background-size(cover);
+		background-size: cover;
 		background-repeat: no-repeat;	
 		padding: 20vh 0;
 		color: #fff;

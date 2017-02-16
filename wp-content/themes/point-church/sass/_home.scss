@@ -26,8 +26,21 @@
 
 }
 
-#home-poc{
-	background-image: url('../images/poj-bg-600.jpg');
+#home-kcco{
+	background-image: url('../images/kcco-bg-600.jpg');
+	.image-filter{
+		display: none;
+	}
+
+		#kcco-text{
+			text-indent: -9999em;
+			background: url('../images/kcco-text.png') no-repeat left center;
+			background-size: contain;
+			height: 400px;
+			width: 100%;
+			background-position: center;
+			margin: 0 auto 1em;
+		}
 }
 
 #home-worship{
@@ -167,7 +180,7 @@
 			background-position: top center;
 			padding-top: 170px;
 			margin-bottom: 2em;
-			@include filter(grayscale(100%));
+			filter: grayscale(100%);
 			
 			&.apex{
 				background-image: url(../images/apex-icon.jpg);
@@ -277,17 +290,8 @@
 		background-image: url('../images/home-intro-new-bg.jpg');
 	}
 
-	#home-poc{
-
-		background-image: url('../images/poj-bg.jpg');
-
-		#poc-text{
-			text-indent: -9999em;
-			background: url('../images/poc-text.png') no-repeat left center;
-			background-size: contain;
-			height: 300px;
-			max-width: 100%;
-		}
+	#home-kcco{
+		background-image: url('../images/kcco-bg.jpg');
 	}
 
 	#home-worship{
@@ -337,5 +341,10 @@
 		display: block;
 		margin-bottom: 2em;
 	}
+}
+
+@media screen and (min-width: 1024px){
+
+
 }
 
