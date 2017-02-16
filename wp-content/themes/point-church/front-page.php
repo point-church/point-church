@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section id="home-intro" class="photo promo" data-photo="<?php bloginfo('stylesheet_directory');?>/images/home-intro-bg.jpg">
+<?php /*<section id="home-intro" class="photo promo" data-photo="<?php bloginfo('stylesheet_directory');?>/images/home-intro-bg.jpg">
 	<div class="image-filter"></div>
 	<div class="wrapper">
 		<h2>
@@ -10,19 +10,18 @@
 			</dl>
 		</h2>
 	</div>
-</section>
+</section> */?>
 
-<!-- <section id="home-poc" class="photo promo" data-photo="<?php bloginfo('stylesheet_directory');?>/images/poc-bg.jpg">
+<section id="home-kcco" class="photo promo" data-photo="<?php bloginfo('stylesheet_directory');?>/images/kcco-bg.jpg">
 	<div class="image-filter"></div>
 	<div class="wrapper">
-		<h3 class="section-head" id="poc-text">The Politics of Jesus</h3>
-		<p>We can't escape it. Politics are everywhere. Leading up to election day, let's take a break. Let's explore the politics of Jesus. Join us at a campus near you this week.</p>
+		<h3 class="section-head" id="kcco-text">Keep Calm and Carry On</h3>
+		<p>Have you ever wondered how to keep calm &amp; carry on in the midst of life's terrible circumstances? Join us this Sunday hear people share their personal keep calm and carry on stories. We will also be giving away FREE Keep Calm and Carry On shirts to all of our guests during this series.  Click below to find a location near you.</p>
 		<div class="buttons">
-			<a href="https://vimeo.com/185998771" target="_blank" class="button">Watch Promo</a>
 			<a href="#home-locations" class="button">Find a campus</a>
 		</div>
 	</div>
-</section> -->
+</section>
 
 <section id="home-welcome">
 	<div class="wrapper">

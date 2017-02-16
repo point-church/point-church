@@ -33,7 +33,7 @@ footer{
 			text-align: center;
 			text-decoration: none;
 			color: #999;
-			@include transition( all .5s);
+			transition: all .5s;
 
 			&:hover{
 				background: #444;

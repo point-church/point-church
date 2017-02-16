@@ -20,7 +20,7 @@
 	letter-spacing: 2px;
 	font-weight: bold;
 	text-decoration: none;
-	@include transition(all .5s);
+	transition: all .5s;
 	display: block;
 }
 
@@ -37,7 +37,7 @@ header{
 	padding: 0 2em;
 	width: 100%;
 	z-index: 9999;
-	@include transition(all .5s);
+	transition: all .5s;
 	@include clearfix;
 
 	h1{
@@ -141,7 +141,6 @@ nav.off-canvas{ display: none; }
 
 @media screen and (max-width: 1024px){
 	header{
-		position: static;
 		text-align: center;
 		background: #333!important;
 		padding: 0;
@@ -188,7 +187,7 @@ nav.off-canvas{ display: none; }
 		height: 150%;
 		padding: 1em;
 		z-index: 9999;
-		@include transition(left .5s);
+		transition: left .5s;
 
 		ul li a{
 			padding: 1em 0;
