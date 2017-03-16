@@ -12,10 +12,10 @@
 	</div>
 </section> */?>
 
-<section id="home-kcco" class="photo promo" data-photo="<?php bloginfo('stylesheet_directory');?>/images/kcco-bg.jpg">
+<section id="home-npp" class="photo promo" data-photo="<?php bloginfo('stylesheet_directory');?>/images/npp-bg.jpg">
 	<div class="image-filter"></div>
 	<div class="wrapper">
-		<h3 class="section-head" id="kcco-text">Keep Calm and Carry On</h3>
+		<h3 class="section-head" id="npp-text">Keep Calm and Carry On</h3>
 		<p>Have you ever wondered how to keep calm &amp; carry on in the midst of life's terrible circumstances? Join us this Sunday to hear people share their personal keep calm and carry on stories. We will also be giving away FREE Keep Calm and Carry On shirts to all of our guests during this series.  Click below to find a location near you.</p>
 		<div class="buttons">
 			<a href="#home-locations" class="button">Find a campus</a>

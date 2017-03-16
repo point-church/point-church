@@ -33,11 +33,12 @@ a.promo-bar:hover{
 header{
 	position: fixed;
 	top: 0;
-	border-bottom: 1px solid rgba(255,255,255,.1);
+	border-bottom: 1px solid rgba(255,255,255,.2);
 	padding: 0 2em;
 	width: 100%;
 	z-index: 9999;
 	transition: all .5s;
+	background: rgba(0,0,0,.75);
 	@include clearfix;
 
 	h1{
@@ -101,7 +102,7 @@ header{
 	}
 
 	&.past-intro, &.opaque{
-		background: rgba(0,0,0,.5);
+		background: rgba(0,0,0,.75);
 		//border-bottom: none;
 	}
 }

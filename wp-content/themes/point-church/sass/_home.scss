@@ -26,20 +26,44 @@
 
 }
 
-#home-kcco{
-	background-image: url('../images/kcco-bg-600.jpg');
+#home-npp{
+	background-image: url('../images/npp-bg-600.jpg');
+	color: #111;
+	background-color: #fff;
+	background-size: contain;
+	background-position: bottom;
+	border-bottom: 1px solid #111;
+	@include clearfix;
+
+	.wrapper{
+		width: 55%;
+		float: right;
+		margin-right: 2em;
+	}
+
+	.button{
+		border: 1px solid #111;
+		color: #111;
+
+		&:hover{
+			background: none;
+			color: $point-blue;
+			border-color: $point-blue;
+		}
+	}
+
 	.image-filter{
 		display: none;
 	}
 
-		#kcco-text{
+		#npp-text{
 			text-indent: -9999em;
-			background: url('../images/kcco-text.png') no-repeat left center;
+			background: url('../images/npp-logo.png') no-repeat left center;
 			background-size: contain;
-			height: 400px;
-			width: 100%;
+			height: 300px;
+			width: 300px;
 			background-position: center;
-			margin: 0 auto 1em;
+			margin: 0 auto .5em;
 		}
 }
 
@@ -290,8 +314,8 @@
 		background-image: url('../images/home-intro-new-bg.jpg');
 	}
 
-	#home-kcco{
-		background-image: url('../images/kcco-bg.jpg');
+	#home-npp{
+		background-image: url('../images/npp-bg.jpg');
 	}
 
 	#home-worship{
@@ -343,8 +367,23 @@
 	}
 }
 
-@media screen and (min-width: 1024px){
+@media screen and (max-width: 1024px){
 
+	#home-npp{
+		background: #fff;
+		padding: 4em 0;
+
+		#npp-text{
+			margin-bottom: 2em;
+		}
+
+		.wrapper{
+			width: 100%;
+			padding: 2em;
+			box-sizing: border-box;
+			float: none;
+		}
+	}
 
 }
 
