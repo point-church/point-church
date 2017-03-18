@@ -15,8 +15,8 @@
 <section id="home-npp" class="photo promo" data-photo="<?php bloginfo('stylesheet_directory');?>/images/npp-bg.jpg">
 	<div class="image-filter"></div>
 	<div class="wrapper">
-		<h3 class="section-head" id="npp-text">Keep Calm and Carry On</h3>
-		<p>Have you ever wondered how to keep calm &amp; carry on in the midst of life's terrible circumstances? Join us this Sunday to hear people share their personal keep calm and carry on stories. We will also be giving away FREE Keep Calm and Carry On shirts to all of our guests during this series.  Click below to find a location near you.</p>
+		<h3 class="section-head" id="npp-text">No Perfect People</h3>
+		<p>For the first time ever we are uninviting people to church.  Perfect people are not welcome at the Point Church for the next 4 weeks, as we search the scriptures for how we follow Jesus as flawed and imperfect people.  If you are still waiting on your dream house, perfect spouse, and convertible... join us this Sunday! If you know some imperfect people, invite them to come with you!</p>
 		<div class="buttons">
 			<a href="#home-locations" class="button">Find a campus</a>
 		</div>
