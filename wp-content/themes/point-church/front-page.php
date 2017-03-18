@@ -16,7 +16,7 @@
 	<div class="image-filter"></div>
 	<div class="wrapper">
 		<h3 class="section-head" id="npp-text">No Perfect People</h3>
-		<p>For the first time ever we are uninviting people to church.  Perfect people are not welcome at the Point Church for the next 4 weeks, as we search the scriptures for how we follow Jesus as flawed and imperfect people.  If you are still waiting on your dream house, perfect spouse, and convertible... join us this Sunday! If you know some imperfect people, invite them to come with you!</p>
+		<p>For the first time ever we are uninviting people to church.  Perfect people are not welcome at the Point Church for the next 4 weeks, as we search the scriptures for how we follow Jesus as flawed and imperfect people.  If you are still waiting on your dream house, perfect spouse, and convertible... join us this Sunday!</p>
 		<div class="buttons">
 			<a href="#home-locations" class="button">Find a campus</a>
 		</div>
