@@ -20,7 +20,7 @@
 	letter-spacing: 2px;
 	font-weight: bold;
 	text-decoration: none;
-	@include transition(all .5s);
+	transition: all .5s;
 	display: block;
 }
 
@@ -33,11 +33,12 @@ a.promo-bar:hover{
 header{
 	position: fixed;
 	top: 0;
-	border-bottom: 1px solid rgba(255,255,255,.1);
+	border-bottom: 1px solid rgba(255,255,255,.2);
 	padding: 0 2em;
 	width: 100%;
 	z-index: 9999;
-	@include transition(all .5s);
+	transition: all .5s;
+	background: rgba(0,0,0,.75);
 	@include clearfix;
 
 	h1{
@@ -101,7 +102,7 @@ header{
 	}
 
 	&.past-intro, &.opaque{
-		background: rgba(0,0,0,.5);
+		background: rgba(0,0,0,.75);
 		//border-bottom: none;
 	}
 }
@@ -141,10 +142,10 @@ nav.off-canvas{ display: none; }
 
 @media screen and (max-width: 1024px){
 	header{
-		position: static;
 		text-align: center;
 		background: #333!important;
-		padding: 0;
+		padding: 1px 0;
+		position: static;
 
 		h1{ float: none; margin: 1em auto; }
 		nav.on-canvas{
@@ -188,7 +189,7 @@ nav.off-canvas{ display: none; }
 		height: 150%;
 		padding: 1em;
 		z-index: 9999;
-		@include transition(left .5s);
+		transition: left .5s;
 
 		ul li a{
 			padding: 1em 0;

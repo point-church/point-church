@@ -1,0 +1,26 @@
+{
+  "name": "wordpressframe",
+  "version": "1.0.0",
+  "description": "A Wordpress Starter framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Brent Brinkley",
+  "license": "ISC",
+  "dependencies": {
+    "@types/chosen": "^1.6.32",
+    "@types/jquery": "^2.0.33",
+    "browser-sync": "^2.17.5",
+    "chosen-npm": "^1.4.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-imagemin": "^3.0.3",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^2.1.1",
+    "gulp-typescript": "^3.0.2",
+    "typescript": "^2.0.3"
+  }
+}

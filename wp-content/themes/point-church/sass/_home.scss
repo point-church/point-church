@@ -26,8 +26,45 @@
 
 }
 
-#home-poc{
-	background-image: url('../images/poj-bg-600.jpg');
+#home-npp{
+	background-image: url('../images/npp-bg-600.jpg');
+	color: #111;
+	background-color: #fff;
+	background-size: contain;
+	background-position: bottom;
+	border-bottom: 1px solid #111;
+	@include clearfix;
+
+	.wrapper{
+		width: 55%;
+		float: right;
+		margin-right: 2em;
+	}
+
+	.button{
+		border: 1px solid #111;
+		color: #111;
+
+		&:hover{
+			background: none;
+			color: $point-blue;
+			border-color: $point-blue;
+		}
+	}
+
+	.image-filter{
+		display: none;
+	}
+
+		#npp-text{
+			text-indent: -9999em;
+			background: url('../images/npp-logo.png') no-repeat left center;
+			background-size: contain;
+			height: 300px;
+			width: 300px;
+			background-position: center;
+			margin: 0 auto .5em;
+		}
 }
 
 #home-worship{
@@ -167,7 +204,7 @@
 			background-position: top center;
 			padding-top: 170px;
 			margin-bottom: 2em;
-			@include filter(grayscale(100%));
+			filter: grayscale(100%);
 			
 			&.apex{
 				background-image: url(../images/apex-icon.jpg);
@@ -277,17 +314,8 @@
 		background-image: url('../images/home-intro-new-bg.jpg');
 	}
 
-	#home-poc{
-
-		background-image: url('../images/poj-bg.jpg');
-
-		#poc-text{
-			text-indent: -9999em;
-			background: url('../images/poc-text.png') no-repeat left center;
-			background-size: contain;
-			height: 300px;
-			max-width: 100%;
-		}
+	#home-npp{
+		background-image: url('../images/npp-bg.jpg');
 	}
 
 	#home-worship{
@@ -337,5 +365,25 @@
 		display: block;
 		margin-bottom: 2em;
 	}
+}
+
+@media screen and (max-width: 1024px){
+
+	#home-npp{
+		background: #fff;
+		padding: 4em 0;
+
+		#npp-text{
+			margin-bottom: 2em;
+		}
+
+		.wrapper{
+			width: 100%;
+			padding: 2em;
+			box-sizing: border-box;
+			float: none;
+		}
+	}
+
 }
 
