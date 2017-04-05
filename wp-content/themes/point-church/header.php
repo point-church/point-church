@@ -5,7 +5,7 @@
 	<script>try{Typekit.load({ async: true });}catch(e){}</script>
 	<title><?php bloginfo('name'); ?></title>
 	<link type="text/css" rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/style.css" />
-	<link type="text/css" rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/stylesheets/screen.css?3.16.2017b" />
+	<link type="text/css" rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/stylesheets/screen.css?4.6.2017b" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" type="image/png" href="<?php bloginfo('stylesheet_directory'); ?>/images/fav-icon.png" />
 	<!--[if lt IE 9]>
