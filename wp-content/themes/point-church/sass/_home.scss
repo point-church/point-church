@@ -26,29 +26,29 @@
 
 }
 
-#home-npp{
-	background-image: url('../images/npp-bg-600.jpg');
+#home-easter{
+	background-image: url('../images/easter-bg-600.jpg');
 	color: #111;
 	background-color: #fff;
-	background-size: contain;
+	background-size: cover;
 	background-position: bottom;
 	border-bottom: 1px solid #111;
 	@include clearfix;
 
 	.wrapper{
-		width: 55%;
-		float: right;
-		margin-right: 2em;
+		font-weight: bold;
 	}
 
 	.button{
-		border: 1px solid #111;
+		font-weight: normal;
+		background: #fff;
+		background: rgba(255,255,255,.5);
 		color: #111;
+		border-color: #111;
 
 		&:hover{
-			background: none;
-			color: $point-blue;
-			border-color: $point-blue;
+			background: #fff;
+			background: rgba(255,255,255,.7);
 		}
 	}
 
@@ -56,9 +56,9 @@
 		display: none;
 	}
 
-		#npp-text{
+		#easter-text{
 			text-indent: -9999em;
-			background: url('../images/npp-logo.png') no-repeat left center;
+			background: url('../images/easter-logo.png') no-repeat left center;
 			background-size: contain;
 			height: 300px;
 			width: 300px;
@@ -314,8 +314,8 @@
 		background-image: url('../images/home-intro-new-bg.jpg');
 	}
 
-	#home-npp{
-		background-image: url('../images/npp-bg.jpg');
+	#home-easter{
+		background-image: url('../images/easter-bg.jpg');
 	}
 
 	#home-worship{
@@ -369,11 +369,10 @@
 
 @media screen and (max-width: 1024px){
 
-	#home-npp{
-		background: #fff;
+	#home-easter{
 		padding: 4em 0;
 
-		#npp-text{
+		#easter-text{
 			margin-bottom: 2em;
 		}
 

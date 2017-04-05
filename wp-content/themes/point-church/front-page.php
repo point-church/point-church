@@ -12,11 +12,11 @@
 	</div>
 </section> */?>
 
-<section id="home-npp" class="photo promo" data-photo="<?php bloginfo('stylesheet_directory');?>/images/npp-bg.jpg">
+<section id="home-easter" class="photo promo" data-photo="<?php bloginfo('stylesheet_directory');?>/images/easter-bg.jpg">
 	<div class="image-filter"></div>
 	<div class="wrapper">
-		<h3 class="section-head" id="npp-text">No Perfect People</h3>
-		<p>For the first time ever we are uninviting people to church.  Perfect people are not welcome at the Point Church for the next 4 weeks, as we search the scriptures for how we follow Jesus as flawed and imperfect people.  If you are still waiting on your dream house, perfect spouse, and convertible... join us this Sunday!</p>
+		<h3 class="section-head" id="easter-text">Easter</h3>
+		<p>Join us for Easter at The Point Church on April 16th. We will explore the question: how does the resurrection of Jesus 2000 years ago make a difference in your life today? There's something everyone! Family portraits, Kid Point, engaging teaching, and dynamic worship will make this a memorable Easter. Find a location near you!</p>
 		<div class="buttons">
 			<a href="#home-locations" class="button">Find a campus</a>
 		</div>
@@ -29,7 +29,7 @@
 		<p>The Point Church is a movement of churches across the Triangle with one mission. We are all about pointing people to Jesus.  We want to help people take their next steps with him—no matter where they are in their faith. So there’s no need to dress up, pretend to be perfect, or worry about your past. We just want you to experience Jesus.</p>
 		<div class="buttons">
 			<a href="<?php echo bloginfo('url'); ?>/about/beliefs-baptism" class="button">Beliefs</a>
-			<a href="<?php echo bloginfo('url'); ?>/about/staff" class="button">Staff</a>
+			<a href="<?php echo bloginfo('url'); ?>/about/staff" class="button light">Staff</a>
 		</a>
 	</div>
 </section>
