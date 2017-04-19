@@ -54,12 +54,12 @@ while ( have_posts() ) : the_post(); ?>
 				$tileWidth = 'three-by';
 			}elseif($columnCount == 5 && $currentPost > 3){
 				$tileWidth = 'two-by';
-			}elseif($columnCount == 7 && $currentPost < 4){
-				$tileWidth = 'three-by';
-			}elseif($columnCount == 7 && $currentPost < 6){
+			}elseif($columnCount == 7 && $currentPost < 3){
 				$tileWidth = 'two-by';
-			}elseif($columnCount == 7 && $currentPost > 5){
+			}elseif($columnCount == 7 && $currentPost < 6){
 				$tileWidth = 'three-by';
+			}elseif($columnCount == 7 && $currentPost > 5){
+				$tileWidth = 'two-by';
 			}else{
 				$tileWidth = $columnCount;
 			}
