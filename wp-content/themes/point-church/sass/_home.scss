@@ -26,9 +26,8 @@
 
 }
 
-#home-easter{
-	background-image: url('../images/easter-bg-600.jpg');
-	color: #111;
+#home-labeled{
+	background-image: url('../images/labeled-bg-600.jpg');
 	background-color: #fff;
 	background-size: cover;
 	background-position: bottom;
@@ -41,30 +40,17 @@
 
 	.button{
 		font-weight: normal;
-		background: #fff;
-		background: rgba(255,255,255,.5);
-		color: #111;
-		border-color: #111;
-
-		&:hover{
-			background: #fff;
-			background: rgba(255,255,255,.7);
-		}
 	}
 
-	.image-filter{
-		display: none;
+	#labeled-text{
+		text-indent: -9999em;
+		background: url('../images/labeled-logo.png') no-repeat left center;
+		background-size: contain;
+		height: 300px;
+		width: 300px;
+		background-position: center;
+		margin: 0 auto .5em;
 	}
-
-		#easter-text{
-			text-indent: -9999em;
-			background: url('../images/easter-logo.png') no-repeat left center;
-			background-size: contain;
-			height: 300px;
-			width: 300px;
-			background-position: center;
-			margin: 0 auto .5em;
-		}
 }
 
 #home-worship{
@@ -314,8 +300,8 @@
 		background-image: url('../images/home-intro-new-bg.jpg');
 	}
 
-	#home-easter{
-		background-image: url('../images/easter-bg.jpg');
+	#home-labeled{
+		background-image: url('../images/labeled-bg.jpg');
 	}
 
 	#home-worship{
@@ -369,12 +355,8 @@
 
 @media screen and (max-width: 1024px){
 
-	#home-easter{
+	#home-labeled{
 		padding: 4em 0;
-
-		#easter-text{
-			margin-bottom: 2em;
-		}
 
 		.wrapper{
 			width: 100%;

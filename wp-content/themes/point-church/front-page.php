@@ -12,11 +12,11 @@
 	</div>
 </section> */?>
 
-<section id="home-easter" class="photo promo" data-photo="<?php bloginfo('stylesheet_directory');?>/images/easter-bg.jpg">
+<section id="home-labeled" class="photo promo" data-photo="<?php bloginfo('stylesheet_directory');?>/images/labeled-bg.jpg">
 	<div class="image-filter"></div>
 	<div class="wrapper">
-		<h3 class="section-head" id="easter-text">Easter</h3>
-		<p>Join us for Easter at The Point Church on April 16th. We will explore the question: how does the resurrection of Jesus 2000 years ago make a difference in your life today? There's something everyone! Family portraits, Kid Point, engaging teaching, and dynamic worship will make this a memorable Easter. Find a location near you!</p>
+		<h3 class="section-head" id="labeled-text">Labeled</h3>
+		<p>In life we wear many Labels, but we have to decide whether these Labels are from God, or from this world. Understanding who you are is essential to understanding the life that you live. Join us for our upcoming series Labeled as we explore the Labels that Jesus gives us, and see how living out these Labels will transform our lives.</p>
 		<div class="buttons">
 			<a href="#home-locations" class="button">Find a campus</a>
 		</div>
