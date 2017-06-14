@@ -272,6 +272,10 @@
 			float: left;
 			text-align: center;
 			margin-bottom: 2em;
+
+			&:nth-child(4n+1) {
+				clear: left;
+			}
 		}
 
 		img{
