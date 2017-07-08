@@ -13,10 +13,11 @@
 </section> */?>
 
 <section id="home-labeled" class="photo promo" data-photo="<?php bloginfo('stylesheet_directory');?>/images/atthemovies.2000x1000.jpg">
+
 	<div class="image-filter"></div>
 	<div class="wrapper">
-		<h3 class="section-head" id="labeled-text">Labeled</h3>
-		<p>In life we wear many Labels, but we have to decide whether these Labels are from God, or from this world. Understanding who you are is essential to understanding the life that you live. Join us for our upcoming series Labeled as we explore the Labels that Jesus gives us, and see how living out these Labels will transform our lives.</p>
+		<h3 class="section-head" id="you-asked-for-it-text">You Asked For It</h3>
+		<p>This summer we are doing something we've never done before.  Starting June 18th, we are diving into a new series that you helped create called, You Asked For It!  You submitted your questions over the past month, and now we are going to speak on it, because YOU asked for it!</p>
 		<div class="buttons">
 			<a href="#home-locations" class="button">Find a campus</a>
 		</div>

@@ -1,0 +1,52 @@
+.news {
+
+    &__post {
+        a {
+            text-decoration: none;
+        }
+
+        + .news__post {
+            border-top: 1px solid #ccc;
+            padding-top: 2em;
+        }
+    }
+    .meta {
+        margin-top: -1.5em;
+        font-size: 1em;
+        color: #999;
+    }
+}
+
+.events {
+    a:hover img {
+       opacity: 1; 
+    }
+
+    img {
+        max-width: 100%;
+        opacity: .8;
+        transition: all .5s;
+    }
+
+    select {
+        margin-bottom: 2em;
+        width: 100%;
+
+        option {
+            background: #eee;
+            border: 1px solid #ccc;
+        }
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .news {
+        float: left;
+        width: 65%;
+    }
+
+    .events {
+        float: right;
+        width: 30%;
+    }
+}

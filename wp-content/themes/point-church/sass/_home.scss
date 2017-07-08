@@ -26,21 +26,28 @@
 
 }
 
-#home-labeled{
-	background-image: url('../images/labeled-bg-600.jpg');
+#home-you-asked-for-it{
+	background-image: url('../images/you-asked-for-it-bg-600.jpg');
 	background-color: #fff;
 	background-size: cover;
 	background-position: bottom;
 	border-bottom: 1px solid #111;
+	color: #111;
 	@include clearfix;
+
+	.image-filter {
+		display: none;
+	}
 
 	.button{
 		font-weight: normal;
+		color: #111;
+		border-color: #111;
 	}
 
-	#labeled-text{
+	#you-asked-for-it-text{
 		text-indent: -9999em;
-		background: url('../images/labeled-logo.png') no-repeat left center;
+		background: url('../images/you-asked-for-it-logo.png') no-repeat left center;
 		background-size: contain;
 		height: 250px;
 		width: 300px;
@@ -296,8 +303,8 @@
 		background-image: url('../images/home-intro-new-bg.jpg');
 	}
 
-	#home-labeled{
-		background-image: url('../images/labeled-bg.jpg');
+	#home-you-asked-for-it{
+		background-image: url('../images/you-asked-for-it-bg.jpg');
 	}
 
 	#home-worship{
@@ -351,7 +358,7 @@
 
 @media screen and (max-width: 1024px){
 
-	#home-labeled{
+	#home-you-asked-for-it{
 		padding: 4em 0;
 
 		.wrapper{
