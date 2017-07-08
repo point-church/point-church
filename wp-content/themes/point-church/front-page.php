@@ -12,7 +12,7 @@
 	</div>
 </section> */?>
 
-<section id="home-labeled" class="photo promo" data-photo="<?php bloginfo('stylesheet_directory');?>/images/labeled-bg.jpg">
+<section id="home-labeled" class="photo promo" data-photo="<?php bloginfo('stylesheet_directory');?>/images/atthemovies.2000x1000.jpg">
 	<div class="image-filter"></div>
 	<div class="wrapper">
 		<h3 class="section-head" id="labeled-text">Labeled</h3>
