@@ -17,7 +17,7 @@
 	<div class="image-filter"></div>
 	<div class="wrapper">
 		<h3 class="section-head" id="you-asked-for-it-text">You Asked For It</h3>
-		<p>This summer we are doing something we've never done before.  Starting June 18th, we are diving into a new series that you helped create called, You Asked For It!  You submitted your questions over the past month, and now we are going to speak on it, because YOU asked for it!</p>
+		<p>“Average movies entertain us.  The best ones inspire us.  So what can movies tell us about our own lives?  Plenty!  Come join us and find a seat!  ‘At The Movies’ premieres this summer, only at the Point Church for a limited time.  Find a location near you!”/p>
 		<div class="buttons">
 			<a href="#home-locations" class="button">Find a campus</a>
 		</div>
