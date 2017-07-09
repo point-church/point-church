@@ -27,7 +27,7 @@
 }
 
 #home-you-asked-for-it{
-	background-image: url('../images/you-asked-for-it-bg-600.jpg');
+	background-image: url('../images/atthemovies.600.jpg');
 	background-color: #fff;
 	background-size: cover;
 	background-position: bottom;
@@ -47,7 +47,6 @@
 
 	#you-asked-for-it-text{
 		text-indent: -9999em;
-		background: url('../images/you-asked-for-it-logo.png') no-repeat left center;
 		background-size: contain;
 		height: 250px;
 		width: 300px;
@@ -303,8 +302,8 @@
 		background-image: url('../images/home-intro-new-bg.jpg');
 	}
 
-	#home-you-asked-for-it{
-		background-image: url('../images/you-asked-for-it-bg.jpg');
+	#home-at-the-movies{
+		background-image: url('../images/atthemovies.2000x1000.jpg');
 	}
 
 	#home-worship{
@@ -358,7 +357,7 @@
 
 @media screen and (max-width: 1024px){
 
-	#home-you-asked-for-it{
+	#home-at-the-movies{
 		padding: 4em 0;
 
 		.wrapper{
