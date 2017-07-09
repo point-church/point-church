@@ -12,12 +12,12 @@
 	</div>
 </section> */?>
 
-<section id="home-labeled" class="photo promo" data-photo="<?php bloginfo('stylesheet_directory');?>/images/atthemovies.2000x1000.jpg">
+<section id="home-at-the-movies" class="photo promo" data-photo="<?php bloginfo('stylesheet_directory');?>/images/atthemovies.jpg">
 
 	<div class="image-filter"></div>
 	<div class="wrapper">
-		<h3 class="section-head" id="you-asked-for-it-text">You Asked For It</h3>
-		<p>“Average movies entertain us.  The best ones inspire us.  So what can movies tell us about our own lives?  Plenty!  Come join us and find a seat!  ‘At The Movies’ premieres this summer, only at the Point Church for a limited time.  Find a location near you!”/p>
+		<h3 class="section-head" id="at-the-movies-text">At the Movies</h3>
+		<p>Average movies entertain us.  The best ones inspire us.  So what can movies tell us about our own lives?  Plenty!  Come join us and find a seat!  ‘At The Movies’ premieres this summer, only at the Point Church for a limited time.</p>
 		<div class="buttons">
 			<a href="#home-locations" class="button">Find a campus</a>
 		</div>
