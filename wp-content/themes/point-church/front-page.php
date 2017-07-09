@@ -12,11 +12,12 @@
 	</div>
 </section> */?>
 
-<section id="home-labeled" class="photo promo" data-photo="<?php bloginfo('stylesheet_directory');?>/images/labeled-bg.jpg">
+<section id="home-at-the-movies" class="photo promo" data-photo="<?php bloginfo('stylesheet_directory');?>/images/atthemovies.jpg">
+
 	<div class="image-filter"></div>
 	<div class="wrapper">
-		<h3 class="section-head" id="labeled-text">Labeled</h3>
-		<p>In life we wear many Labels, but we have to decide whether these Labels are from God, or from this world. Understanding who you are is essential to understanding the life that you live. Join us for our upcoming series Labeled as we explore the Labels that Jesus gives us, and see how living out these Labels will transform our lives.</p>
+		<h3 class="section-head" id="at-the-movies-text">At the Movies</h3>
+		<p>Average movies entertain us.  The best ones inspire us.  So what can movies tell us about our own lives?  Plenty!  Come join us and find a seat!  ‘At The Movies’ premieres this summer, only at the Point Church for a limited time.</p>
 		<div class="buttons">
 			<a href="#home-locations" class="button">Find a campus</a>
 		</div>
