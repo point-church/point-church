@@ -121,6 +121,11 @@ h5{
 		transition: all .5s;
 		line-height: 1.4em;
 
+		&.xsmall {
+			padding: .25em 1em;
+			font-size: 1em;
+		}
+
 		&.small{
 			padding: .5em 1.5em;
 			font-size: 1em;
@@ -129,18 +134,12 @@ h5{
 		&:hover{
 			color: $point-blue!important;
 			border-color: $point-blue!important;
-			
-			&:after{
-				//content: "\2192"; 
-				//padding-left: .5em;
-			}
 		}
 	}
 }
 
 section{
 	padding: 4em 0;
-	//background: url('../images/texture.png') 0 0 no-repeat;
 
 	&.photo{
 		background-attachment: fixed;

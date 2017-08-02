@@ -1,91 +1,55 @@
 <?php
 
-
-
-$campusMap = (object) array (
-    'all-church' => 8,
-    'apex' => 2,
-    'cary' => 3,
-    'chapel-hill' => 9,
-    'espanol-cary' => 4,
-    'fuquay-varina' => 10,
-    'north-raleigh' => 5,
-    'south-raleigh' => 1,
-    'espanol-apex' => 6
-);
-
-function slugify($text) {
-  // replace non letter or digits by -
-  $text = preg_replace('~[^\pL\d]+~u', '-', $text);
-
-  // transliterate
-  $text = iconv('utf-8', 'us-ascii//TRANSLIT', $text);
-
-  // remove unwanted characters
-  $text = preg_replace('~[^-\w]+~', '', $text);
-
-  // trim
-  $text = trim($text, '-');
-
-  // remove duplicate -
-  $text = preg_replace('~-+~', '-', $text);
-
-  // lowercase
-  $text = strtolower($text);
-
-  if (empty($text)) {
-    return 'n-a';
-  }
-
-  return $text;
+/* gets the contents of a file if it exists, otherwise grabs and caches */
+function get_content($file,$url,$hours = 1,$fn = '',$fn_args = '') {
+	//vars
+	$current_time = time(); 
+    $expire_time = $hours * 60 * 60; 
+    $file_time = filemtime($file);
+	//decisions, decisions
+	if(file_exists($file) && ($current_time - $expire_time < $file_time)) {
+		//echo 'returning from cached file';
+		return file_get_contents($file);
+	}
+	else {
+		$content = get_url($url);
+		if($fn) { $content = $fn($content,$fn_args); }
+		$content.= '<!-- cached:  '.time().'-->';
+		file_put_contents($file, $content);
+		//echo 'retrieved fresh from '.$url.':: '.$content;
+		return $content;
+	}
 }
 
-$campusName = slugify($_POST["campus"]);
-
-if( $campusName == 'n-a' ) {
-    $campusName = 'all-church';
+/* gets content from a URL via curl */
+function get_url($url) {
+	$ch = curl_init();
+	curl_setopt($ch,CURLOPT_URL,$url);
+    curl_setopt($ch, CURLOPT_USERPWD, "joshmobley:Sem1n01e*");
+	curl_setopt($ch,CURLOPT_RETURNTRANSFER,1); 
+	curl_setopt($ch,CURLOPT_CONNECTTIMEOUT,5);
+	$content = curl_exec($ch);
+	curl_close($ch);
+    $content = new SimpleXMLElement($content);
+    $events = array();
+    $i = 0;
+    foreach($content->response->items->item as $item){
+        array_push($events, $item);
+        $i++;
+    }
+	return json_encode($events);
 }
 
-$selectedCampus = $campusMap->$campusName;
+$today = date('Y-m-d');
+$t = new DateTime();
+$twoMonths = $t->modify('+60 days')->format('Y-m-d');
+$url = 'https://point.ccbchurch.com/api.php?srv=public_calendar_listing&date_start=' . $today . '&date_end=' . $twoMonths;
 
-$day = date('w');
-$week_start = date('Y-m-d', strtotime('-'.$day.' days'));
-$week_end = date('Y-m-d', strtotime('+'.(6-$day).' days'));
+get_content(__DIR__ . '/cache/events.txt',  $url);
 
-# srv=individual_calendar_listing&id=48&date_start=2010-01-01
- $url = 'https://point.ccbchurch.com/api.php?srv=individual_calendar_listing&id=' . $selectedCampus. '&date_start=' . $week_start . '&date_end=' . $week_end;
-
-//  Initiate curl
-$ch = curl_init();
-// Disable SSL verification
-curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-// Will return the response, if false it print the response
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-// username
-curl_setopt($ch, CURLOPT_USERPWD, "joshmobley:Sem1n01e*");
-// Set the url
-curl_setopt($ch, CURLOPT_URL,$url);
-// Execute
-$result=curl_exec($ch);
-// Closing
-curl_close($ch);
-
-// Will dump a beauty json :3
-
-$xml = simplexml_load_string($result);
-
-# print_r($xml);
-
-$events = array();
-
-foreach($xml->item as $item){
-    $eventObj = (object) array(
-        'name' => $item->event_name,
-        'description' => $item->event_description,
-        'date' => $item->date,
-        'group_name' => $item->group_name
-    );
-   array_push($events,$eventObj);
-}
+echo '<script>' .
+    'var events = ' . file_get_contents( __DIR__ . '/cache/events.txt') . ';' .
+	'console.log(events);' .
+    '</script>';
 
 ?>

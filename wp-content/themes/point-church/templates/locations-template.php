@@ -73,6 +73,7 @@
 				<h4 class="question-title kids"><span></span>What do I do with my kids?</h4>
 				<?php the_field('what_do_i_do_with_my_kids'); ?>	
 			</div>
+			
 		</div>
 		<div class="buttons">
 			<a class="button" href="mailto:info@pointchurch.com">More questions? Contact us at info@pointchurch.com</a>

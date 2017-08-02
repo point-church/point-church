@@ -16,6 +16,7 @@ function staff_post_type() {
       ),
       'public' => true,
       'has_archive' => false,
+      'menu_icon' => 'dashicons-groups'
     )
   );
 }
@@ -30,6 +31,22 @@ function events_post_type() {
       ),
       'public' => true,
       'has_archive' => true,
+      'menu_icon' => 'dashicons-calendar'
+    )
+  );
+}
+
+add_action( 'init', 'locations_post_type' );
+function locations_post_type() {
+  register_post_type( 'locations',
+    array(
+      'labels' => array(
+        'name' => __( 'Locations' ),
+        'singular_name' => __( 'Location' )
+      ),
+      'public' => true,
+      'has_archive' => true,
+      'menu_icon' => 'dashicons-location'
     )
   );
 }
@@ -37,7 +54,7 @@ function events_post_type() {
 function remove_content_editor() {
     remove_post_type_support( 'staff' , 'editor' );
     remove_post_type_support( 'events', 'editor' );
-    
+    remove_post_type_support( 'locations', 'editor' );
 }
 
 add_action( 'init', 'remove_content_editor' );
