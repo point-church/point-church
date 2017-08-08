@@ -12,14 +12,14 @@
 	</div>
 </section> */?>
 
-<section id="home-at-the-movies" class="photo promo" data-photo="<?php bloginfo('stylesheet_directory');?>/images/atthemovies.jpg">
+<section id="home-fuquay-launch" class="photo promo" data-photo="<?php bloginfo('stylesheet_directory');?>/images/fuquay-launch.jpg">
 
 	<div class="image-filter"></div>
 	<div class="wrapper">
-		<h3 class="section-head" id="at-the-movies-text">At the Movies</h3>
-		<p>Average movies entertain us.  The best ones inspire us.  So what can movies tell us about our own lives?  Plenty!  Come join us and find a seat!  ‘At The Movies’ premieres this summer, only at the Point Church for a limited time.</p>
+		<h3 class="section-head" id="fuquay-launch-text">Fuquay-Varina Launces This Sunday!</h3>
+		<p>The Point Church in Fuquay-Varina launches on August 13th. Join us at Fuquay-Varina High School at 10:00am for a church where you don't need to pretend. No matter your spiritual background, we are starting this church for you. Even better, we believe your kids will beg to come back!</p>
 		<div class="buttons">
-			<a href="#home-locations" class="button">Find a campus</a>
+			<a href="/locations/fuquay-varina-coming-august-2017" class="button">Learn More</a>
 		</div>
 	</div>
 </section>
