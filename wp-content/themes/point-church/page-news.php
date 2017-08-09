@@ -14,6 +14,8 @@
 
     $eventsQuery = new WP_Query($eventsArgs);
     $newsQuery = new WP_Query($newsArgs);
+
+    include('includes/ccb-api.php');
 ?>
 
 
@@ -46,18 +48,23 @@
 
             <h4><strong>Upcoming Events</strong></h4>
 
-            <form>
-                <fieldset>
-                    <select>
+            <form method="POST" action="/news">
+                <select name="campus">
                         <option>All Church</option>
                         <option>Apex</option>
                         <option>Cary</option>
                         <option>Español</option>
-                        <option>N. Raleigh</option>
-                        <option>S. Raleigh</option>
-                    </select>
-                </fieldset>
+                        <option>North Raleigh</option>
+                        <option>South Raleigh</option>
+                </select>
+                <input type="submit" value="Update" />
             </form>
+
+            <?php foreach($events as $event) {
+                echo '<h1>' . $event->name . '</h1>';
+                echo '<p>' . $event->group_name . '</p>';
+            }
+            ?>
 
             <?php if ( $eventsQuery->have_posts() ) : while ( $eventsQuery->have_posts() ) : $eventsQuery->the_post(); ?>
 

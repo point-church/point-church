@@ -26,13 +26,13 @@
 
 }
 
-#home-you-asked-for-it{
-	background-image: url('../images/atthemovies.600.jpg');
+#home-fuquay-launch{
+	background-image: url('../images/fuquay-launch-bg-600.jpg');
 	background-color: #fff;
 	background-size: cover;
 	background-position: bottom;
 	border-bottom: 1px solid #111;
-	color: #111;
+	color: #fff;
 	@include clearfix;
 
 	.image-filter {
@@ -41,15 +41,17 @@
 
 	.button{
 		font-weight: normal;
-		color: #111;
-		border-color: #111;
+		color: #fff;
+		border-color: #fff;
 	}
 
-	#you-asked-for-it-text{
+	#fuquay-launch-text{
 		text-indent: -9999em;
 		background-size: contain;
 		height: 250px;
 		width: 300px;
+		background-image: url('../images/fuquay-launch-logo.png');
+		background-repeat: no-repeat;
 		background-position: center;
 		margin: 0 auto .5em;
 	}
@@ -302,8 +304,8 @@
 		background-image: url('../images/home-intro-new-bg.jpg');
 	}
 
-	#home-at-the-movies{
-		background-image: url('../images/atthemovies.2000x1000.jpg');
+	#home-fuquay-launch{
+		background-image: url('../images/fuquay-launch-bg.jpg');
 	}
 
 	#home-worship{
@@ -357,7 +359,7 @@
 
 @media screen and (max-width: 1024px){
 
-	#home-at-the-movies{
+	#home-fuquay-launch{
 		padding: 4em 0;
 
 		.wrapper{

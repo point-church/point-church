@@ -300,9 +300,6 @@ function operateMenu(){
 
 }
 
-
-
-
 if($('body').hasClass('home')){ buildHomepageMap(); }
 if($('body').hasClass('locations')){ buildCampusMap(); }
 //if($('body').hasClass('events')){ buildEventsMap(); }
@@ -310,6 +307,5 @@ $('.off-canvas-control, .off-canvas-click-blocker').click(function(){
 	event.preventDefault();
 	operateMenu();
 }); //controller for mobile nav
-
 
 });
