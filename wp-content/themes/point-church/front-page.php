@@ -125,7 +125,7 @@
 				<li class="fuquay">
 					<dl>
 						<dt>Fuquay</dt>
-						<dd>August 2017</dd>
+						<dd>10am</dd>
 					</dl>
 				</li>
 			</a>
@@ -141,7 +141,7 @@
 				<li class="s-raleigh">
 					<dl>
 						<dt>S. Raleigh</dt>
-						<dd>9:15 &amp; 11am</dd>
+						<dd>8:45, 10 &amp; 11:15am</dd>
 					</dl>
 				</li>	
 			</a>
