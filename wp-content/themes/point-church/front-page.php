@@ -12,12 +12,12 @@
 	</div>
 </section> */?>
 
-<section id="home-fuquay-launch" class="photo promo" data-photo="<?php bloginfo('stylesheet_directory');?>/images/fuquay-launch.jpg">
+<section id="home-anniversary" class="photo promo" data-photo="<?php bloginfo('stylesheet_directory');?>/images/anniversary.jpg">
 
 	<div class="image-filter"></div>
 	<div class="wrapper">
-		<h3 class="section-head" id="fuquay-launch-text">Fuquay-Varina Launces This Sunday!</h3>
-		<p>The Point Church in Fuquay-Varina launches on August 13th. Join us at Fuquay-Varina High School at 10:00am for a church where you don't need to pretend. No matter your spiritual background, we are starting this church for you. Even better, we believe your kids will beg to come back!</p>
+		<h3 class="section-head" id="anniversary-text">7 Year Anniversary - September 10th</h3>
+		<p>The Point Church turns 7 on September 10th and we want you to celebrate with us!  Join your local Point Church for worship and to hear what The Point Church has done and our biblically rooted vision for the future.  That evening, we are celebrating as one church, under one roof, at The Point Church South Raleigh at 6:30 for our biggest worship night ever!  Come join in for a day full of celebration and worship for all that God has done!</p>
 		<div class="buttons">
 			<a href="/locations/fuquay-varina-coming-august-2017" class="button">Learn More</a>
 		</div>

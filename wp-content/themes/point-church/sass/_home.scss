@@ -26,8 +26,8 @@
 
 }
 
-#home-fuquay-launch{
-	background-image: url('../images/fuquay-launch-bg-600.jpg');
+#home-anniversary{
+	background-image: url('../images/anniversary-bg-600.jpg');
 	background-color: #fff;
 	background-size: cover;
 	background-position: bottom;
@@ -45,12 +45,13 @@
 		border-color: #fff;
 	}
 
-	#fuquay-launch-text{
+	#anniversary-text{
 		text-indent: -9999em;
 		background-size: contain;
 		height: 250px;
-		width: 300px;
-		background-image: url('../images/fuquay-launch-logo.png');
+		width: 100%;
+		max-width: 500px;
+		background-image: url('../images/anniversary-logo.png');
 		background-repeat: no-repeat;
 		background-position: center;
 		margin: 0 auto .5em;
@@ -304,8 +305,8 @@
 		background-image: url('../images/home-intro-new-bg.jpg');
 	}
 
-	#home-fuquay-launch{
-		background-image: url('../images/fuquay-launch-bg.jpg');
+	#home-anniversary{
+		background-image: url('../images/anniversary-bg.jpg');
 	}
 
 	#home-worship{
@@ -359,7 +360,7 @@
 
 @media screen and (max-width: 1024px){
 
-	#home-fuquay-launch{
+	#home-anniversary{
 		padding: 4em 0;
 
 		.wrapper{
