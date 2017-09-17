@@ -26,8 +26,8 @@
 
 }
 
-#home-anniversary{
-	background-image: url('../images/anniversary-bg-600.jpg');
+#home-deep-love{
+	background-image: url('../images/deep-love-bg-600.jpg');
 	background-color: #fff;
 	background-size: cover;
 	background-position: bottom;
@@ -36,7 +36,7 @@
 	@include clearfix;
 
 	.image-filter {
-		display: none;
+		background: rgba(0,0,0,.25);
 	}
 
 	.button{
@@ -45,13 +45,13 @@
 		border-color: #fff;
 	}
 
-	#anniversary-text{
+	#deep-love-text{
 		text-indent: -9999em;
 		background-size: contain;
 		height: 250px;
 		width: 100%;
 		max-width: 500px;
-		background-image: url('../images/anniversary-logo.png');
+		background-image: url('../images/deep-love-logo.png');
 		background-repeat: no-repeat;
 		background-position: center;
 		margin: 0 auto .5em;
@@ -305,8 +305,8 @@
 		background-image: url('../images/home-intro-new-bg.jpg');
 	}
 
-	#home-anniversary{
-		background-image: url('../images/anniversary-bg.jpg');
+	#home-deep-love{
+		background-image: url('../images/deep-love-bg.jpg');
 	}
 
 	#home-worship{
@@ -360,7 +360,7 @@
 
 @media screen and (max-width: 1024px){
 
-	#home-anniversary{
+	#home-deep-love{
 		padding: 4em 0;
 
 		.wrapper{
