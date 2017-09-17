@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<?php /*<section id="home-intro" class="photo promo" data-photo="<?php bloginfo('stylesheet_directory');?>/images/home-intro-bg.jpg">
+<section id="home-intro" class="photo promo" data-photo="<?php bloginfo('stylesheet_directory');?>/images/home-intro-bg.jpg">
 	<div class="image-filter"></div>
 	<div class="wrapper">
 		<h2>
@@ -10,9 +10,9 @@
 			</dl>
 		</h2>
 	</div>
-</section> */?>
+</section>
 
-<section id="home-anniversary" class="photo promo" data-photo="<?php bloginfo('stylesheet_directory');?>/images/anniversary.jpg">
+<?php /*<section id="home-anniversary" class="photo promo" data-photo="<?php bloginfo('stylesheet_directory');?>/images/anniversary.jpg">
 
 	<div class="image-filter"></div>
 	<div class="wrapper">
@@ -22,7 +22,7 @@
 			<a href="/locations/fuquay-varina-coming-august-2017" class="button">Learn More</a>
 		</div>
 	</div>
-</section>
+</section>*/ ?>
 
 <section id="home-welcome">
 	<div class="wrapper">
