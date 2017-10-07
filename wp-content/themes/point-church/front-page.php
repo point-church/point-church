@@ -124,7 +124,7 @@
 			<a href="<?php bloginfo('url'); ?>/locations/fuquay-varina">
 				<li class="fuquay">
 					<dl>
-						<dt>Fuquay</dt>
+						<dt>Fuquay-Varina</dt>
 						<dd>10am</dd>
 					</dl>
 				</li>
