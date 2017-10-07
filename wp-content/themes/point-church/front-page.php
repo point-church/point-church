@@ -12,12 +12,12 @@
 	</div>
 </section>*/ ?>
 
-<section id="home-deep-love" class="photo promo" data-photo="<?php bloginfo('stylesheet_directory');?>/images/deep-love-logo.png">
+<section id="home-financial-freedom" class="photo promo" data-photo="<?php bloginfo('stylesheet_directory');?>/images/financial-freedom-logo.png">
 
 	<div class="image-filter"></div>
 	<div class="wrapper">
-		<h3 class="section-head" id="deep-love-text">Deep Love</h3>
-		<p>Has the pace of life and lack of intentionality led you to a life filled with shallow relationships? As we dive into this series, we will grab a hold of Christianity’s unique vision for community. That vision moves us past shallow love and into a deep love for one another.</p>
+		<h3 class="section-head" id="financial-freedom-text">Financial Freedom</h3>
+		<p>On October 15th we are starting a new series called Financial Freedom that has been instrumental in helping thousands of people and churches all across America turn their financial situations around! You will discover the biblical principles that show you how to get out from under the burden of debt and enable you to declare your financial independence. </p>
 		<div class="buttons">
 			<a href="#home-locations" class="button">Find a Location</a>
 		</div>

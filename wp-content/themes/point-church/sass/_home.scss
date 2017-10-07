@@ -26,9 +26,9 @@
 
 }
 
-#home-deep-love{
-	background-image: url('../images/deep-love-bg-600.jpg');
-	background-color: #fff;
+#home-financial-freedom{
+	//background-image: url('../images/financial-freedom-bg-600.jpg');
+	background-color: #333d3f;
 	background-size: cover;
 	background-position: bottom;
 	border-bottom: 1px solid #111;
@@ -45,13 +45,13 @@
 		border-color: #fff;
 	}
 
-	#deep-love-text{
+	#financial-freedom-text{
 		text-indent: -9999em;
 		background-size: contain;
 		height: 250px;
 		width: 100%;
 		max-width: 500px;
-		background-image: url('../images/deep-love-logo.png');
+		background-image: url('../images/financial-freedom-logo.png');
 		background-repeat: no-repeat;
 		background-position: center;
 		margin: 0 auto .5em;
@@ -305,8 +305,8 @@
 		background-image: url('../images/home-intro-new-bg.jpg');
 	}
 
-	#home-deep-love{
-		background-image: url('../images/deep-love-bg.jpg');
+	#home-financial-freedom{
+		//background-image: url('../images/financial-freedom-bg.jpg');
 	}
 
 	#home-worship{
@@ -360,7 +360,7 @@
 
 @media screen and (max-width: 1024px){
 
-	#home-deep-love{
+	#home-financial-freedom{
 		padding: 4em 0;
 
 		.wrapper{
