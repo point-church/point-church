@@ -166,9 +166,19 @@
 	//MAKE ICONS COLOR ON HOVER
 	.locations{
 		margin-bottom: 4em;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		max-width: 800px;
+		margin: 0 auto 4em;
 		@include clearfix;
 		
-		a{ text-decoration: none; 
+		a{ 
+			text-decoration: none; 
+			flex-basis: 33%;
+			margin: 0 0 4em;
+			flex-shrink: 0;
+			//margin-bottom: 4em;
 			
 			dd{ 
 				margin-top: .25em;
@@ -186,15 +196,10 @@
 		}
 
 		li{
-			display: inline-block;
-			width: 45%;
-			float: left;
-			margin-left: 5%;
 			text-align: center;
 			background-repeat: no-repeat;
 			background-position: top center;
 			padding-top: 170px;
-			margin-bottom: 2em;
 			filter: grayscale(100%);
 			
 			&.apex{
@@ -205,7 +210,15 @@
 				background-image: url(../images/cary-icon.jpg);
 			}
 			
-			&.espanol{
+			&.espanol-apex{
+				background-image: url(../images/espanol-apex-icon.png);
+			}
+			
+			&.international{
+				background-image: url(../images/international-icon.png);
+			}
+			
+			&.espanol-cary{
 				background-image: url(../images/espanol-icon.jpg);
 			}
 			
@@ -247,57 +260,51 @@
 	}
 }
 
-@media screen and (max-width: 401px){
 
 
-	#home-intro{
-		padding: 2em 0;
-	}
-
-	.section{
-
-		.section-head{
-			font-size: 2.2em;
-		}
-
-		.head-desc{
-			font-size: 1.4em;
-		}
-	}
-
-}
-
-@media screen and (min-width: 700px){
+@media screen and (max-width: 650px){
 
 	#home-locations{
 
 		.locations{
 
 			a{
-
-				li{
-					width: 24%;
-					margin-left: 0;
-					background-size: auto;
-				}
-
-				&:nth-child(2n+1){
-
-					li{
-						clear: none;
-					}
-
-				}
-
-				&:nth-child(n+5){
-					li{
-						width: 33%;
-					}
-				}
+				flex-basis: 50%;
 			} 
 		}
 	}
 }
+
+@media screen and (max-width: 401px){
+	
+	
+		#home-intro{
+			padding: 2em 0;
+		}
+	
+		.section{
+	
+			.section-head{
+				font-size: 2.2em;
+			}
+	
+			.head-desc{
+				font-size: 1.4em;
+			}
+		}
+		
+		#home-locations {
+	
+			.locations {
+	
+				a {
+					flex-basis: 100%;
+					margin-bottom: 2em;
+				}
+			}
+		}
+	
+	}
 
 @media screen and (min-width: 800px){
 

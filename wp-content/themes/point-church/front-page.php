@@ -113,14 +113,6 @@
 					</dl>
 				</li>	
 			</a>
-			<a href="<?php bloginfo('url'); ?>/locations/espanol">
-				<li class="espanol">
-					<dl>
-						<dt>Español</dt>
-						<dd>4pm</dd>
-					</dl>
-				</li>
-			</a>
 			<a href="<?php bloginfo('url'); ?>/locations/fuquay-varina">
 				<li class="fuquay">
 					<dl>
@@ -144,6 +136,30 @@
 						<dd>8:45, 10 &amp; 11:15am</dd>
 					</dl>
 				</li>	
+			</a>
+			<a href="<?php bloginfo('url'); ?>/locations/point-international-january-2018">
+				<li class="international">
+					<dl>
+						<dt>Point Church International</dt>
+						<dd>Coming January</dd>
+					</dl>
+				</li>
+			</a>
+			<a href="<?php bloginfo('url'); ?>/locations/apexenespanol">
+				<li class="espanol-apex">
+					<dl>
+						<dt>Apex en Español</dt>
+						<dd>6:30pm</dd>
+					</dl>
+				</li>
+			</a>
+			<a href="<?php bloginfo('url'); ?>/locations/espanol">
+				<li class="espanol-cary">
+					<dl>
+						<dt>Cary en Español</dt>
+						<dd>4pm</dd>
+					</dl>
+				</li>
 			</a>
 		</ul>
 
