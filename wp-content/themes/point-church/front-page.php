@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section id="home-intro" class="photo promo" data-photo="<?php bloginfo('stylesheet_directory');?>/images/home-intro-bg.jpg">
+<?php /*<section id="home-intro" class="photo promo" data-photo="<?php bloginfo('stylesheet_directory');?>/images/home-intro-bg.jpg">
 	<div class="image-filter"></div>
 	<div class="wrapper">
 		<h2>
@@ -10,19 +10,19 @@
 			</dl>
 		</h2>
 	</div>
-</section>
+</section>*/ ?>
 
-<?php /*<section id="home-anniversary" class="photo promo" data-photo="<?php bloginfo('stylesheet_directory');?>/images/anniversary.jpg">
+<section id="home-financial-freedom" class="photo promo" data-photo="<?php bloginfo('stylesheet_directory');?>/images/financial-freedom-logo.png">
 
 	<div class="image-filter"></div>
 	<div class="wrapper">
-		<h3 class="section-head" id="anniversary-text">7 Year Anniversary - September 10th</h3>
-		<p>The Point Church turns 7 on September 10th and we want you to celebrate with us!  Join your local Point Church for worship and to hear what The Point Church has done and our biblically rooted vision for the future.  That evening, we are celebrating as one church, under one roof, at The Point Church South Raleigh at 6:30 for our biggest worship night ever!  Come join in for a day full of celebration and worship for all that God has done!</p>
+		<h3 class="section-head" id="financial-freedom-text">Financial Freedom</h3>
+		<p>On October 15th we are starting a new series called Financial Freedom that has been instrumental in helping thousands of people and churches all across America turn their financial situations around! You will discover the biblical principles that show you how to get out from under the burden of debt and enable you to declare your financial independence. </p>
 		<div class="buttons">
-			<a href="/locations/fuquay-varina-coming-august-2017" class="button">Learn More</a>
+			<a href="#home-locations" class="button">Find a Location</a>
 		</div>
 	</div>
-</section>*/ ?>
+</section>
 
 <section id="home-welcome">
 	<div class="wrapper">
