@@ -101,7 +101,7 @@
 				<li class="cary">
 					<dl>
 						<dt>Cary</dt>
-						<dd>9:15am &amp; 11am</dd>
+						<dd>9:30am &amp; 11am</dd>
 					</dl>
 				</li>
 			</a>
