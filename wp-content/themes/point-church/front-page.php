@@ -10,16 +10,16 @@
 			</dl>
 		</h2>
 	</div>
-</section> */?>
+</section>*/ ?>
 
-<section id="home-fuquay-launch" class="photo promo" data-photo="<?php bloginfo('stylesheet_directory');?>/images/fuquay-launch.jpg">
+<section id="home-financial-freedom" class="photo promo" data-photo="<?php bloginfo('stylesheet_directory');?>/images/financial-freedom-logo.png">
 
 	<div class="image-filter"></div>
 	<div class="wrapper">
-		<h3 class="section-head" id="fuquay-launch-text">Fuquay-Varina Launces This Sunday!</h3>
-		<p>The Point Church in Fuquay-Varina launches on August 13th. Join us at Fuquay-Varina High School at 10:00am for a church where you don't need to pretend. No matter your spiritual background, we are starting this church for you. Even better, we believe your kids will beg to come back!</p>
+		<h3 class="section-head" id="financial-freedom-text">Financial Freedom</h3>
+		<p>On October 15th we are starting a new series called Financial Freedom that has been instrumental in helping thousands of people and churches all across America turn their financial situations around! You will discover the biblical principles that show you how to get out from under the burden of debt and enable you to declare your financial independence. </p>
 		<div class="buttons">
-			<a href="/locations/fuquay-varina-coming-august-2017" class="button">Learn More</a>
+			<a href="#home-locations" class="button">Find a Location</a>
 		</div>
 	</div>
 </section>
@@ -101,7 +101,7 @@
 				<li class="cary">
 					<dl>
 						<dt>Cary</dt>
-						<dd>9:15am &amp; 11am</dd>
+						<dd>9:30am &amp; 11am</dd>
 					</dl>
 				</li>
 			</a>
@@ -113,19 +113,11 @@
 					</dl>
 				</li>	
 			</a>
-			<a href="<?php bloginfo('url'); ?>/locations/espanol">
-				<li class="espanol">
-					<dl>
-						<dt>Español</dt>
-						<dd>4pm</dd>
-					</dl>
-				</li>
-			</a>
 			<a href="<?php bloginfo('url'); ?>/locations/fuquay-varina">
 				<li class="fuquay">
 					<dl>
-						<dt>Fuquay</dt>
-						<dd>August 2017</dd>
+						<dt>Fuquay-Varina</dt>
+						<dd>10am</dd>
 					</dl>
 				</li>
 			</a>
@@ -141,9 +133,33 @@
 				<li class="s-raleigh">
 					<dl>
 						<dt>S. Raleigh</dt>
-						<dd>9:15 &amp; 11am</dd>
+						<dd>8:45, 10 &amp; 11:15am</dd>
 					</dl>
 				</li>	
+			</a>
+			<a href="<?php bloginfo('url'); ?>/locations/point-international-january-2018">
+				<li class="international">
+					<dl>
+						<dt>Point Church International</dt>
+						<dd>Coming January</dd>
+					</dl>
+				</li>
+			</a>
+			<a href="<?php bloginfo('url'); ?>/locations/apexenespanol">
+				<li class="espanol-apex">
+					<dl>
+						<dt>Apex en Español</dt>
+						<dd>6:30pm</dd>
+					</dl>
+				</li>
+			</a>
+			<a href="<?php bloginfo('url'); ?>/locations/espanol">
+				<li class="espanol-cary">
+					<dl>
+						<dt>Cary en Español</dt>
+						<dd>4pm</dd>
+					</dl>
+				</li>
 			</a>
 		</ul>
 

@@ -12,7 +12,7 @@
 		<div class="footer-utilities">
 
 			<a class="button float-left" href="https://point.ccbchurch.com/">Connect Account</a>
-			<p class="copyright">&copy;2015 The Point Church | <a href="<?php echo bloginfo('url'); ?>/wp-admin">Log In</a></p>
+			<p class="copyright">&copy;<?php echo date('Y'); ?> The Point Church | <a href="<?php echo bloginfo('url'); ?>/wp-admin">Log In</a></p>
 			<a class="button float-right" href="https://pushpay.com/pay/pointchurch">Online Giving</a>
 
 	</div><!--.wrapper-->
