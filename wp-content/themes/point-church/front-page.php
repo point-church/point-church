@@ -93,7 +93,7 @@
 				<li class="apex">
 					<dl>
 						<dt>Apex</dt>
-						<dd>9:15am &amp; 11am</dd>
+						<dd>9:30am &amp; 11am</dd>
 					</dl>
 				</li>
 			</a>
@@ -140,7 +140,7 @@
 			<a href="<?php bloginfo('url'); ?>/locations/point-international-january-2018">
 				<li class="international">
 					<dl>
-						<dt>Point Church International</dt>
+						<dt>International</dt>
 						<dd>Coming January</dd>
 					</dl>
 				</li>
