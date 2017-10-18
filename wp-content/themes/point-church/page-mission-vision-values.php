@@ -22,15 +22,15 @@
 			<div class="values">
 				<h3>Our Values</h3>
 				<ul class="styled-list">
-					<li>We are<strong>Made To Worship</strong> God created us to worship and we experience maximum joy when we worship him with all we are.</li>
-	
-					<li>We are<strong>Better Together</strong> We were created to do life with others, so we are more effective when we follow Jesus together.</li>
-	
-					<li>We are<strong>Here To Help</strong> Jesus gives every Christian spiritual gifts and places us here to help others.</li>
-	
-					<li>We will<strong>Grow Daily</strong> We grow spiritually when we are connected with God so we prioritize daily time with Him.</li>
-	
-					<li>We will<strong>Lead The Way</strong> We have a mission to point people to Jesus, so we lead others to take their next step with Him.</li>
+					<li><strong>We Are Made To Worship</strong> God created us to worship and we experience maximum joy when we worship him with all we are.</li>
+                    
+					<li><strong>We Are Better Together</strong> We were created to do life with others, so we are more effective when we follow Jesus together.</li>
+                    
+					<li><strong>We Are Here To Help</strong> Jesus gives every Christian spiritual gifts and places us here to help others.</li>
+                    
+					<li><strong>We Will Grow Daily</strong> We grow spiritually when we are connected with God so we prioritize daily time with Him.</li>
+                    
+					<li><strong>We Will Lead The Way</strong> We have a mission to point people to Jesus, so we lead others to take their next step with Him.</li>
 				</ul>
 			</div>
 		</div>
