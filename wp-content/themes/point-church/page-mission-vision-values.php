@@ -22,23 +22,15 @@
 			<div class="values">
 				<h3>Our Values</h3>
 				<ul class="styled-list">
-					<li><strong>Invest and Invite</strong> We intentionally invest our lives into people who are far from 	God and invite them to know Christ.</li>
-	
-					<li><strong>Contributors not Consumers</strong> We do not settle for being religious consumers but 	desire for every person to contribute to the cause of Christ.</li>
-	
-					<li><strong>Better Together</strong> We can do more by working together than we can apart both as 	believers and churches.</li>
-	
-					<li><strong>Where God Guides He Provides</strong> We take bold steps of faith because God will always 	provide for what he calls us to do.</li>
-	
-					<li><strong>Help the Hurting</strong> We have a heart to help the hurting and in doing so we serve 	Christ. (Matthew 25:40)</li>
-	
-					<li><strong>Disciples Make Disciples</strong> We will reach our community and world by making 	disciples who make disciples and planting churches who plant churches.</li>
-	
-					<li><strong>Families Our First Mission Field</strong> We prioritize reaching and discipling the 	families God has already entrusted us.</li>
-	
-					<li><strong>Love the Local Church</strong> We love the local church because it is the bride of Christ 	and primary vehicle to accomplish God’s mission in the world.</li>
-	
-					<li><strong>Intentionally Pursue Diversity</strong> We desire to reach all demographics of our 	communities and work purposefully to achieve this goal.</li>
+					<li><strong>We Are Made To Worship</strong> God created us to worship and we experience maximum joy when we worship him with all we are.</li>
+                    
+					<li><strong>We Are Better Together</strong> We were created to do life with others, so we are more effective when we follow Jesus together.</li>
+                    
+					<li><strong>We Are Here To Help</strong> Jesus gives every Christian spiritual gifts and places us here to help others.</li>
+                    
+					<li><strong>We Will Grow Daily</strong> We grow spiritually when we are connected with God so we prioritize daily time with Him.</li>
+                    
+					<li><strong>We Will Lead The Way</strong> We have a mission to point people to Jesus, so we lead others to take their next step with Him.</li>
 				</ul>
 			</div>
 		</div>
