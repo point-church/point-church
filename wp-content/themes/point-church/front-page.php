@@ -125,7 +125,7 @@
 				<li class="n-raleigh">
 					<dl>
 						<dt>N. Raleigh</dt>
-						<dd>9:15am &amp; 11am</dd>
+						<dd>9:30am &amp; 11am</dd>
 					</dl>
 				</li>	
 			</a>
