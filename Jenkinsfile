@@ -4,20 +4,17 @@ pipeline {
 
     stages {
         stage('Build') { 
-            steps { 
-                sh 'make' 
+              node {
+                  checkout scm 
             }
         }
-        stage('Test'){
-            steps {
-                sh 'make check'
-                junit 'reports/**/*.xml' 
-            }
-        }
-        stage('Deploy') {
-            steps {
-                sh 'make publish'
-            }
+        stage('build docker image') {
+    steps {
+        sh 'docker-compose up -d
+    }
+}
+        
+            
         }
     }
 }
