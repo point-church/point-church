@@ -7,12 +7,10 @@ pipeline {
                   checkout scm 
             }
         }
-        stage('build docker image') {
+        stage('docker-compose image') {
     steps {
         sh 'docker-compose up -d'
     }
+  }
 }
-        
-            
-        }
    
