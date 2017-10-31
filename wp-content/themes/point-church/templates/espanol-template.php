@@ -1,4 +1,4 @@
-<?php /* Template Name: espanol Template */ ?>
+<?php /* Template Name: Español Template */ ?>
 
 <?php get_header(); ?>
 
@@ -31,7 +31,7 @@
 <section id="campus-sermon" class="photo teaching" style="background-image: url('<?php the_field('this_weeks_sermon_image'); ?>');">
 	<div class="image-filter"></div>
 	<div class="wrapper">
-		<h3 class="section-head">enseñando</h3>
+		<h3 class="section-head">Enseñando</h3>
 		<?php the_field('this_weeks_sermon_text'); ?>		
 		<!--<div class="audio"></div>-->
 	<!--	<audio controls>
@@ -164,37 +164,7 @@ El personal @ <?php the_title(); ?></h3>
 				
 	</div>
 </section>
-<?php /*
-<section id="campus-social" class="photo">
-	<div class="wrapper">
-		<h3 class="section-head">Connect with Us</h3>
-		<div class="instagram">
-			<img src="http://placehold.it/300x180" />
-			<img src="http://placehold.it/300x180" />
-			<img src="http://placehold.it/300x180" />
-			<img src="http://placehold.it/300x180" />
-			<img src="http://placehold.it/300x180" />
-			<img src="http://placehold.it/300x180" />
-			<img src="http://placehold.it/300x180" />
-			<img src="http://placehold.it/300x180" />
-			<img src="http://placehold.it/300x180" />
-			<img src="http://placehold.it/300x180" />
-			<img src="http://placehold.it/300x180" />
-			<img src="http://placehold.it/300x180" />
-			<img src="http://placehold.it/300x180" />
-			<img src="http://placehold.it/300x180" />
-			<img src="http://placehold.it/300x180" />
-			<img src="http://placehold.it/300x180" />
-			<img src="http://placehold.it/300x180" />
-			<img src="http://placehold.it/300x180" />
-		</div>
-		<div class="buttons">
-			<a href="#" class="button">Facebook</a>
-			<a href="#" class="button">Instagram</a>
-			<a href="#" class="button">Twitter</a>
-		</div>
-	</div>
-</section> */?>
+
 
 
 <?php endwhile; else : ?>
