@@ -12,12 +12,13 @@
 	</div>
 </section>*/ ?>
 
-<section id="home-financial-freedom" class="photo promo" data-photo="<?php bloginfo('stylesheet_directory');?>/images/financial-freedom-logo.png">
+<section id="home-here-to-help" class="photo promo" data-photo="<?php bloginfo('stylesheet_directory');?>/images/here-to-help-logo.png">
 
 	<div class="image-filter"></div>
 	<div class="wrapper">
-		<h3 class="section-head" id="financial-freedom-text">Financial Freedom</h3>
-		<p>On October 15th we are starting a new series called Financial Freedom that has been instrumental in helping thousands of people and churches all across America turn their financial situations around! You will discover the biblical principles that show you how to get out from under the burden of debt and enable you to declare your financial independence. </p>
+		<h3 class="section-head" id="here-to-help-text">Here to Help</h3>
+		<p>Join us for our current series, Here to Help, to see God’s biblical mandate to be here to help those who cannot help themselves!</p>
+		<p>We cannot wait to show you how you can use your gifts to carry out this value in your everyday life.  Find a location near you and come be a part of what is happening here at The Point!</p>
 		<div class="buttons">
 			<a href="#home-locations" class="button">Find a Location</a>
 		</div>

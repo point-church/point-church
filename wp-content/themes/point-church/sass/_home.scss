@@ -26,9 +26,8 @@
 
 }
 
-#home-financial-freedom{
-	//background-image: url('../images/financial-freedom-bg-600.jpg');
-	background-color: #333d3f;
+#home-here-to-help{
+	background-image: url('../images/here-to-help-bg-600.jpg');
 	background-size: cover;
 	background-position: bottom;
 	border-bottom: 1px solid #111;
@@ -45,16 +44,16 @@
 		border-color: #fff;
 	}
 
-	#financial-freedom-text{
+	#here-to-help-text{
 		text-indent: -9999em;
 		background-size: contain;
-		height: 250px;
+		height: 200px;
 		width: 100%;
-		max-width: 500px;
-		background-image: url('../images/financial-freedom-logo.png');
+		max-width: 400px;
+		background-image: url('../images/here-to-help-logo.png');
 		background-repeat: no-repeat;
 		background-position: center;
-		margin: 0 auto .5em;
+		margin: 0 auto 1em;
 	}
 }
 
@@ -312,8 +311,8 @@
 		background-image: url('../images/home-intro-new-bg.jpg');
 	}
 
-	#home-financial-freedom{
-		//background-image: url('../images/financial-freedom-bg.jpg');
+	#home-here-to-help{
+		background-image: url('../images/here-to-help-bg.jpg');
 	}
 
 	#home-worship{
@@ -367,7 +366,7 @@
 
 @media screen and (max-width: 1024px){
 
-	#home-financial-freedom{
+	#home-here-to-help{
 		padding: 4em 0;
 
 		.wrapper{
