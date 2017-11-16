@@ -17,7 +17,9 @@
 			</div>
 			<div class="vision">
 				<h3>Our Vision</h3>
-				<p>To plant 30 churches in the triangle area in the next 15 years (2025) through making disciples that disciple others and planting churches that plant churches.</p>
+				<p>Plant 30 Point Churches in the Triangle by 2025 to point every man, woman, and child here to Jesus in our generation!</p> 
+
+                   <p>We believe every town, community and urban area across the Triangle would be better off with a thriving Point Church actively pointing people to Jesus.  We also believe every person  can play a part in turning this God sized vision into a reality.  We invite you to partner with God to bless the community He has placed you in and partner with what he's doing in the next town or community.  Consider this your invitation to join with us in pointing every man, woman, and child in the Triangle to Jesus in our generation!</p>
 			</div>
 			<div class="values">
 				<h3>Our Values</h3>
