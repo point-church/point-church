@@ -86,7 +86,7 @@
 	<div class="wrapper">
 		<h3 class="section-head">Explore a Campus</h3>
 		<h4 class="section-head-desc">A Movement in Many Locations.</h4>
-		<p>Experience the the intimacy of a local church combined with power of collaboration resulting in a movement across the Triangle. At each of our campuses you will receive live in person teaching and engaging worship.</p>
+		<p>Experience the intimacy of a local church combined with power of collaboration resulting in a movement across the Triangle. At each of our campuses you will receive live in person teaching and engaging worship.</p>
 		<ul class="locations">
 
 			<a href="<?php bloginfo('url'); ?>/locations/apex">
