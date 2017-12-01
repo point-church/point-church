@@ -12,13 +12,13 @@
 	</div>
 </section>*/ ?>
 
-<section id="home-here-to-help" class="photo promo" data-photo="<?php bloginfo('stylesheet_directory');?>/images/here-to-help-logo.png">
+<section id="home-christmas-2017" class="photo promo" data-photo="<?php bloginfo('stylesheet_directory');?>/images/christmas-2017-logo.png">
 
 	<div class="image-filter"></div>
 	<div class="wrapper">
-		<h3 class="section-head" id="here-to-help-text">Here to Help</h3>
-		<p>Join us for our current series, Here to Help, to see God’s biblical mandate to be here to help those who cannot help themselves!</p>
-		<p>We cannot wait to show you how you can use your gifts to carry out this value in your everyday life.  Find a location near you and come be a part of what is happening here at The Point!</p>
+		<h3 class="section-head" id="christmas-2017-text">Be Christmas</h3>
+		<p>Christmas has become something it was never meant to be. Christmas is stressful, busy, tense, and expensive. What if we could flip Christmas upside down? What if we were able to bring Christmas back to what it was meant to be?</p> 
+		<p>We believe Christmas is a verb. It is not just a time of celebration, it is how we respond to it.  Come join us at a location near you to learn what it means to not just celebrate Christmas, but to Be Christmas!</p>
 		<div class="buttons">
 			<a href="#home-locations" class="button">Find a Location</a>
 		</div>
