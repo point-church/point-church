@@ -26,8 +26,8 @@
 
 }
 
-#home-here-to-help{
-	background-image: url('../images/here-to-help-bg-600.jpg');
+#home-christmas-2017{
+	background-image: url('../images/christmas-2017-bg-600.jpg');
 	background-size: cover;
 	background-position: bottom;
 	border-bottom: 1px solid #111;
@@ -44,13 +44,13 @@
 		border-color: #fff;
 	}
 
-	#here-to-help-text{
+	#christmas-2017-text{
 		text-indent: -9999em;
 		background-size: contain;
 		height: 200px;
 		width: 100%;
 		max-width: 400px;
-		background-image: url('../images/here-to-help-logo.png');
+		background-image: url('../images/christmas-2017-logo.png');
 		background-repeat: no-repeat;
 		background-position: center;
 		margin: 0 auto 1em;
@@ -311,8 +311,8 @@
 		background-image: url('../images/home-intro-new-bg.jpg');
 	}
 
-	#home-here-to-help{
-		background-image: url('../images/here-to-help-bg.jpg');
+	#home-christmas-2017{
+		background-image: url('../images/christmas-2017-bg.jpg');
 	}
 
 	#home-worship{
@@ -366,7 +366,7 @@
 
 @media screen and (max-width: 1024px){
 
-	#home-here-to-help{
+	#home-christmas-2017{
 		padding: 4em 0;
 
 		.wrapper{
