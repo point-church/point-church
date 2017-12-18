@@ -12,15 +12,15 @@
 	</div>
 </section>*/ ?>
 
-<section id="home-christmas-2017" class="photo promo" data-photo="<?php bloginfo('stylesheet_directory');?>/images/christmas-2017-logo.png">
+<section id="home-christmas-exp-2017" class="photo promo" data-photo="<?php bloginfo('stylesheet_directory');?>/images/christmas-exp-2017-logo.png">
 
 	<div class="image-filter"></div>
 	<div class="wrapper">
-		<h3 class="section-head" id="christmas-2017-text">Be Christmas</h3>
-		<p>Christmas has become something it was never meant to be. Christmas is stressful, busy, tense, and expensive. What if we could flip Christmas upside down? What if we were able to bring Christmas back to what it was meant to be?</p> 
-		<p>We believe Christmas is a verb. It is not just a time of celebration, it is how we respond to it.  Come join us at a location near you to learn what it means to not just celebrate Christmas, but to Be Christmas!</p>
+		<h3 class="section-head" id="christmas-exp-2017-text">Be Christmas</h3>
+		<p>You do not want to miss The Christmas Experience this year here at The Point Church! Christmas carols, cookies, activities for kids, a photo booth, hot chocolate, and the Christmas story make this a special time for the whole family.</p> 
+		<p>There are 7 opportunities in 3 locations to attend the exact same experience whenever and wherever is best for you!</p>
 		<div class="buttons">
-			<a href="#home-locations" class="button">Find a Location</a>
+			<a href="http://pointchurch.com/christmas/" class="button">Find a Service Near You</a>
 		</div>
 	</div>
 </section>
