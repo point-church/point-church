@@ -12,15 +12,15 @@
 	</div>
 </section>*/ ?>
 
-<section id="home-christmas-exp-2017" class="photo promo" data-photo="<?php bloginfo('stylesheet_directory');?>/images/christmas-exp-2017-logo.png">
+<section id="home-grow-daily" class="photo promo" data-photo="<?php bloginfo('stylesheet_directory');?>/images/grow-daily-logo.png">
 
 	<div class="image-filter"></div>
 	<div class="wrapper">
-		<h3 class="section-head" id="christmas-exp-2017-text">Be Christmas</h3>
-		<p>You do not want to miss The Christmas Experience this year here at The Point Church! Christmas carols, cookies, activities for kids, a photo booth, hot chocolate, and the Christmas story make this a special time for the whole family.</p> 
-		<p>There are 7 opportunities in 3 locations to attend the exact same experience whenever and wherever is best for you!</p>
+		<h3 class="section-head" id="grow-daily-text">Be Christmas</h3>
+		<p>We are diving into our new series, Grow Daily, as we enter the new year!  We experience the blessed life when we learn to grow daily in our walk with Jesus.</p>  
+		<p>Join us this January as we learn to prioritize him in our daily lives so that 2018 will be our best year ever!</p>
 		<div class="buttons">
-			<a href="http://pointchurch.com/christmas/" class="button">Find a Service Near You</a>
+			<a href="<?php echo bloginfo('url'); ?>/locations" class="button">Find a Service Near You</a>
 		</div>
 	</div>
 </section>
