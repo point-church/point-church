@@ -26,8 +26,8 @@
 
 }
 
-#home-christmas-exp-2017{
-	background-image: url('../images/christmas-exp-2017-bg-600.jpg');
+#home-grow-daily{
+	background-image: url('../images/grow-daily-bg-600.jpg');
 	background-size: cover;
 	background-position: bottom;
 	border-bottom: 1px solid #111;
@@ -44,13 +44,13 @@
 		border-color: #fff;
 	}
 
-	#christmas-exp-2017-text{
+	#grow-daily-text{
 		text-indent: -9999em;
 		background-size: contain;
 		height: 200px;
 		width: 100%;
 		max-width: 400px;
-		background-image: url('../images/christmas-exp-2017-logo.png');
+		background-image: url('../images/grow-daily-logo.png');
 		background-repeat: no-repeat;
 		background-position: center;
 		margin: 0 auto 1em;
@@ -311,8 +311,8 @@
 		background-image: url('../images/home-intro-new-bg.jpg');
 	}
 
-	#home-christmas-exp-2017{
-		background-image: url('../images/christmas-exp-2017-bg.jpg');
+	#home-grow-daily{
+		background-image: url('../images/grow-daily-bg.jpg');
 	}
 
 	#home-worship{
@@ -366,7 +366,7 @@
 
 @media screen and (max-width: 1024px){
 
-	#home-christmas-exp-2017{
+	#home-grow-daily{
 		padding: 4em 0;
 
 		.wrapper{
