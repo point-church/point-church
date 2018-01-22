@@ -1,4 +1,4 @@
-<?php /* Template Name: Languages Template */ ?>
+<?php /* Template Name: RUSSIAN Template */ ?>
 
 <?php get_header(); ?>
 
@@ -31,7 +31,7 @@
 <section id="campus-sermon" class="photo teaching" style="background-image: url('<?php the_field('this_weeks_sermon_image'); ?>');">
 	<div class="image-filter"></div>
 	<div class="wrapper">
-		<h3 class="section-head">Enseñando</h3>
+		<h3 class="section-head">RUSSIAN – РУССКИЙ</h3>
 		<?php the_field('this_weeks_sermon_text'); ?>		
 		<!--<div class="audio"></div>-->
 	<!--	<audio controls>
