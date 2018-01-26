@@ -26,10 +26,8 @@
 
 }
 
-#home-grow-daily{
-	background-image: url('../images/grow-daily-bg-600.jpg');
-	background-size: cover;
-	background-position: bottom;
+#home-marriage-restart{
+	background-color: #524758;
 	border-bottom: 1px solid #111;
 	color: #fff;
 	@include clearfix;
@@ -44,13 +42,13 @@
 		border-color: #fff;
 	}
 
-	#grow-daily-text{
+	#marriage-restart-text{
 		text-indent: -9999em;
 		background-size: contain;
 		height: 200px;
 		width: 100%;
 		max-width: 400px;
-		background-image: url('../images/grow-daily-logo.png');
+		background-image: url('../images/marriage-restart-logo.png');
 		background-repeat: no-repeat;
 		background-position: center;
 		margin: 0 auto 1em;
@@ -311,8 +309,8 @@
 		background-image: url('../images/home-intro-new-bg.jpg');
 	}
 
-	#home-grow-daily{
-		background-image: url('../images/grow-daily-bg.jpg');
+	#home-marriage-restart{
+		background-image: url('../images/marriage-restart-bg.jpg');
 	}
 
 	#home-worship{
@@ -366,7 +364,7 @@
 
 @media screen and (max-width: 1024px){
 
-	#home-grow-daily{
+	#home-marriage-restart{
 		padding: 4em 0;
 
 		.wrapper{

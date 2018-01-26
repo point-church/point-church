@@ -12,13 +12,14 @@
 	</div>
 </section>*/ ?>
 
-<section id="home-grow-daily" class="photo promo" data-photo="<?php bloginfo('stylesheet_directory');?>/images/grow-daily-logo.png">
+<section id="home-marriage-restart" class="photo promo" data-photo="<?php bloginfo('stylesheet_directory');?>/images/marriage-restart-logo.png">
 
 	<div class="image-filter"></div>
 	<div class="wrapper">
-		<h3 class="section-head" id="grow-daily-text">Be Christmas</h3>
-		<p>We are diving into our new series, Grow Daily, as we enter the new year!  We experience the blessed life when we learn to grow daily in our walk with Jesus.</p>  
-		<p>Join us this January as we learn to prioritize him in our daily lives so that 2018 will be our best year ever!</p>
+		<h3 class="section-head" id="marriage-restart-text">Be Christmas</h3>
+		<p>Is your marriage as great as you want it to be? Do you want better communication, more fun, and a great sex life? Revitalize your marriage and help it thrive. Marriage Restart takes our proven premarital counseling principles and gives your marriage the foundation it needs!</p>
+
+		<p>Join us this February for a series you don't want to miss!</p>
 		<div class="buttons">
 			<a href="<?php echo bloginfo('url'); ?>/locations" class="button">Find a Service Near You</a>
 		</div>
