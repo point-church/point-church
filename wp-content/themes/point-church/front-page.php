@@ -12,14 +12,12 @@
 	</div>
 </section>*/ ?>
 
-<section id="home-marriage-restart" class="photo promo" data-photo="<?php bloginfo('stylesheet_directory');?>/images/marriage-restart-logo.png">
+<section id="home-easter-2018" class="photo promo" data-photo="<?php bloginfo('stylesheet_directory');?>/images/easter-2018-bg.png">
 
 	<div class="image-filter"></div>
 	<div class="wrapper">
-		<h3 class="section-head" id="marriage-restart-text">Be Christmas</h3>
-		<p>Is your marriage as great as you want it to be? Do you want better communication, more fun, and a great sex life? Revitalize your marriage and help it thrive. Marriage Restart takes our proven premarital counseling principles and gives your marriage the foundation it needs!</p>
-
-		<p>Join us this February for a series you don't want to miss!</p>
+		<h3 class="section-head" id="easter-2018-text">Easter at The Point</h3>
+		<p>We’re expectant that on this day of days, as we look at the empty grave and celebrate the Resurrection of Jesus, that anything is possible for anyone.</p>
 		<div class="buttons">
 			<a href="<?php echo bloginfo('url'); ?>/locations" class="button">Find a Service Near You</a>
 		</div>

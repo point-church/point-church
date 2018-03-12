@@ -26,8 +26,8 @@
 
 }
 
-#home-marriage-restart{
-	background-color: #524758;
+#home-easter-2018{
+	background-image: url('../images/easter-2018-bg-600.jpg');
 	border-bottom: 1px solid #111;
 	color: #fff;
 	@include clearfix;
@@ -42,13 +42,13 @@
 		border-color: #fff;
 	}
 
-	#marriage-restart-text{
+	#easter-2018-text{
 		text-indent: -9999em;
 		background-size: contain;
-		height: 200px;
+		height: 310px;
 		width: 100%;
-		max-width: 400px;
-		background-image: url('../images/marriage-restart-logo.png');
+		max-width: 500px;
+		background-image: url('../images/easter-2018-logo.png');
 		background-repeat: no-repeat;
 		background-position: center;
 		margin: 0 auto 1em;
@@ -309,8 +309,8 @@
 		background-image: url('../images/home-intro-new-bg.jpg');
 	}
 
-	#home-marriage-restart{
-		background-image: url('../images/marriage-restart-bg.jpg');
+	#home-easter-2018{
+		background-image: url('../images/easter-2018-bg.jpg');
 	}
 
 	#home-worship{
@@ -364,7 +364,7 @@
 
 @media screen and (max-width: 1024px){
 
-	#home-marriage-restart{
+	#home-easter-2018{
 		padding: 4em 0;
 
 		.wrapper{
